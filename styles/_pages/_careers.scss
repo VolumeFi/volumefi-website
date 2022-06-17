@@ -1,0 +1,19 @@
+.careers-page-container {
+  width: 100%;
+  max-width: $team-panel-width;
+  margin: 120px auto;
+
+  .careers-page-top {
+    &-title {
+      text-align: center;
+    }
+  }
+
+  .careers-job-list {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    outline: none;
+    margin-top: 100px;
+  }
+}

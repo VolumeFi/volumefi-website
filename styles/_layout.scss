@@ -1,0 +1,334 @@
+@import "libraries/global";
+
+.layout-container {
+  width: 100vw;
+  max-width: 100%;
+
+  &__header {
+    padding: 0px 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
+      padding: 0px 30px;
+    }
+
+    @media screen and (max-width: 850px) {
+      flex-direction: row;
+    }
+
+    &__logo {
+      cursor: pointer;
+
+      img {
+        height: 57px;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+
+      @media screen and (max-width: 850px) {
+        margin-top: 15px;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &__hamburger {
+      display: none;
+
+      img {
+        height: 13px;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+    }
+
+    .header-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $font-bold;
+      font-size: 14px;
+      color: $main_text_color;
+      // text-decoration: underline;
+      cursor: pointer;
+      margin-left: 25px;
+      text-transform: uppercase;
+
+      img {
+        height: 9px;
+        margin-left: 5px;
+      }
+
+      &.active {
+        color: $hightlighted_color;
+      }
+
+      &.disabled {
+        color: #e7c5c5;
+        text-decoration: none;
+      }
+
+      &.community {
+        display: flex;
+        margin-left: 100px;
+        text-decoration: underline;
+
+        @media screen and (max-width: 930px) {
+          margin-left: 25px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 16px;
+        height: 30px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+      }
+    }
+
+    .header-menu-sub {
+      position: absolute;
+      padding-top: 15px;
+      margin-left: 20px;
+      padding-left: 20px;
+      font-size: 15px;
+      font-family: $font-bold;
+      display: flex;
+      flex-direction: column;
+      color: $main_text_color;
+      display: none;
+
+      &-link {
+        margin-bottom: 10px;
+        cursor: pointer;
+
+        &.active {
+          color: $hightlighted_color;
+        }
+      }
+    }
+
+    .header-parent-menu:hover {
+      .header-menu-sub {
+        display: block;
+      }
+    }
+  }
+
+  .mobile-header-menu {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background: #151515;
+    z-index: 5000;
+    padding: 21px 24px;
+
+    &-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .mobile-logo {
+        height: 57px;
+      }
+
+      .mobile-menu-close {
+        height: 13px;
+      }
+    }
+
+    &-menus {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 61px;
+      height: calc(100% - 21px - 57px - 61px);
+    }
+
+    .mobile-menu-spacer {
+      flex: 1;
+    }
+
+    .mobile-button {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: $font-bold;
+      font-size: 14px;
+      color: #fff;
+      // text-decoration: underline;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+
+      img {
+        height: 9px;
+        margin-left: 5px;
+      }
+
+      &.active {
+        color: $hightlighted_color;
+      }
+
+      &.disabled {
+        color: #494849;
+        text-decoration: none;
+      }
+
+      &.community {
+        display: flex;
+        text-decoration: underline;
+      }
+    }
+
+    .mobile-menu-sub {
+      display: block;
+      width: 100%;
+      margin-left: 18px;
+      font-family: $font-bold;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+
+      span {
+        text-decoration: none;
+      }
+
+      &-link {
+        margin-bottom: 13px;
+        text-decoration: none !important;
+        // text-transform: uppercase;
+
+        &.active {
+          color: $hightlighted_color;
+          // text-decoration: none !important;
+        }
+      }
+    }
+  }
+
+  .sub-nav-bar {
+    width: 100%;
+    padding: 0px 62px;
+    margin-top: 62px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0px 32px;
+    }
+  }
+
+  .footer-container {
+    background: #151515;
+    padding: 122px 0px 0px;
+    width: 100%;
+
+    .footer-view {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 859px;
+      width: 100%;
+      margin: 0px auto;
+
+      @media screen and (max-width: 768px) {
+        padding: 30px;
+      }
+
+      &-left {
+        flex: 1;
+        max-width: 332px;
+
+        .social-icons {
+          display: flex;
+
+          img {
+            height: 31px;
+            margin-right: 14px;
+          }
+        }
+      }
+
+      &-right {
+        flex: 1;
+        max-width: 338px;
+
+        .join-volume {
+          margin-top: 15px;
+          width: 174px;
+          height: 50px;
+          background: #ffffff;
+          color: #000;
+          border: 1px solid #ffffff;
+          border-radius: 5px;
+          font-weight: 500;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footer-divider {
+      height: 1px;
+      background: #313131;
+      margin-top: 120px;
+    }
+
+    .footer-copyright {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 859px;
+      width: 100%;
+      margin: 0px auto;
+      padding: 40px 0px;
+
+      img {
+        height: 35px;
+      }
+    }
+  }
+
+  .link-back-to {
+    border-radius: 7px;
+    border: 1px solid #2c2c2c;
+    width: 83px;
+    height: 31px;
+    font-size: 12px;
+    line-height: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+      height: 10px;
+      margin-right: 4px;
+    }
+  }
+}

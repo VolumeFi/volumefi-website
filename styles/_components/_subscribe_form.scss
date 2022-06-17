@@ -1,0 +1,12 @@
+.subscribe-form-container {
+  width: 100%;
+  max-width: 660px;
+  min-height: 660px;
+  height: fit-content;
+  background: url('/assets/newsletter.png');
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

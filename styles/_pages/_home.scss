@@ -1,0 +1,355 @@
+.home-page-container {
+  width: 100%;
+
+  .home-top {
+    width: 100%;
+    min-height: calc(100vh - $header);
+    background: url("/assets/vectors/home-1.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-text {
+      max-width: 600px;
+    }
+
+    &-description {
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+    }
+
+    &-images {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  .home-software-developers {
+    width: 100%;
+    max-width: $home-panel-width;
+    margin: 0px auto 148px;
+
+    p {
+      max-width: 479px;
+      width: 100%;
+    }
+
+    .home-products {
+      max-width: 757px;
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.22);
+    }
+  }
+
+  .home-value-propositions {
+    width: 100%;
+    margin: 240px auto 0px;
+    max-width: $home-panel-width;
+
+    &-title {
+      text-align: center;
+    }
+
+    .home-propositions-wrapper {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      margin-top: 120px;
+    }
+  }
+
+  .home-reviewers {
+    width: 100%;
+    margin: 240px auto 0px;
+    max-width: $home-panel-width;
+  }
+}
+
+.home-product-container {
+  padding: 35px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  &:hover {
+    .home-product-description {
+      display: flex;
+    }
+  }
+
+  .home-product-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .home-product-description {
+    margin-top: 37px;
+    display: none;
+
+    &-left {
+      flex: 1;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      margin-right: 24px;
+      color: #b1b1b1;
+    }
+
+    &-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: capitalize;
+      color: #b1b1b1;
+
+      .home-product-link {
+        background: #ffffff;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: #0f0f0f;
+        font-weight: 500;
+        font-size: 14;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 275px;
+        height: 50px;
+        margin-top: 7px;
+      }
+    }
+  }
+
+  .home-product-info {
+    .home-product-for {
+      width: fit-content;
+      height: 19px;
+      text-transform: uppercase;
+      background: #5252ff;
+      border-radius: 3px;
+      font-weight: 600;
+      font-size: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 7px;
+    }
+
+    .home-product-category {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      margin-top: 10px;
+      text-transform: capitalize;
+    }
+
+    .home-product-title {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      max-width: 150px;
+      text-transform: capitalize;
+    }
+  }
+
+  .home-product-img {
+    margin-left: 85px;
+    height: 50px;
+  }
+}
+
+.value-proposition-container {
+  width: calc(50% - 12px);
+  display: flex;
+  align-items: center;
+  padding: 67px 23px;
+  background: #151515;
+  border-radius: 5px;
+  margin-bottom: 24px;
+
+  .value-proposition-image {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .value-proposition-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+
+    .value-proposition-category {
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #878787;
+    }
+
+    .value-proposition-title {
+      font-weight: 700;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+
+    .value-proposition-description {
+      font-weight: 400;
+      font-size: 16px;
+      padding-top: 30px;
+      max-width: 250px;
+    }
+  }
+}
+
+.review-container {
+  background: #151515;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  width: 100%;
+
+  .reviewer-photo {
+    background: url("/assets/review/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px;
+    max-height: 319px;
+
+    img {
+      height: 200px;
+    }
+  }
+
+  .reviewer-info {
+    flex: 1;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-comment {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    &-name {
+      font-weight: 400;
+      font-size: 18px;
+      padding-top: 15px;
+    }
+
+    &-title {
+      font-weight: 400;
+      font-size: 18px;
+      padding-top: 5px;
+    }
+
+    &-logo {
+      height: 32px;
+      padding-top: 5px;
+    }
+  }
+}
+
+.newsletter-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 240px;
+
+  .join {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+
+  .cc {
+    font-family: $font-ruso;
+    font-weight: 400;
+    font-size: 53px;
+  }
+
+  .weekly {
+    font-family: $font-ruso;
+    font-weight: 400;
+    font-size: 44.722px;
+    color: #5252ff;
+  }
+
+  .content {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 524px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .email-box {
+    background: #0f0f0f;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 568px;
+    height: 63px;
+    display: flex;
+    margin-top: 50px;
+
+    &-input {
+      height: 100%;
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: #fff;
+      font-weight: 400;
+      font-size: 16px;
+      padding-left: 30px;
+    }
+
+    .submit {
+      padding: 0px 45px;
+      height: 100%;
+      cursor: pointer;
+      background: #ffffff;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border: none;
+      outline: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+
+.volume-investors {
+  width: 100%;
+  margin: 240px auto;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .volume-investor-logo {
+    height: 130px;
+    margin: 19px;
+  }
+}
