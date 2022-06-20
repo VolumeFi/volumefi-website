@@ -61,16 +61,16 @@ export default function Home({ state, router }) {
       <div className="home-page-container">
         <div className="home-top">
           <div className="home-top-text">
-            <h1>all possibilities of scaling blockchain transactions</h1>
+            <h1>all possibilities <br/> of scaling blockchain <br/>transactions</h1>
             <p className="home-top-description">
               Volume’s mission is to launch blockchains and blockchain
               applications that leverage our view that blockchains are best when
               they are scheduled and automated transactions.
             </p>
             <div className="home-top-images">
-              <img src="/assets/logo/kallisto.png" height={65} />
-              <img src="/assets/logo/paloma.png" height={65} />
-              <img src="/assets/logo/ccc.png" height={91} />
+              <img src="/assets/logo/kallisto.png"/>
+              <img src="/assets/logo/paloma.png"/>
+              <img src="/assets/logo/ccc.png" className="ccc" />
             </div>
           </div>
         </div>
