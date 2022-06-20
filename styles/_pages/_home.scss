@@ -11,15 +11,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    @media screen and (max-width: 768px) {
+      background: none;
+      padding: 150px 47px;
+      min-height: 0px;
+    }
 
     &-text {
-      max-width: 600px;
+      max-width: 620px;
+
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+      }
     }
 
     &-description {
       font-size: 18px;
       line-height: 26px;
       text-align: center;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
 
     &-images {
@@ -28,6 +43,22 @@
       align-items: flex-end;
       width: 100%;
       padding: 20px;
+
+      img {
+        height: 65px;
+
+        @media screen and (max-width: 768px) {
+          height: 27px;
+        }
+
+        &.ccc {
+          height: 91px;
+
+          @media screen and (max-width: 768px) {
+            height: 53px;
+          }
+        }
+      }
     }
   }
 
@@ -35,6 +66,16 @@
     width: 100%;
     max-width: $home-panel-width;
     margin: 0px auto 148px;
+
+    @media screen and (max-width: 1200px) {
+      max-width: 100%;
+      padding: 0px 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      padding: 0px 24px;
+    }
 
     p {
       max-width: 479px;
@@ -45,6 +86,7 @@
       max-width: 757px;
       width: 100%;
       border-top: 1px solid rgba(255, 255, 255, 0.22);
+      margin-top: 65px;
     }
   }
 
@@ -53,8 +95,23 @@
     margin: 240px auto 0px;
     max-width: $home-panel-width;
 
+    @media screen and (max-width: 1200px) {
+      max-width: 100%;
+      padding: 0px 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      padding: 0px 24px;
+      margin: 100px auto 0px;
+    }
+
     &-title {
       text-align: center;
+
+      @media screen and (max-width: 768px) {
+        text-align: left;
+      }
     }
 
     .home-propositions-wrapper {
@@ -63,6 +120,11 @@
       flex-flow: row wrap;
       justify-content: space-between;
       margin-top: 120px;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 70px;
+        flex-direction: column;
+      }
     }
   }
 
@@ -70,6 +132,12 @@
     width: 100%;
     margin: 240px auto 0px;
     max-width: $home-panel-width;
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      padding: 0px 24px;
+      margin: 100px auto 0px;
+    }
   }
 }
 
@@ -79,6 +147,10 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    padding: 42px 0px;
+  }
 
   &:hover {
     .home-product-description {
@@ -166,6 +238,11 @@
   .home-product-img {
     margin-left: 85px;
     height: 50px;
+
+    @media screen and (max-width: 768px) {
+      height: 45px;
+      margin-left: 31px;
+    }
   }
 }
 
@@ -177,6 +254,12 @@
   background: #151515;
   border-radius: 5px;
   margin-bottom: 24px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 36px 23px;
+    margin-bottom: 12px;
+  }
 
   .value-proposition-image {
     flex: 2;
@@ -198,12 +281,21 @@
       font-size: 16px;
       text-transform: uppercase;
       color: #878787;
+
+      @media screen and (max-width: 768px) {
+        font-size: 10px;
+      }
     }
 
     .value-proposition-title {
       font-weight: 700;
       font-size: 20px;
       text-transform: capitalize;
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        margin-top: 3px;
+      }
     }
 
     .value-proposition-description {
@@ -211,6 +303,11 @@
       font-size: 16px;
       padding-top: 30px;
       max-width: 250px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 11px;
+        padding-top: 15px;
+      }
     }
   }
 }
@@ -223,6 +320,11 @@
   padding: 0px 50px;
   width: 100%;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+
   .reviewer-photo {
     background: url("/assets/review/bg.png");
     background-repeat: no-repeat;
@@ -230,8 +332,18 @@
     padding: 80px;
     max-height: 319px;
 
+    @media screen and (max-width: 768px) {
+      background-size: 90%;
+      background-position: center center;
+      padding: 60px;
+    }
+
     img {
       height: 200px;
+
+      @media screen and (max-width: 768px) {
+        height: 99px;
+      }
     }
   }
 
@@ -242,26 +354,49 @@
     flex-direction: column;
     align-items: flex-start;
 
+    @media screen and (max-width: 768px) {
+      padding: 0px 0px 50px;
+      align-items: center;
+    }
+
     &-comment {
       font-weight: 700;
       font-size: 20px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        text-align: center;
+      }
     }
 
     &-name {
       font-weight: 400;
       font-size: 18px;
       padding-top: 15px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        padding-top: 8px;
+      }
     }
 
     &-title {
       font-weight: 400;
       font-size: 18px;
       padding-top: 5px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+      }
     }
 
     &-logo {
       height: 32px;
       padding-top: 5px;
+
+      @media screen and (max-width: 768px) {
+        height: 22px;
+      }
     }
   }
 }
@@ -272,76 +407,19 @@
   justify-content: center;
   margin-bottom: 240px;
 
-  .join {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    text-transform: uppercase;
-  }
-
-  .cc {
-    font-family: $font-ruso;
-    font-weight: 400;
-    font-size: 53px;
-  }
-
-  .weekly {
-    font-family: $font-ruso;
-    font-weight: 400;
-    font-size: 44.722px;
-    color: #5252ff;
-  }
-
-  .content {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 28px;
-    max-width: 524px;
-    text-align: center;
-    margin-top: 50px;
-  }
-
-  .email-box {
-    background: #0f0f0f;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 568px;
-    height: 63px;
-    display: flex;
-    margin-top: 50px;
-
-    &-input {
-      height: 100%;
-      flex: 1;
-      border: none;
-      outline: none;
-      background: transparent;
-      color: #fff;
-      font-weight: 400;
-      font-size: 16px;
-      padding-left: 30px;
-    }
-
-    .submit {
-      padding: 0px 45px;
-      height: 100%;
-      cursor: pointer;
-      background: #ffffff;
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-      border: none;
-      outline: none;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 16px;
-    }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 120px;
+    padding: 0px 24px;
   }
 }
 
 .volume-investors {
   width: 100%;
   margin: 240px auto;
+
+  @media screen and (max-width: 768px) {
+    margin: 120px auto;
+  }
 
   &-title {
     text-align: center;
@@ -351,5 +429,9 @@
   .volume-investor-logo {
     height: 130px;
     margin: 19px;
+
+    @media screen and (max-width: 768px) {
+      height: 80px;
+    }
   }
 }

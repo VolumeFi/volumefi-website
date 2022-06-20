@@ -43,12 +43,20 @@ h1 {
   font-weight: 600;
   text-transform: capitalize;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
 }
 
 h2 {
   font-size: 36px;
   font-weight: 600;
   text-transform: capitalize;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 h3 {
@@ -60,4 +68,9 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
