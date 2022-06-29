@@ -27,7 +27,13 @@ const BlogLatestItem = ({ blog }) => (
 );
 
 export async function getServerSideProps({ req, res }) {
+    console.log("getServerSideProps");
     console.log(req);
+}
+
+export async function getStaticProps({ params }) {
+    console.log("getStaticProps");
+    console.log(params)
 }
 
 export default BlogLatestItem;

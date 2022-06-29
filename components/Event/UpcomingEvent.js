@@ -1,6 +1,10 @@
 import React, { useMemo } from "react";
 
 import { convertDateStringWithWeekDay } from "utils/date";
+import mixpanel from "mixpanel-browser";
+mixpanel.init(process.env.MIXPANEL_API_KEY)
+
+
 
 const UpcomingEvent = ({ data }) => {
   const eventLink = useMemo(() => {
@@ -19,6 +23,13 @@ const UpcomingEvent = ({ data }) => {
 
     return link;
   }, [data]);
+
+  const openRegistration = () => {
+    console.log('click');
+
+    mixpanel.track('REGISTER_EVENT', eventLink.register);
+    window.location = eventLink.register;
+  }
 
   return (
     <div className="event-item-container">
@@ -44,7 +55,7 @@ const UpcomingEvent = ({ data }) => {
           )}
           {eventLink.learnMore !== "" && (
             <a
-              href={eventLink.learnMore}
+              onClick={(e) => openRegistration()}
               className="event-register"
               target="_blank"
             >
