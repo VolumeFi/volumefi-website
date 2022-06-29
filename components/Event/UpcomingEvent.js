@@ -10,15 +10,19 @@ const UpcomingEvent = ({ data }) => {
   const eventLink = useMemo(() => {
     const link = {
       register: "",
+      register_info: null,
       learnMore: "",
+      learnMore_info: null,
     };
 
     if ("RegistrationLink" in data.content) {
       link.register = data.content.RegistrationLink.url;
+      link.register_info = data.content.RegistrationLink;
     }
 
     if ("LearnMore" in data.content) {
       link.learnMore = data.content.LearnMore.url;
+      link.learnMore_info = data.content.LearnMore;
     }
 
     return link;
@@ -27,7 +31,7 @@ const UpcomingEvent = ({ data }) => {
   const openRegistration = () => {
     console.log('click');
 
-    mixpanel.track('REGISTER_EVENT', eventLink.register);
+    mixpanel.track('REGISTER_EVENT', eventLink.register_info);
     window.location = eventLink.register;
   }
 
