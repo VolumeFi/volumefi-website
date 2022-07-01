@@ -7,6 +7,10 @@ import { convertDateString2 } from "utils/date";
 
 import { HeadSeo } from "components/Blog";
 
+import mixpanel from "mixpanel-browser";
+
+mixpanel.init(process.env.MIXPANEL_API_KEY)
+
 const Blog = ({ post, router }) => (
   <>
     {post !== null && post !== undefined && (
@@ -26,8 +30,8 @@ const Blog = ({ post, router }) => (
           </div>
           <div className="blog-post-view">
             <div className="blog-content">
-            
-              
+
+
             </div>
             {/* <div className="blog-divider"></div> */}
             <div className="blog-pubtime">
@@ -94,6 +98,12 @@ export async function getStaticProps({ params }) {
       break;
     }
   }
+
+  mixpanel.track('VISIT_BLOGPOST', {
+    title: post.content.title,
+    slug: post.slug
+  });
+
 
   // Pass post data to the page via props
   return { props: { post } };

@@ -4,6 +4,7 @@ import { fetchEvents } from "utils/storyblok";
 import { UpcomingEvent, NoEvents } from "components/Event";
 import { convertUTCtoLocalTime, parseDate } from "utils/date";
 
+
 const UpcomingEvents = () => {
   const [events, setEvents] = useState([]);
 
