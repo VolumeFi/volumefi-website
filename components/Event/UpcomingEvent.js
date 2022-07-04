@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, {useEffect, useMemo} from "react";
 
 import { convertDateStringWithWeekDay } from "utils/date";
 import mixpanel from "mixpanel-browser";
