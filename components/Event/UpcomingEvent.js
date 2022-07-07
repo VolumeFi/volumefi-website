@@ -1,8 +1,8 @@
 import React, {useEffect, useMemo} from "react";
 
 import { convertDateStringWithWeekDay } from "utils/date";
-import mixpanel from "mixpanel-browser";
-mixpanel.init(process.env.MIXPANEL_API_KEY)
+// import mixpanel from "mixpanel-browser";
+// mixpanel.init(process.env.MIXPANEL_API_KEY)
 
 
 
