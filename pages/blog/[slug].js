@@ -7,15 +7,12 @@ import { convertDateString2 } from "utils/date";
 
 import { HeadSeo } from "components/Blog";
 
-
-
 const Blog = ({ post, router }) => {
     useEffect(() => {
-        // mixpanel.track('VISIT_BLOGPOST', {
-        //     title: post.content.title,
-        //     slug: post.slug
-        // });
-
+        mixpanel.track('VISIT_BLOGPOST', {
+            title: post.content.title,
+            slug: post.slug
+        });
     }, []);
 
     return (
@@ -50,7 +47,7 @@ const Blog = ({ post, router }) => {
                                         [NODE_IMAGE]: (children, props) => (
                                             <img
                                                 {...props}
-                                                style={{borderRadius: "0px", maxWidth: "100%"}}
+                                                style={{ borderRadius: "0px", maxWidth: "100%" }}
                                             />
                                         ),
                                     },
@@ -76,41 +73,39 @@ const Blog = ({ post, router }) => {
         </>
     );
 }
+
 // This function gets called at build time
- async function getStaticPaths() {
-  // Call an external API endpoint to get posts
-  const posts = await fetchBlogs();
+export async function getStaticPaths() {
+    // Call an external API endpoint to get posts
+    const posts = await fetchBlogs();
 
-  // Get the paths we want to pre-render based on posts
-  const paths = posts.map((post) => ({
-    params: { slug: post.slug },
-  }));
+    // Get the paths we want to pre-render based on posts
+    const paths = posts.map((post) => ({
+        params: { slug: post.slug },
+    }));
 
-  // We'll pre-render only these paths at build time.
-  // { fallback: false } means other routes should 404.
-  return { paths, fallback: false };
+    // We'll pre-render only these paths at build time.
+    // { fallback: false } means other routes should 404.
+    return { paths, fallback: false };
 }
 
 // This also gets called at build time
- async function getStaticProps({ params }) {
-  // params contains the post `id`.
-  // If the route is like /posts/1, then params.id is 1
-  const posts = await fetchBlogs();
+export async function getStaticProps({ params }) {
+    // params contains the post `id`.
+    // If the route is like /posts/1, then params.id is 1
+    const posts = await fetchBlogs();
 
-  let post = {};
+    let post = {};
 
-  for (let i = 0; i < posts.length; i++) {
-    if (posts[i].full_slug.includes(params.slug)) {
-      post = posts[i];
-      break;
+    for (let i = 0; i < posts.length; i++) {
+        if (posts[i].full_slug.includes(params.slug)) {
+            post = posts[i];
+            break;
+        }
     }
-  }
 
-  console.log(post);
-
-
-  // Pass post data to the page via props
-  return { props: { post } };
+    // Pass post data to the page via props
+    return { props: { post } };
 }
 
 export default Blog;
