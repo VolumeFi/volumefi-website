@@ -11,10 +11,10 @@ import { HeadSeo } from "components/Blog";
 
 const Blog = ({ post, router }) => {
     useEffect(() => {
-        mixpanel.track('VISIT_BLOGPOST', {
-            title: post.content.title,
-            slug: post.slug
-        });
+        // mixpanel.track('VISIT_BLOGPOST', {
+        //     title: post.content.title,
+        //     slug: post.slug
+        // });
 
     }, []);
 
@@ -106,10 +106,7 @@ const Blog = ({ post, router }) => {
     }
   }
 
-  mixpanel.track('VISIT_BLOGPOST', {
-    title: post.content.title,
-    slug: post.slug
-  });
+  console.log(post);
 
 
   // Pass post data to the page via props
