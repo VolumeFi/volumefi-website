@@ -7,18 +7,15 @@ import { convertDateString2 } from "utils/date";
 
 import { HeadSeo } from "components/Blog";
 
-import mixpanel from "mixpanel-browser";
 
-mixpanel.init(process.env.MIXPANEL_API_KEY)
 
 const Blog = ({ post, router }) => {
     useEffect(() => {
-        const res = mixpanel.track('VISIT_BLOGPOST', {
+        mixpanel.track('VISIT_BLOGPOST', {
             title: post.content.title,
             slug: post.slug
         });
 
-        console.log(res);
     }, []);
 
     return (
