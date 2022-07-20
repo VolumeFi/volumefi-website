@@ -20,7 +20,7 @@ export const PRODUCTS = [
     image: "/assets/logo/ccc.svg",
     param1: "The Cross Chain Coalition (CCC) is a collective of builders that have united together to educate developers on cross chain infrastructure. Through events & educational content, the CCC aims to expand awareness and increase education for cross chain development.",
     param2: "Explore the future of Cross Chain",
-    linkText: "JOIN THE CROSS CHAIN COALITION",
+    linkText: "join the ccc",
     link: CCC_TELEGRAM,
     style: { height: 98, opacity: '0.7'}
   },

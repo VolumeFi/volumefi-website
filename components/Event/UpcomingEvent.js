@@ -21,6 +21,7 @@ const UpcomingEvent = ({ data }) => {
       }
     });
   })
+
   const eventLink = useMemo(() => {
     const link = {
       register: "",
@@ -29,9 +30,9 @@ const UpcomingEvent = ({ data }) => {
       learnMore_info: null,
     };
 
-    if ("RegistrationLink" in data.content) {
-      link.register = data.content.RegistrationLink.url;
-      link.register_info = data.content.RegistrationLink;
+    if ("Register" in data.content) {
+      link.register = data.content.Register.url;
+      link.register_info = data.content.Register;
     }
 
     if ("LearnMore" in data.content) {
