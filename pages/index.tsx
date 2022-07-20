@@ -69,7 +69,7 @@ export default function Home({ state, router }) {
             </p>
             <div className="home-top-images">
               <img src="/assets/logo/paloma.png"/>
-              <img src="/assets/logo/ccc.svg" className="ccc" />
+              <img src="/assets/logo/ccc.svg" className="ccc" style={{ opacity: 0.7 }}/>
             </div>
           </div>
         </div>
