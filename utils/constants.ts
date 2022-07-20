@@ -15,17 +15,6 @@ export const LATEST_BLOG_SHOW_CNT = 3;
 export const PRODUCTS = [
   {
     for: "For Developers",
-    category: "AWARNESS",
-    description: "Cross Chain Communication And Development",
-    image: "/assets/logo/ccc.svg",
-    param1: "The Cross Chain Coalition (CCC) is a collective of builders that have united together to educate developers on cross chain infrastructure. Through events & educational content, the CCC aims to expand awareness and increase education for cross chain development.",
-    param2: "Explore the future of Cross Chain",
-    linkText: "join the ccc",
-    link: CCC_TELEGRAM,
-    style: { height: 98, opacity: '0.7'}
-  },
-  {
-    for: "For Developers",
     category: "BUILD",
     description: "Automate Smart Contracts",
     image: "/assets/logo/paloma.png",
@@ -34,6 +23,17 @@ export const PRODUCTS = [
     linkText: "launch paloma",
     link: PALOMA_WEBSITE,
     style: {}
+  },
+  {
+    for: "For Developers",
+    category: "AWARNESS",
+    description: "Cross Chain Communication And Development",
+    image: "/assets/logo/ccc.svg",
+    param1: "The Cross Chain Coalition (CCC) is a collective of builders that have united together to educate developers on cross chain infrastructure. Through events & educational content, the CCC aims to expand awareness and increase education for cross chain development.",
+    param2: "Explore the future of Cross Chain",
+    linkText: "join the ccc",
+    link: CCC_TELEGRAM,
+    style: { height: 98, opacity: '0.7'}
   },
 ];
 
