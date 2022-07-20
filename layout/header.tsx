@@ -88,12 +88,12 @@ const LayoutHeader = ({ router }) => {
           hoverClassName="header-parent-menu"
         >
           <div className="header-menu-sub">
-            <HeaderMenu
+            {/* <HeaderMenu
               title="Kallisto"
               href="/about-us/kallisto"
               className="header-menu-sub-link"
               active={curLink.startsWith("/about-us/kallisto")}
-            />
+            /> */}
             <HeaderMenu
               title="Paloma"
               href="/about-us/paloma"
@@ -187,7 +187,7 @@ const LayoutHeader = ({ router }) => {
               }
             >
               <div className="mobile-menu-sub">
-                <HeaderMenu
+                {/* <HeaderMenu
                   title="Kallisto"
                   href="/about-us/kallisto"
                   className="mobile-menu-sub-link"
@@ -196,7 +196,7 @@ const LayoutHeader = ({ router }) => {
                   onClick={() =>
                     handleClickMobileLink("/about-us/kallisto")
                   }
-                />
+                /> */}
                 <HeaderMenu
                   title="Paloma"
                   href="/about-us/paloma"

@@ -186,6 +186,7 @@
     .blog-pubtime {
       color: #B1B1B1;
       font-size: 18px;
+      margin-bottom: 15px;
     }
 
     .blog-featured-image {
@@ -216,6 +217,37 @@
         color: $main_text_color;
         text-decoration: underline;
       }
+    }
+
+    .embed-responsive {
+      display: block;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+      width: 100%;
+    }
+
+    .embed-responsive-16by9:before {
+      padding-top: 56.25%;
+    }
+
+    .embed-responsive:before {
+      content: "";
+      display: block;
+    }
+
+    .embed-responsive .embed-responsive-item,
+    .embed-responsive embed,
+    .embed-responsive iframe,
+    .embed-responsive object,
+    .embed-responsive video {
+      border: 0;
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
     }
   }
 }
