@@ -88,23 +88,17 @@ const LayoutHeader = ({ router }) => {
           hoverClassName="header-parent-menu"
         >
           <div className="header-menu-sub">
-            {/* <HeaderMenu
-              title="Kallisto"
-              href="/about-us/kallisto"
-              className="header-menu-sub-link"
-              active={curLink.startsWith("/about-us/kallisto")}
-            /> */}
-            <HeaderMenu
-              title="Paloma"
-              href="/about-us/paloma"
-              className="header-menu-sub-link"
-              active={curLink.startsWith("/about-us/paloma")}
-            />
             <HeaderMenu
               title="Cross-Chain Coalition"
               href="/about-us/cross-chain-coalition"
               className="header-menu-sub-link"
               active={curLink.startsWith("/about-us/cross-chain-coalition")}
+            />
+            <HeaderMenu
+              title="Paloma"
+              href="/about-us/paloma"
+              className="header-menu-sub-link"
+              active={curLink.startsWith("/about-us/paloma")}
             />
           </div>
         </HeaderMenu>
@@ -187,24 +181,6 @@ const LayoutHeader = ({ router }) => {
               }
             >
               <div className="mobile-menu-sub">
-                {/* <HeaderMenu
-                  title="Kallisto"
-                  href="/about-us/kallisto"
-                  className="mobile-menu-sub-link"
-                  active={curLink.startsWith("/about-us/kallisto")}
-                  isLink={false}
-                  onClick={() =>
-                    handleClickMobileLink("/about-us/kallisto")
-                  }
-                /> */}
-                <HeaderMenu
-                  title="Paloma"
-                  href="/about-us/paloma"
-                  className="mobile-menu-sub-link"
-                  active={curLink.startsWith("/about-us/paloma")}
-                  isLink={false}
-                  onClick={() => handleClickMobileLink("/about-us/paloma")}
-                />
                 <HeaderMenu
                   title="Cross-Chain Coalition"
                   href="/about-us/cross-chain-coalition"
@@ -212,6 +188,14 @@ const LayoutHeader = ({ router }) => {
                   active={curLink.startsWith("/about-us/cross-chain-coalition")}
                   isLink={false}
                   onClick={() => handleClickMobileLink("/about-us/cross-chain-coalition")}
+                />
+                <HeaderMenu
+                  title="Paloma"
+                  href="/about-us/paloma"
+                  className="mobile-menu-sub-link"
+                  active={curLink.startsWith("/about-us/paloma")}
+                  isLink={false}
+                  onClick={() => handleClickMobileLink("/about-us/paloma")}
                 />
               </div>
             </HeaderMenu>
