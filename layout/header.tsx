@@ -89,16 +89,16 @@ const LayoutHeader = ({ router }) => {
         >
           <div className="header-menu-sub">
             <HeaderMenu
-              title="Cross-Chain Coalition"
-              href="/about-us/cross-chain-coalition"
-              className="header-menu-sub-link"
-              active={curLink.startsWith("/about-us/cross-chain-coalition")}
-            />
-            <HeaderMenu
               title="Paloma"
               href="/about-us/paloma"
               className="header-menu-sub-link"
               active={curLink.startsWith("/about-us/paloma")}
+            />
+            <HeaderMenu
+              title="Cross-Chain Coalition"
+              href="/about-us/cross-chain-coalition"
+              className="header-menu-sub-link"
+              active={curLink.startsWith("/about-us/cross-chain-coalition")}
             />
           </div>
         </HeaderMenu>
@@ -182,20 +182,20 @@ const LayoutHeader = ({ router }) => {
             >
               <div className="mobile-menu-sub">
                 <HeaderMenu
-                  title="Cross-Chain Coalition"
-                  href="/about-us/cross-chain-coalition"
-                  className="mobile-menu-sub-link"
-                  active={curLink.startsWith("/about-us/cross-chain-coalition")}
-                  isLink={false}
-                  onClick={() => handleClickMobileLink("/about-us/cross-chain-coalition")}
-                />
-                <HeaderMenu
                   title="Paloma"
                   href="/about-us/paloma"
                   className="mobile-menu-sub-link"
                   active={curLink.startsWith("/about-us/paloma")}
                   isLink={false}
                   onClick={() => handleClickMobileLink("/about-us/paloma")}
+                />
+                <HeaderMenu
+                  title="Cross-Chain Coalition"
+                  href="/about-us/cross-chain-coalition"
+                  className="mobile-menu-sub-link"
+                  active={curLink.startsWith("/about-us/cross-chain-coalition")}
+                  isLink={false}
+                  onClick={() => handleClickMobileLink("/about-us/cross-chain-coalition")}
                 />
               </div>
             </HeaderMenu>
