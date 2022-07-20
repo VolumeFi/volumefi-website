@@ -47,6 +47,8 @@ const HeaderMenu = ({
   );
 };
 
+const baseUrl = process.env.BASE_URL;
+
 const LayoutHeader = ({ router }) => {
   const [curLink, setCurLink] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -90,13 +92,13 @@ const LayoutHeader = ({ router }) => {
           <div className="header-menu-sub">
             <HeaderMenu
               title="Paloma"
-              href="/about-us/paloma"
+              href={`${baseUrl}/about-us/paloma`}
               className="header-menu-sub-link"
               active={curLink.startsWith("/about-us/paloma")}
             />
             <HeaderMenu
               title="Cross-Chain Coalition"
-              href="/about-us/cross-chain-coalition"
+              href={`${baseUrl}/about-us/cross-chain-coalition`}
               className="header-menu-sub-link"
               active={curLink.startsWith("/about-us/cross-chain-coalition")}
             />
@@ -104,7 +106,7 @@ const LayoutHeader = ({ router }) => {
         </HeaderMenu>
         <HeaderMenu
           title="Blog"
-          href="/blog"
+          href={`${baseUrl}/blog`}
           className="header-button"
           active={curLink.startsWith("/blog")}
         />
@@ -134,13 +136,13 @@ const LayoutHeader = ({ router }) => {
         </HeaderMenu>
         <HeaderMenu
           title="Team"
-          href="/team"
+          href={`${baseUrl}/team`}
           className="header-button"
           active={curLink.startsWith("/team")}
         />
         <HeaderMenu
           title="Careers"
-          href="/careers"
+          href={`${baseUrl}/careers`}
           className="header-button"
           active={curLink.startsWith("/careers")}
         />
@@ -183,7 +185,7 @@ const LayoutHeader = ({ router }) => {
               <div className="mobile-menu-sub">
                 <HeaderMenu
                   title="Paloma"
-                  href="/about-us/paloma"
+                  href={`${baseUrl}/about-us/paloma`}
                   className="mobile-menu-sub-link"
                   active={curLink.startsWith("/about-us/paloma")}
                   isLink={false}
@@ -191,7 +193,7 @@ const LayoutHeader = ({ router }) => {
                 />
                 <HeaderMenu
                   title="Cross-Chain Coalition"
-                  href="/about-us/cross-chain-coalition"
+                  href={`${baseUrl}/about-us/cross-chain-coalition`}
                   className="mobile-menu-sub-link"
                   active={curLink.startsWith("/about-us/cross-chain-coalition")}
                   isLink={false}
@@ -201,7 +203,7 @@ const LayoutHeader = ({ router }) => {
             </HeaderMenu>
             <HeaderMenu
               title="Blog"
-              href="/blog"
+              href={`${baseUrl}/blog`}
               isLink={false}
               className="mobile-button"
               active={curLink.startsWith("/blog")}
@@ -241,7 +243,7 @@ const LayoutHeader = ({ router }) => {
             </HeaderMenu>
             <HeaderMenu
               title="Team"
-              href="/team"
+              href={`${baseUrl}/team`}
               isLink={false}
               className="mobile-button"
               active={curLink.startsWith("/team")}
@@ -249,7 +251,7 @@ const LayoutHeader = ({ router }) => {
             />
             <HeaderMenu
               title="Careers"
-              href="/careers"
+              href={`${baseUrl}/careers`}
               isLink={false}
               className="mobile-button"
               active={curLink.startsWith("/careers")}
