@@ -12,12 +12,22 @@ const SubscribeForm = () => (
       keep you informed and bring you one step closer on your journey from
       blockchain engineer to crosschain engineer.
     </p>
-    <div className="email-box">
-      <input className="email-box-input" type="text" placeholder="Join the Cross Chain Coalition"/>
-      <Button className="submit">
-        Subscribe
-      </Button>
-    </div>
+    <form
+      className="email-form"
+      method="post"
+      action="https://crosschaindev.substack.com/api/v1/free?nojs=true"
+      target="_blank"
+    >
+      <div className="email-box">
+        <input
+          className="email-box-input"
+          type="email"
+          name="email"
+          placeholder="Join the Cross Chain Coalition"
+        />
+        <Button className="submit">Subscribe</Button>
+      </div>
+    </form>
   </div>
 );
 
