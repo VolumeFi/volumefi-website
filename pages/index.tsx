@@ -61,11 +61,9 @@ export default function Home({ state, router }) {
       <div className="home-page-container">
         <div className="home-top">
           <div className="home-top-text">
-            <h1>all possibilities <br/> of scaling blockchain <br/>transactions</h1>
+            <h1>{process.env.LANDING_TITLE}</h1>
             <p className="home-top-description">
-              Volume’s mission is to launch blockchains and blockchain
-              applications that leverage our view that blockchains are best when
-              they are scheduled and automated transactions.
+              {process.env.VOLUME_MISSION}
             </p>
             <div className="home-top-images">
               <img src="/assets/logo/paloma.png"/>
@@ -80,9 +78,7 @@ export default function Home({ state, router }) {
             <br /> software developers{" "}
           </h2>
           <p>
-            Volume provides blockchain automation and scheduling software that
-            manages smart contracts on any blockchain, enabling high volume
-            execution to all protocols.
+            {process.env.VOLUME_PROVIDING}
           </p>
           <div className="home-products">
             {PRODUCTS.map((product, index) => (
