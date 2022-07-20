@@ -39,13 +39,14 @@
 
     &-images {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: flex-end;
       width: 100%;
       padding: 20px;
 
       img {
         height: 65px;
+        margin: 0px 25px;
 
         @media screen and (max-width: 768px) {
           height: 27px;
@@ -187,7 +188,7 @@
       color: #b1b1b1;
 
       .home-product-link {
-        background: #ffffff;
+        background: #4BFFA9;
         border-radius: 5px;
         text-transform: uppercase;
         color: #0f0f0f;

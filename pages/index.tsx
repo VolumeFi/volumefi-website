@@ -13,7 +13,7 @@ const Product = ({ product }) => (
         <div className="home-product-category">{product.category}</div>
         <div className="home-product-title">{product.description}</div>
       </div>
-      <img className="home-product-img" src={product.image} />
+      <img className="home-product-img" src={product.image} style={product.style}/>
     </div>
     <div className="home-product-description">
       <div className="home-product-description-left">
@@ -68,9 +68,8 @@ export default function Home({ state, router }) {
               they are scheduled and automated transactions.
             </p>
             <div className="home-top-images">
-              <img src="/assets/logo/kallisto.png"/>
               <img src="/assets/logo/paloma.png"/>
-              <img src="/assets/logo/ccc.png" className="ccc" />
+              <img src="/assets/logo/ccc.svg" className="ccc" />
             </div>
           </div>
         </div>

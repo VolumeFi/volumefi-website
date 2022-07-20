@@ -14,14 +14,15 @@ export const LATEST_BLOG_SHOW_CNT = 3;
 
 export const PRODUCTS = [
   {
-    for: "For Users",
-    category: "Use",
-    description: "Automate Yield and Profit harvesting",
-    image: "/assets/logo/kallisto.png",
-    param1: "Kallisto automates yield sourcing and liquidity movement—everyday. Strategies source performance data and move towards new opportunities without the need for an intermediary.",
-    param2: "Kallisto Automated Liquidity Vaults Here!",
-    linkText: "launch kallisto",
-    link: KALLISTO_WEBSITE
+    for: "For Developers",
+    category: "AWARNESS",
+    description: "Cross Chain Communication And Development",
+    image: "/assets/logo/ccc.svg",
+    param1: "The Cross Chain Coalition (CCC) is a collective of builders that have united together to educate developers on cross chain infrastructure. Through events & educational content, the CCC aims to expand awareness and increase education for cross chain development.",
+    param2: "Explore the future of Cross Chain",
+    linkText: "JOIN THE CROSS CHAIN COALITION",
+    link: CCC_TELEGRAM,
+    style: { height: 98, opacity: '0.7'}
   },
   {
     for: "For Developers",
@@ -31,7 +32,8 @@ export const PRODUCTS = [
     param1: "Paloma blockchain monitors leading chains so that you can control your smart contract at scale. Try Our Hello world to say Hello across multiple EVMs.",
     param2: "Hello World Across the EVMs!",
     linkText: "launch paloma",
-    link: PALOMA_WEBSITE
+    link: PALOMA_WEBSITE,
+    style: {}
   },
 ];
 
@@ -132,11 +134,6 @@ export const TEAM = [
     name: "Matija Martinić",
     title: "Head of Engineering",
     photo: "/assets/team/matija.png",
-  },
-  {
-    name: "Michael Long",
-    title: "Marketing",
-    photo: "/assets/team/michael.png",
   },
   {
     name: "Kofi Kessie",
