@@ -169,6 +169,7 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     margin-top: 12px;
+    line-height: 129%;
   }
 
   .event-spacer {
@@ -191,6 +192,8 @@
       height: 40px;
       font-size: 12px;
       color: #0F0F0F;
+      font-weight: 500;
+      text-transform: uppercase;
     }
   }
 }

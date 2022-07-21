@@ -85,6 +85,7 @@
         display: flex;
         margin-left: 100px;
         text-decoration: underline;
+        color: #4BFFA9;
 
         @media screen and (max-width: 930px) {
           margin-left: 25px;
@@ -200,6 +201,7 @@
       &.community {
         display: flex;
         text-decoration: underline;
+        color: #4BFFA9;
       }
     }
 
@@ -302,9 +304,9 @@
           margin-top: 15px;
           width: 174px;
           height: 50px;
-          background: #ffffff;
-          color: #000;
-          border: 1px solid #ffffff;
+          background: transparent;
+          color: #4BFFA9;
+          border: 1px solid rgba(75, 255, 169, 1);
           border-radius: 5px;
           font-weight: 500;
           font-size: 16px;

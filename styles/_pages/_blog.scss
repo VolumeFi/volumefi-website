@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: flex-start;
     background: $main_bg_color;
-    background-image: url('/assets/blog/bg2.png');
+    background-image: url("/assets/blog/bg2.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -74,7 +74,7 @@
         height: 300px;
         display: flex;
         align-items: center;
-        background: url('/assets/blog/bg.png');
+        background: url("/assets/blog/bg.png");
         background-repeat: no-repeat;
         background-position: 200% center;
         background-size: auto 130%;
@@ -84,11 +84,9 @@
         }
       }
 
-     
       @media screen and (max-width: 768px) {
         margin-bottom: 40px;
       }
-
     }
 
     .blog-latest-date {
@@ -132,13 +130,33 @@
         font-size: 11px;
       }
     }
+
+    .blog-latest-readmore {
+      border: 1px solid #ffffff;
+      border-radius: 5px;
+      color: #ffffff;
+      width: 174px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 23px;
+      cursor: pointer;
+
+      @media screen and (max-width: 768px) {
+        width: 124px;
+        height: 35px;
+        font-size: 11px;
+        margin-top: 15px;
+      }
+    }
   }
 
   .blog-post-title-bg {
     width: 100%;
     height: 494px;
     background: #0f0f0f;
-    background-image: url('/assets/blog/bg2.png');
+    background-image: url("/assets/blog/bg2.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -168,8 +186,6 @@
     .blog-title {
       display: block;
       max-width: $blog-panel-width;
-
-     
     }
   }
 
@@ -184,7 +200,7 @@
     }
 
     .blog-pubtime {
-      color: #B1B1B1;
+      color: #b1b1b1;
       font-size: 18px;
       margin-bottom: 15px;
     }
@@ -206,7 +222,10 @@
     .blog-post {
       width: 100%;
 
-      h1, h2, h3, h4 {
+      h1,
+      h2,
+      h3,
+      h4 {
         text-align: left;
       }
 
