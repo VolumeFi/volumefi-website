@@ -4,8 +4,6 @@ import { convertDateStringWithWeekDay } from "utils/date";
 // import mixpanel from "mixpanel-browser";
 // mixpanel.init(process.env.MIXPANEL_API_KEY)
 
-
-
 const UpcomingEvent = ({ data }) => {
   let regClicked = false;
   let eventClicked = false;

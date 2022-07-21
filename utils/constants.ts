@@ -122,37 +122,32 @@ export const TEAM = [
   },
   {
     name: "Jack Lu",
-    title: "Front-End",
+    title: "Senior Software Engineer",
     photo: "/assets/team/jack.png",
   },
   {
     name: "Steven Jung",
-    title: "Smart Contracts",
+    title: "Senior Software Engineer",
     photo: "/assets/team/steven.png",
   },
   {
     name: "Matija Martinić",
-    title: "Head of Engineering",
+    title: "Senior Software Engineer",
     photo: "/assets/team/matija.png",
   },
   {
-    name: "Kofi Kessie",
-    title: "Recruiting",
-    photo: "/assets/team/kofi.png",
-  },
-  {
     name: "William Chang",
-    title: "Smart Contracts",
+    title: "Senior Software Engineer",
     photo: "/assets/team/william.png",
   },
   {
     name: "Zhibai Zhang",
-    title: "DeFi Strategies",
+    title: "DeFi Strategy",
     photo: "/assets/team/zhibai.png",
   },
   {
     name: "Jason Jacobs",
-    title: "Data Infrastructure",
+    title: "Senior Software Engineer",
     photo: "/assets/team/jason.png",
   },
 
@@ -163,12 +158,12 @@ export const TEAM = [
   },
   {
     name: "Joyce Hermosilla",
-    title: "Head of Design",
+    title: "UI/UX",
     photo: "/assets/team/joyce.png",
   },
   {
     name: "Chase Albert",
-    title: "Smart Contracts",
+    title: "Senior Software Engineer",
     photo: "/assets/team/chase.png",
   },
 ];
