@@ -67,7 +67,7 @@ export default function Home({ state, router }) {
             </p>
             <div className="home-top-images">
               <img src="/assets/logo/paloma.png"/>
-              <img src="/assets/logo/ccc.svg" className="ccc" style={{ opacity: 0.7 }}/>
+              <img src="/assets/logo/ccc.svg" className="ccc" />
             </div>
           </div>
         </div>
@@ -107,6 +107,7 @@ export default function Home({ state, router }) {
               {INVESTORS.map((img, index) => (
                 <img
                   src={img}
+                  style={{ opacity: img.endsWith("newform.png") ? 0.7 : 1 }}
                   className="volume-investor-logo"
                   key={`volume-investor-${index}`}
                 />

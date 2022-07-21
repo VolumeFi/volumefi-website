@@ -33,7 +33,7 @@ export const PRODUCTS = [
     param2: "Explore the future of Cross Chain",
     linkText: "join the ccc",
     link: CCC_TELEGRAM,
-    style: { height: 98, opacity: '0.7'}
+    style: { height: 98 }
   },
 ];
 
