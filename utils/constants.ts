@@ -116,16 +116,6 @@ export const TEAM = [
     photo: "/assets/team/taariq.png",
   },
   {
-    name: "Vera Behr",
-    title: "Head of Product",
-    photo: "/assets/team/vera.png",
-  },
-  {
-    name: "Jack Lu",
-    title: "Senior Software Engineer",
-    photo: "/assets/team/jack.png",
-  },
-  {
     name: "Steven Jung",
     title: "Senior Software Engineer",
     photo: "/assets/team/steven.png",
@@ -141,30 +131,39 @@ export const TEAM = [
     photo: "/assets/team/william.png",
   },
   {
+    name: "Jason Jacobs",
+    title: "Senior Software Engineer",
+    photo: "/assets/team/jason.png",
+  },
+  {
+    name: "Chase Albert",
+    title: "Senior Software Engineer",
+    photo: "/assets/team/chase.png",
+  },
+  {
+    name: "Jack Lu",
+    title: "Senior Software Engineer",
+    photo: "/assets/team/jack.png",
+  },
+  {
     name: "Zhibai Zhang",
     title: "DeFi Strategy",
     photo: "/assets/team/zhibai.png",
   },
   {
-    name: "Jason Jacobs",
-    title: "Senior Software Engineer",
-    photo: "/assets/team/jason.png",
+    name: "Vera Behr",
+    title: "Product",
+    photo: "/assets/team/vera.png",
   },
-
   {
     name: "Thelema Dietler",
-    title: "Head of Events",
+    title: "Events",
     photo: "/assets/team/thelema.png",
   },
   {
     name: "Joyce Hermosilla",
     title: "UI/UX",
     photo: "/assets/team/joyce.png",
-  },
-  {
-    name: "Chase Albert",
-    title: "Senior Software Engineer",
-    photo: "/assets/team/chase.png",
   },
 ];
 
