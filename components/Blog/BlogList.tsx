@@ -17,6 +17,11 @@ const BlogList = ({ data }) => (
           <div className="blog-latest-intro">
             {blog.content.intro}
           </div>
+          <Link href={`/${blog.full_slug}`}>
+            <div className="blog-latest-readmore">
+              Read More...
+            </div>
+          </Link>
         </div>
         <div className="blog-latest-item-right">
           <img

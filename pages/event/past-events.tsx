@@ -44,9 +44,6 @@ const PastEvents = () => {
   return (
     <div className="page-container">
       <div className="event-page-container">
-        <div className="event-page-top">
-          <h1 className="event-page-top-title">Volume Events</h1>
-        </div>
         <div className="event-page-subtitle">
           <h2 className="event-page-top-title">Past Events</h2>
         </div>
