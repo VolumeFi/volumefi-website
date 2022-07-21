@@ -156,14 +156,14 @@ export const TEAM = [
     photo: "/assets/team/vera.png",
   },
   {
-    name: "Thelema Dietler",
-    title: "Events",
-    photo: "/assets/team/thelema.png",
-  },
-  {
     name: "Joyce Hermosilla",
     title: "UI/UX",
     photo: "/assets/team/joyce.png",
+  },
+  {
+    name: "Thelema Dietler",
+    title: "Marketing",
+    photo: "/assets/team/thelema.png",
   },
 ];
 
