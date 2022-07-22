@@ -54,7 +54,7 @@ export const PROPOSITIONS = [
     image: "/assets/vectors/3.png",
     title: "for Developers",
     description:
-      "Volume’s software makes it very painless for developers to write smart contracts that be distributed across multiple chains but managed by one chaiN.",
+      "Volume’s software makes it very painless for developers to write smart contracts that be distributed across multiple chains but managed by one chain.",
   },
   {
     image: "/assets/vectors/4.png",
