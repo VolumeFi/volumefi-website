@@ -175,6 +175,11 @@ export const TEAM = [
     title: "Marketing",
     photo: "/assets/team/drake.png",
   },
+  {
+    name: "Cesar Lorenzo",
+    title: "Marketing",
+    photo: "/assets/team/cesar.jpg",
+  },
 ];
 
 export const PILLARS = [
