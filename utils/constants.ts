@@ -46,7 +46,7 @@ export const PROPOSITIONS = [
   },
   {
     image: "/assets/vectors/2.png",
-    title: "Liquidity Traking",
+    title: "Liquidity Tracking",
     description:
       "Volume writes software that tracks liquidity movements across any token, blockchain, or decentralized application with its own blockchain.",
   },
