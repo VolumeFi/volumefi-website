@@ -8,9 +8,8 @@ export default function Paloma({ state, router }) {
       <div className="about-page-container">
         <div className="about-page-top">
           <div className="top-logo-wrapper">
-            <img className="top-logo" src="/assets/logo/paloma.png" />
+            <img className="top-logo" src="/assets/logo/paloma-red.png" />
           </div>
-          <div className="top-divider"></div>
           <div className="top-content">
             <div className="top-content-title">
               Build your own automatic vaults cross-chain with Paloma

@@ -9,17 +9,17 @@ const UpcomingEvent = ({ data }) => {
   let regClicked = false;
   let eventClicked = false;
 
-  useEffect(() => {
-    window.$ = window.jQuery = require("jquery");
+  // useEffect(() => {
+  //   window.$ = window.jQuery = require("jquery");
 
-    $("#event-register").click(function () {
-      if (!regClicked) {
-        regClicked = true;
-        mixpanel.track("REGISTER_EVENT", eventLink.register_info);
-        window.location = eventLink.register;
-      }
-    });
-  });
+  //   $("#event-register").click(function () {
+  //     if (!regClicked) {
+  //       regClicked = true;
+  //       mixpanel.track("REGISTER_EVENT", eventLink.register_info);
+  //       window.location = eventLink.register;
+  //     }
+  //   });
+  // });
 
   const eventLink = useMemo(() => {
     const link = {
@@ -58,7 +58,6 @@ const UpcomingEvent = ({ data }) => {
         <div className="event-date">
           {convertDateStringWithWeekDay(data.content.EventTime, true)}
         </div>
-        <div className="event-spacer"></div>
         <div className="event-description">
           {render(data.content.Description, {
             nodeResolvers: {
@@ -84,6 +83,7 @@ const UpcomingEvent = ({ data }) => {
             },
           })}
         </div>
+        <div className="event-spacer"></div>
         <div className="event-buttons">
           {eventLink.register !== "" && (
             <a

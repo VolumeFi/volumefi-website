@@ -12,7 +12,6 @@ const PastEvent = ({ data }) => (
       <div className="event-date">
         {convertDateStringWithWeekDay(data.content.EventTime, true)}
       </div>
-      <div className="event-spacer"></div>
       <div className="event-description">
         {render(data.content.Description, {
           nodeResolvers: {
@@ -38,6 +37,7 @@ const PastEvent = ({ data }) => (
           },
         })}
       </div>
+      <div className="event-spacer"></div>
     </div>
   </div>
 );

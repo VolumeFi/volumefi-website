@@ -161,7 +161,7 @@
   }
 
   .event-description {
-    font-size: 12px;
+    font-size: 14px;
     color: $main_text_color;
     // text-overflow: ellipsis;
     // overflow: hidden;
@@ -169,7 +169,12 @@
     // -webkit-line-clamp: 3;
     // -webkit-box-orient: vertical;
     margin-top: 12px;
-    // line-height: 129%;
+    line-height: 18px;
+
+    p {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 
   .event-spacer {
