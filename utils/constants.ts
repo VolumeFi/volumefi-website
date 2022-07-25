@@ -75,15 +75,17 @@ export const REVIEWS = [
 ];
 
 export const INVESTORS = [
-  "/assets/investors/alameda.png",
-  "/assets/investors/curve.png",
-  "/assets/investors/dancing-bananas.png",
+  "/assets/investors/volume.png",
+  "/assets/investors/paloma.png",
+  "/assets/investors/coindesk.png",
+  "/assets/investors/coinfx.png",
+  "/assets/investors/evmos.png",
   "/assets/investors/figment.png",
-  "/assets/investors/newform.png",
-  "/assets/investors/ngc.png",
+  "/assets/investors/kadena.png",
+  "/assets/investors/quicknode.png",
   "/assets/investors/simply-vc.png",
-  "/assets/investors/solana.png",
-  "/assets/investors/trgc.png",
+  "/assets/investors/strangelove.png",
+  "/assets/investors/umee.png",
 ];
 
 export const SOCIALS = [

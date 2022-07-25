@@ -59,6 +59,10 @@
       }
 
       &-description {
+        font-size: 18px;
+        line-height: 28px;
+        margin-top: 8px;
+
         @media screen and (max-width: 768px) {
           text-align: center;
           margin-top: 8px;
@@ -91,10 +95,10 @@
     }
 
     .top-logo {
-      height: 102px;
+      height: 222px;
 
       @media screen and (max-width: 768px) {
-        height: 80px;
+        height: 120px;
       }
 
       &.ccc {
