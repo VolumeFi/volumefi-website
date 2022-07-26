@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 import SubscribeForm from "components/SubscribeForm";
 
-import { PILLARS, CCC_TELEGRAM, INVESTORS } from "utils/constants";
+import { PILLARS, CCC_TELEGRAM, CCC_PARTNERS } from "utils/constants";
 
 const Pillar = ({ data }) => (
   <div className="value-proposition-container">
@@ -67,9 +67,10 @@ export default function CrossChainCoalition({ state, router }) {
         <div className="volume-investors">
           <Marquee speed={120} gradient={false} loop={0} delay={0}>
             <div>
-              {INVESTORS.map((img, index) => (
+              {CCC_PARTNERS.map((img, index) => (
                 <img
                   src={img}
+                  style={{ opacity: img.endsWith("figment.png") || img.endsWith("simple-vc.png") ? 0.7 : 1 }}
                   className="volume-investor-logo"
                   key={`volume-investor-${index}`}
                 />
