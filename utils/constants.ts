@@ -74,19 +74,32 @@ export const REVIEWS = [
   },
 ];
 
-export const INVESTORS = [
-  "/assets/investors/volume.png",
-  "/assets/investors/paloma.png",
-  "/assets/investors/coindesk.png",
-  "/assets/investors/coinfx.png",
-  "/assets/investors/evmos.png",
-  "/assets/investors/figment.png",
-  "/assets/investors/kadena.png",
-  "/assets/investors/quicknode.png",
-  "/assets/investors/simply-vc.png",
-  "/assets/investors/strangelove.png",
-  "/assets/investors/umee.png",
+export const CCC_PARTNERS = [
+  "/assets/ccc-partners/volume.png",
+  "/assets/ccc-partners/paloma.png",
+  "/assets/ccc-partners/coindesk.png",
+  "/assets/ccc-partners/coinfx.png",
+  "/assets/ccc-partners/evmos.png",
+  "/assets/ccc-partners/figment.png",
+  "/assets/ccc-partners/kadena.png",
+  "/assets/ccc-partners/quicknode.png",
+  "/assets/ccc-partners/simply-vc.png",
+  "/assets/ccc-partners/strangelove.png",
+  "/assets/ccc-partners/umee.png",
 ];
+
+export const INVESTORS = [
+  "/assets/investors/alameda.png",
+  "/assets/investors/curve.png",
+  "/assets/investors/dancing-bananas.png",
+  "/assets/investors/figment.png",
+  "/assets/investors/newform.png",
+  "/assets/investors/ngc.png",
+  "/assets/investors/simply-vc.png",
+  "/assets/investors/solana.png",
+  "/assets/investors/trgc.png",
+];
+
 
 export const SOCIALS = [
   {
