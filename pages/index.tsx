@@ -179,7 +179,7 @@ export default function Home({ state, router }) {
         </div>
 
         <div className="home-software-developers">
-          <h2>{data.pageSubTitle}</h2>
+          <h2 style={{ maxWidth: 400 }}>{data.pageSubTitle}</h2>
           <p>{data.pageSubText}</p>
           <div className="home-products">
             {data.products.map((product, index) => (
