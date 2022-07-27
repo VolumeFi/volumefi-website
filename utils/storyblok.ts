@@ -1,10 +1,20 @@
 import StoryblokClient from "storyblok-js-client";
 
-import { LATEST_BLOG_SHOW_CNT } from "./constants";
-
 const Storyblok = new StoryblokClient({
   accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
 });
+
+export const fetchHome = async () => {
+  var response = await Storyblok.get("cdn/stories/", {
+    "starts_with": "home",
+  });
+
+  if (response.data.stories.length > 0) {
+    return response.data.stories[0];
+  }
+
+  return null;
+};
 
 export const fetchBlogs = async () => {
   const blogs = [];
