@@ -4,32 +4,29 @@ import { render, NODE_IMAGE } from "storyblok-rich-text-react-renderer";
 
 import SubscribeForm from "components/SubscribeForm";
 
-import { INVESTORS, PALOMA_WEBSITE, CCC_TELEGRAM } from "utils/constants";
-import { fetchHome } from "utils/storyblok";
+import { INVESTORS, PALOMA_WEBSITE, CCC_TELEGRAM, STORYBLOK_PAGES } from "utils/constants";
+import { fetchPageValues } from "utils/storyblok";
 
 const Product = ({ product }) => (
   <div className="home-product-container">
+    <div className="home-product-for">{product.for}</div>
     <div className="home-product-content">
-      <div className="home-product-info">
-        <div className="home-product-for">{product.for}</div>
-        <div className="home-product-category">{product.category}</div>
-        <div className="home-product-title">{product.description}</div>
-      </div>
       <img
         className="home-product-img"
         src={product.image}
         style={product.style}
       />
-    </div>
-    <div className="home-product-description">
-      <div className="home-product-description-left">{product.param1}</div>
-      <div className="home-product-description-right">
-        <span>{product.param2}</span>
-        <a href={product.link} target="_blank" className="home-product-link">
-          {product.linkText}
-        </a>
+      <div className="home-product-info">
+        <div className="home-product-category">{product.category}</div>
+        <div className="home-product-title">{product.description}</div>
       </div>
     </div>
+    <div className="home-product-description">{product.param1}</div>
+    <div className="home-product-spacer"></div>
+    <div className="home-product-description">{product.param2}</div>
+    <a href={product.link} target="_blank" className="home-product-link">
+      {product.linkText}
+    </a>
   </div>
 );
 
@@ -79,7 +76,7 @@ export default function Home({ state, router }) {
 
   useEffect(() => {
     const getData = async () => {
-      const homeData = await fetchHome();
+      const homeData = await fetchPageValues(STORYBLOK_PAGES.HOME);
       if (homeData === null) {
         return;
       }
@@ -115,7 +112,7 @@ export default function Home({ state, router }) {
             param2: homeContent.ccc_button_caption,
             linkText: "join the ccc",
             link: CCC_TELEGRAM,
-            style: { height: 98 },
+            style: { /*height: 144*/ },
           },
         ],
 

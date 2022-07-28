@@ -151,6 +151,7 @@ const LayoutHeader = ({ router }) => {
           className="header-button community"
           target="_blank"
         >
+          <img src="/assets/social/discord.png" />
           <span>Join our Community</span>
         </a>
       </div>
@@ -263,6 +264,7 @@ const LayoutHeader = ({ router }) => {
               className="mobile-button community"
               target="_blank"
             >
+              <img src="/assets/social/discord.png" />
               <span>Join our Community</span>
             </a>
           </div>

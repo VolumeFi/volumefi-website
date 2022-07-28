@@ -12,6 +12,13 @@ export const JOB_LINK = "https://jobs.lever.co/volume-finance";
 
 export const LATEST_BLOG_SHOW_CNT = 3;
 
+// PAGE SLUGS
+export const STORYBLOK_PAGES = {
+  HOME: "home",
+  ABOUT_US_PALOMA: "about-us-paloma",
+  ABOUT_US_CCC: "about-us-cross-chain-coalition"
+}
+
 export const PRODUCTS = [
   {
     for: "For Developers",
