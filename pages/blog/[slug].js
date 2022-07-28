@@ -14,7 +14,7 @@ const Blog = ({ post, router }) => {
       slug: post.slug,
     });
   }, []);
-
+console.log(post)
   return (
     <>
       {post !== null && post !== undefined && (

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 
 import SubscribeForm from "components/SubscribeForm";
 
-import { PILLARS, CCC_TELEGRAM, CCC_PARTNERS } from "utils/constants";
+import {   CCC_TELEGRAM, CCC_PARTNERS, STORYBLOK_PAGES } from "utils/constants";
+import { fetchPageValues } from "utils/storyblok";
 
 const Pillar = ({ data }) => (
   <div className="value-proposition-container">
@@ -19,6 +20,56 @@ const Pillar = ({ data }) => (
 );
 
 export default function CrossChainCoalition({ state, router }) {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const getData = async () => {
+      const homeData = await fetchPageValues(STORYBLOK_PAGES.ABOUT_US_CCC);
+      if (homeData === null) {
+        return;
+      }
+
+      const content = homeData.content;
+
+      const data = {
+        pageMainTitle: content.title,
+        pageSubTitle: content.subtitle,
+
+        pageHeaderTitle: content.header,
+        pageHeaderText: content.text,
+
+        pillars: [
+          {
+            image: "/assets/vectors/1.png",
+            category: content.pillar_title1,
+            title: content.pillar_subtitle1,
+            description: content.pillar_text1,
+          },
+          {
+            image: "/assets/vectors/1.png",
+            category: content.pillar_title2,
+            title: content.pillar_subtitle2,
+            description: content.pillar_text2,
+          },
+          {
+            image: "/assets/vectors/1.png",
+            category: content.pillar_title3,
+            title: content.pillar_subtitle3,
+            description: content.pillar_text3,
+          },
+        ]
+      };
+
+      setData(data);
+    };
+
+    getData();
+  }, []);
+
+  if (data === null) {
+    return <div className="page-container" />;
+  }
+
   return (
     <div className="page-container">
       <div className="about-page-container">
@@ -28,11 +79,10 @@ export default function CrossChainCoalition({ state, router }) {
           </div>
           <div className="top-content">
             <div className="top-content-title">
-              Moving developers forward to innovate for a cross chain world
+              {data.pageMainTitle}
             </div>
             <div className="top-content-description">
-              Our mission is to expand awareness of cross chain communication
-              and cross chain development to drive forward the future of crypto.
+              {data.pageSubTitle}
             </div>
             <a href={CCC_TELEGRAM} target="_blank" className="launch-link">
               join the cross chain coalition
@@ -41,8 +91,9 @@ export default function CrossChainCoalition({ state, router }) {
         </div>
 
         <div className="ccc-history">
-          <h2 className="ccc-history-title">History</h2>
+          <h2 className="ccc-history-title">{data.pageHeaderTitle}</h2>
           <div className="ccc-history-content">
+            {/* {data.pageHeaderText} */}
             <div className="ccc-history-left">
               The Cross Chain Coalition (CCC) is a collective of builders that
               have united together to educate developers on cross chain
@@ -63,7 +114,6 @@ export default function CrossChainCoalition({ state, router }) {
           </div>
         </div>
 
-
         <div className="volume-investors">
           <Marquee speed={120} gradient={false} loop={0} delay={0}>
             <div>
@@ -82,7 +132,7 @@ export default function CrossChainCoalition({ state, router }) {
         <div className="ccc-pillars">
           <h2 className="ccc-pillars-title">Pillars</h2>
           <div className="ccc-pillars-wrapper">
-            {PILLARS.map((item, index) => (
+            {data.pillars.map((item, index) => (
               <Pillar data={item} key={`ccc-pillar-${index}`} />
             ))}
           </div>

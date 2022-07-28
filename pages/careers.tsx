@@ -7,7 +7,7 @@ export default function Careers({ state, router }) {
     <div className="page-container">
       <div className="careers-page-container">
         <div className="careers-page-top">
-          <h1 className="careers-page-top-title">Careers</h1>
+          <h2 className="careers-page-top-title">Careers</h2>
         </div>
         <iframe className="careers-job-list" src={JOB_LINK} />
       </div>

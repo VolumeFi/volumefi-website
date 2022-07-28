@@ -85,7 +85,12 @@
         display: flex;
         margin-left: 100px;
         text-decoration: underline;
-        color: #4BFFA9;
+        color: #fff;
+
+        img {
+          height: 15px;
+          margin-right: 6px;
+        }
 
         @media screen and (max-width: 930px) {
           margin-left: 25px;
@@ -201,7 +206,12 @@
       &.community {
         display: flex;
         text-decoration: underline;
-        color: #4BFFA9;
+        color: #fff;
+
+        img {
+          height: 15px;
+          margin-right: 6px;
+        }
       }
     }
 

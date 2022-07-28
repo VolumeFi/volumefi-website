@@ -4,9 +4,9 @@ const Storyblok = new StoryblokClient({
   accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
 });
 
-export const fetchHome = async () => {
+export const fetchPageValues = async (param) => {
   var response = await Storyblok.get("cdn/stories/", {
-    "starts_with": "home",
+    "starts_with": param,
   });
 
   if (response.data.stories.length > 0) {
