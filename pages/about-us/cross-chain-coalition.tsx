@@ -31,7 +31,6 @@ export default function CrossChainCoalition({ state, router }) {
       }
 
       const content = homeData.content;
-      console.log(content);
 
       const data = {
         pageMainTitle: content.title,

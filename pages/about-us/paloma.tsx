@@ -62,7 +62,7 @@ export default function Paloma({ state, router }) {
               className="service-item"
               key={`service-description-item-${index}`}
             >
-              Create the new future of decentralized applications
+              {item}
             </div>
           ))}
         </div>
