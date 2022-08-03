@@ -29,10 +29,11 @@ console.log(post)
               </div>
             </div>
             <div className="blog-post-view">
-              <div className="blog-content"></div>
-              {/* <div className="blog-divider"></div> */}
               <div className="blog-pubtime">
                 {convertDateString2(post.first_published_at)}
+              </div>
+              <div className="blog-intro">
+                {post.content.intro}
               </div>
               <div className="blog-post">
                 {render(post.content.long_text, {
