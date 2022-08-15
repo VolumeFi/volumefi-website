@@ -18,7 +18,9 @@ export const fetchPageValues = async (param) => {
 
 export const fetchBlogs = async () => {
   const blogs = [];
-  var response = await Storyblok.get("cdn/stories/");
+  var response = await Storyblok.get("cdn/stories/", {
+    starts_with: "blog/",
+  });
 
   for (const story of response.data.stories) {
     if (story.published_at != null) {
@@ -32,8 +34,8 @@ export const fetchBlogs = async () => {
   }
 
   blogs.sort((a, b) => {
-    const aTimestamp = Date.parse(a.first_published_at);
-    const bTimestamp = Date.parse(b.first_published_at);
+    const aTimestamp = Date.parse(a.content.published_date);
+    const bTimestamp = Date.parse(b.content.published_date);
 
     return aTimestamp > bTimestamp ? -1 : 1;
   });
@@ -43,7 +45,9 @@ export const fetchBlogs = async () => {
 
 export const fetchEvents = async () => {
   const events = [];
-  var response = await Storyblok.get("cdn/stories/");
+  var response = await Storyblok.get("cdn/stories/", {
+    starts_with: "events/",
+  });
 
   for (const story of response.data.stories) {
     if (story.published_at != null) {
@@ -73,8 +77,8 @@ export const filterBlogs = (eventList, category = "") => {
   });
 
   blogs.sort((a, b) => {
-    const aTime = Date.parse(a.first_published_at);
-    const bTime = Date.parse(b.first_published_at);
+    const aTime = Date.parse(a.content.published_date);
+    const bTime = Date.parse(b.content.published_date);
 
     return aTime > bTime ? -1 : 1;
   });

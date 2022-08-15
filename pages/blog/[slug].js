@@ -14,7 +14,7 @@ const Blog = ({ post, router }) => {
       slug: post.slug,
     });
   }, []);
-console.log(post)
+
   return (
     <>
       {post !== null && post !== undefined && (
@@ -30,7 +30,7 @@ console.log(post)
             </div>
             <div className="blog-post-view">
               <div className="blog-pubtime">
-                {convertDateString2(post.first_published_at)}
+                {convertDateString2(post.content.published_date)}
               </div>
               <div className="blog-intro">
                 {post.content.intro}
