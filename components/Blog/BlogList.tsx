@@ -9,7 +9,7 @@ const BlogList = ({ data }) => (
       <div className="blog-latest-item" key={`blog-latest-${index}`}>
         <div className="blog-latest-item-left">
           <div className="blog-latest-date">
-            {convertDateString2(blog.first_published_at)}
+            {convertDateString2(blog.content.published_date)}
           </div>
           <Link href={`/${blog.full_slug}`}>
             <h3 className="blog-latest-title">{blog.content.title}</h3>
