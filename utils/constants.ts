@@ -183,11 +183,6 @@ export const TEAM = [
     photo: "/assets/team/joyce.png",
   },
   {
-    name: "Thelema Dietler",
-    title: "Marketing",
-    photo: "/assets/team/thelema.png",
-  },
-  {
     name: "Alex Martin",
     title: "Marketing",
     photo: "/assets/team/alex.png",
@@ -201,6 +196,16 @@ export const TEAM = [
     name: "Cesar Lorenzo",
     title: "Marketing",
     photo: "/assets/team/cesar.jpg",
+  },
+  {
+    name: "",
+    title: "",
+    photo: "",
+  },
+  {
+    name: "",
+    title: "",
+    photo: "",
   },
 ];
 
