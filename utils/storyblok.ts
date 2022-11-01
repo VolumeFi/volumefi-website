@@ -20,6 +20,7 @@ export const fetchBlogs = async () => {
   const blogs = [];
   var response = await Storyblok.get("cdn/stories/", {
     starts_with: "blog/",
+    per_page: 100,
   });
 
   for (const story of response.data.stories) {
@@ -47,6 +48,7 @@ export const fetchEvents = async () => {
   const events = [];
   var response = await Storyblok.get("cdn/stories/", {
     starts_with: "events/",
+    per_page: 100,
   });
 
   for (const story of response.data.stories) {
