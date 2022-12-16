@@ -143,11 +143,6 @@ export const TEAM = [
     photo: "/assets/team/steven.png",
   },
   {
-    name: "Matija Martinić",
-    title: "Senior Software Engineer",
-    photo: "/assets/team/matija.png",
-  },
-  {
     name: "William Chang",
     title: "Senior Software Engineer",
     photo: "/assets/team/william.png",
@@ -196,6 +191,11 @@ export const TEAM = [
     name: "Cesar Lorenzo",
     title: "Marketing",
     photo: "/assets/team/cesar.jpg",
+  },
+  {
+    name: "Jose Alfonso",
+    title: "Marketing",
+    photo: "/assets/team/jose.png",
   },
   {
     name: "",
