@@ -194,9 +194,9 @@ export default function Home({ state, router }) {
           </div>
         </div>
 
-        <div className="home-reviewers">
+        {/* <div className="home-reviewers">
           <Review data={data.reviews[0]} />
-        </div>
+        </div> */}
 
         <div className="volume-investors">
           <h2 className="volume-investors-title">Investors</h2>
