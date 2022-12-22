@@ -96,7 +96,6 @@ export const CCC_PARTNERS = [
 ];
 
 export const INVESTORS = [
-  "/assets/investors/alameda.png",
   "/assets/investors/curve.png",
   "/assets/investors/dancing-bananas.png",
   "/assets/investors/figment.png",
