@@ -1,2 +1,2 @@
-export type ButtonVariantType = 'primary' | 'secondary' | 'text';
+export type ButtonVariantType = 'primary' | 'secondary' | 'dark' | 'text';
 export type ButtonType = 'button' | 'submit' | 'reset';
