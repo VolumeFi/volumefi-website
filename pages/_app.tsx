@@ -1,12 +1,12 @@
-import { AppProps } from "next/app";
-import Layout from "layout";
+import { AppProps } from 'next/app';
+import MainContainer from 'ui/main/Main';
 
-import "../styles/index.scss";
+import 'styles/index.scss';
 
 const App = ({ Component, router, pageProps }: AppProps) => (
-  <Layout router={router}>
+  <MainContainer router={router}>
     <Component {...pageProps} />
-  </Layout>
+  </MainContainer>
 );
 
 export default App;

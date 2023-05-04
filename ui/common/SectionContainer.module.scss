@@ -1,0 +1,9 @@
+.container {
+  width: 100%;
+
+  &.w-max-full {
+    max-width: var(--max-container-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,3 +1,7 @@
+interface DefaultComponentProps  {
+  className?: string;
+}
+
 export type TMap = {
   [key: string]: any;
 };

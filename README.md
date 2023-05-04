@@ -7,6 +7,7 @@ This repo the web application for [volume.finance](https://volume.finance/)
 To run this locally, you will need a Storyblok Api Key.
 
 To set up the app for local development:
+
 ```
 git clone https://github.com/VolumeFi/volumefi-website.git
 cd volumefi-website
@@ -22,6 +23,7 @@ STORYBLOK_ACCESS_TOKEN=YOUR_STORYBLOK_API_KEY
 ```
 
 ## Run
+
 ```
 npm install
 npm run dev
