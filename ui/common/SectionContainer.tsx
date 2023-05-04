@@ -1,5 +1,4 @@
 import { PropsWithChildren } from 'react';
-import { DefaultComponentProps } from 'types';
 
 import style from 'ui/common/SectionContainer.module.scss';
 import classNames from 'classnames';
