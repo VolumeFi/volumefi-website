@@ -1,5 +1,6 @@
-import { AppProps } from 'next/app';
 import MainContainer from 'ui/main/Main';
+
+import type { AppProps } from 'next/app';
 
 import 'styles/index.scss';
 

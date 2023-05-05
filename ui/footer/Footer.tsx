@@ -1,9 +1,7 @@
 import { Link } from 'components/Link';
-import SectionContainer from 'ui/common/SectionContainer';
-
 import { StaticLink } from 'configs/links';
 import { footerMenus } from 'configs/menus';
-
+import SectionContainer from 'ui/common/SectionContainer';
 import style from 'ui/footer/Footer.module.scss';
 
 const Footer = () => (
@@ -23,7 +21,7 @@ const Footer = () => (
                 {parentFooterMenu.title}
               </Link>
               <section className={style.subMenu}>
-                {parentFooterMenu.subMenus.map((subFooterMenu) => (
+                {parentFooterMenu.subMenus?.map((subFooterMenu) => (
                   <Link
                     key={`${parentFooterMenu.title}-${subFooterMenu.title}`}
                     className={style.subMenuLink}

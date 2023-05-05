@@ -1,9 +1,7 @@
 import { Button } from 'components/Button';
 import { Link } from 'components/Link';
-
 import { StaticLink } from 'configs/links';
 import { headerMenus } from 'configs/menus';
-
 import style from 'ui/header/Header.module.scss';
 
 const Header = () => (

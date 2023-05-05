@@ -1,9 +1,6 @@
 import { Box } from 'components/Box';
-
-import SectionContainer from 'ui/common/SectionContainer';
-
 import { productsAndService } from 'configs/home';
-
+import SectionContainer from 'ui/common/SectionContainer';
 import style from 'ui/home/ProductsAndService.module.scss';
 
 const ProductsAndService = () => (

@@ -1,9 +1,9 @@
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 
-import { ButtonType, ButtonVariantType } from 'components/Button';
-
-import style from 'components/Button/Button.module.scss';
 import classNames from 'classnames';
+import style from 'components/Button/Button.module.scss';
+
+import type { ButtonType, ButtonVariantType } from 'components/Button';
 
 interface ButtonProps {
   type?: ButtonType;
@@ -26,6 +26,7 @@ export const Button = ({
   const content = children ?? label;
 
   return (
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     <button type={type} className={classNames(style.container, style[variant], className)} onClick={(e) => onClick?.()}>
       {content}
     </button>

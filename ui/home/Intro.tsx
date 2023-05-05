@@ -1,6 +1,5 @@
 import { Button } from 'components/Button';
 import SectionContainer from 'ui/common/SectionContainer';
-
 import style from 'ui/home/Intro.module.scss';
 
 const Intro = () => (

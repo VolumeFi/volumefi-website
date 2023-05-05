@@ -1,8 +1,6 @@
+import { priceOptions } from 'configs/services';
 import SectionContainer from 'ui/common/SectionContainer';
 import PriceOption from 'ui/pricing/PriceOption';
-
-import { priceOptions } from 'configs/services';
-
 import style from 'ui/pricing/PriceTable.module.scss';
 
 const PriceTable = () => (

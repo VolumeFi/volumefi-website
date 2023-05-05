@@ -1,16 +1,16 @@
-import { PropsWithChildren } from 'react';
-import { Router } from 'next/router';
+import type { PropsWithChildren } from 'react';
 
-import Header from 'ui/header/Header';
 import Footer from 'ui/footer/Footer';
-
+import Header from 'ui/header/Header';
 import style from 'ui/main/Main.module.scss';
+
+import type { Router } from 'next/router';
 
 interface MainContainerProps {
   router: Router;
 }
 
-const MainContainer = ({ router, children }: PropsWithChildren<MainContainerProps>) => (
+const MainContainer = ({ children }: PropsWithChildren<MainContainerProps>) => (
   <section className={style.container}>
     <Header />
     {children}

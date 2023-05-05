@@ -1,9 +1,6 @@
 import { Box } from 'components/Box';
-
-import SectionContainer from 'ui/common/SectionContainer';
-
 import { privateKeyManagement } from 'configs/home';
-
+import SectionContainer from 'ui/common/SectionContainer';
 import style from 'ui/home/PrivateKeyManagement.module.scss';
 
 const PrivateKeyManagement = () => (

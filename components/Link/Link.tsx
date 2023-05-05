@@ -1,8 +1,8 @@
-import { PropsWithChildren } from 'react';
-import NextLink from 'next/link';
+import type { PropsWithChildren } from 'react';
 
-import style from 'components/Link/Link.module.scss';
 import classNames from 'classnames';
+import style from 'components/Link/Link.module.scss';
+import NextLink from 'next/link';
 
 interface LinkProps {
   label?: string;
@@ -13,6 +13,8 @@ interface LinkProps {
 
 export const Link = ({ label, href, target, className, children }: PropsWithChildren<LinkProps>) => {
   const content = children ?? label;
+
+  if (!href) return null;
 
   return target ? (
     <a href={href} target={target} className={classNames(style.container, className)}>

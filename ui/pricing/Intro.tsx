@@ -1,5 +1,4 @@
 import SectionContainer from 'ui/common/SectionContainer';
-
 import style from 'ui/pricing/Intro.module.scss';
 
 const Intro = () => (

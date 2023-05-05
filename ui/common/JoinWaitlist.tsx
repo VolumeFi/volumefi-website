@@ -1,10 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from 'components/Button';
-import SectionContainer from 'ui/common/SectionContainer';
-
 import style from 'ui/common/JoinWaitlist.module.scss';
+import SectionContainer from 'ui/common/SectionContainer';
 
 const JoinWaitlist = () => (
   <SectionContainer>

@@ -1,7 +1,7 @@
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 
-import style from 'ui/common/SectionContainer.module.scss';
 import classNames from 'classnames';
+import style from 'ui/common/SectionContainer.module.scss';
 
 interface SectionContainerProps extends DefaultComponentProps {
   fullScreenWidth?: boolean;
