@@ -19,8 +19,11 @@
     text-align: center;
   }
 
-  .compare {
+  .serviceContainer {
+    display: flex;
+    gap: 1px;
     width: 100%;
+    justify-content: space-around;
     margin-top: 98px;
   }
 }

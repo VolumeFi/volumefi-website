@@ -14,7 +14,7 @@ export const headerMenus: Menu[] = [
   },
   {
     title: 'Pricing',
-    href: StaticLink.Home,
+    href: StaticLink.Pricing,
   },
   {
     title: 'Volume Products',

@@ -1,6 +1,8 @@
+import { serviceCompanies } from 'configs/services';
 import SectionContainer from 'ui/common/SectionContainer';
 
 import style from 'ui/home/CompareServices.module.scss';
+import Service from './Service';
 
 const CompareServices = () => (
   <SectionContainer>
@@ -10,7 +12,12 @@ const CompareServices = () => (
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
         standard dummy text ever since the 1500s,
       </p>
-      <img src="/assets/service-compare.png" className={style.compare} />
+      <section className={style.serviceContainer}>
+        <Service />
+        {serviceCompanies.map((item) => (
+          <Service serviceCompany={item} border={item.name === 'Volume'} />
+        ))}
+      </section>
     </section>
   </SectionContainer>
 );
