@@ -9,7 +9,7 @@ interface Menu {
 
 export const headerMenus: Menu[] = [
   {
-    title: 'About',
+    title: 'Volume Products',
     href: StaticLink.Home,
   },
   {
@@ -17,7 +17,7 @@ export const headerMenus: Menu[] = [
     href: StaticLink.Pricing,
   },
   {
-    title: 'Volume Products',
+    title: 'About',
     href: StaticLink.Home,
   },
 ];
