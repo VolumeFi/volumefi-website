@@ -24,6 +24,12 @@
   flex: 1;
   display: flex;
   gap: 32px;
+
+  .menu {
+    &.active {
+      color: #9adf06;
+    }
+  }
 }
 
 .communityWrapper {

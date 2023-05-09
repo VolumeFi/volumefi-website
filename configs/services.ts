@@ -134,38 +134,38 @@ export const serviceCompanies: ServiceCompany[] = [
 export const supportingServices: ServiceAvailable[] = [
   {
     name: 'MPC-CMP',
-    available: ['Volume', 'Fireblocks', 'BitGo', 'Coinbase'],
+    available: ['Volume', 'Fireblocks'],
   },
   {
     name: 'Self-Serve Policy Engin & Workflow Authorization',
-    available: ['Volume', 'Fireblocks', 'BitGo', 'Coinbase'],
+    available: ['Volume', 'Fireblocks'],
   },
   {
     name: 'Cost savings on ERC-20 transactions',
-    available: ['Volume', 'Fireblocks', 'BitGo', 'Coinbase'],
+    available: ['Volume', 'Fireblocks'],
   },
   {
     name: 'Zero custodial counterparty risk',
-    available: ['Volume', 'Fireblocks', 'BitGo', 'Coinbase'],
+    available: ['Volume', 'Fireblocks'],
   },
   {
     name: 'DeFi Programmatic Access',
-    available: ['Volume', 'Fireblocks', 'BitGo', 'Coinbase'],
+    available: ['Volume', 'Fireblocks'],
   },
   {
     name: 'DeFi Authorization Workflows(Apps, Contracts, Users)',
-    available: ['Volume', 'Fireblocks', 'BitGo', 'Coinbase'],
+    available: ['Volume', 'Fireblocks'],
   },
   {
     name: 'MEV Front-Run and Back-Run Protection',
-    available: ['Volume', 'Fireblocks', 'BitGo', 'Coinbase'],
+    available: ['Volume'],
   },
   {
     name: 'Native Blockchain Support',
-    available: ['Volume', 'Fireblocks', 'BitGo', 'Coinbase'],
+    available: ['Volume'],
   },
   {
     name: 'Decentralized',
-    available: ['Volume', 'Fireblocks', 'BitGo', 'Coinbase'],
+    available: ['Volume'],
   },
 ];

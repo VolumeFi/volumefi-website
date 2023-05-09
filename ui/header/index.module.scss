@@ -1,0 +1,18 @@
+.container {
+  width: 100vw;
+  max-width: 100%;
+
+  .mobile {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: block;
+    }
+  }
+}

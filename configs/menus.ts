@@ -8,17 +8,17 @@ interface Menu {
 }
 
 export const headerMenus: Menu[] = [
-  {
-    title: 'Volume Products',
-    href: StaticLink.Home,
-  },
+  // {
+  //   title: 'Volume Products',
+  //   href: StaticLink.Home,
+  // },
   {
     title: 'Pricing',
     href: StaticLink.Pricing,
   },
   {
     title: 'About',
-    href: StaticLink.Home,
+    href: StaticLink.About,
   },
 ];
 

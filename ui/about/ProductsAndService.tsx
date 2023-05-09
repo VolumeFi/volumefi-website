@@ -1,13 +1,13 @@
 import { Box } from 'components/Box';
 import { productsAndService } from 'configs/home';
+import style from 'ui/about/ProductsAndService.module.scss';
 import SectionContainer from 'ui/common/SectionContainer';
-import style from 'ui/home/ProductsAndService.module.scss';
 
 const ProductsAndService = () => (
   <SectionContainer>
     <section className={style.container}>
-      <h2 className={style.title}>Volume Products and Services</h2>
-      <p className={style.description}>Volume already supports Decentralized Key Management Applications</p>
+      <h2 className={style.title}>Volume’s Key Management Services</h2>
+      <p className={style.description}>See the difference in cost and security.</p>
       <section className={style.products}>
         {productsAndService.map((item) => (
           <Box key={item.title} className={style.product}>

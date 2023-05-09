@@ -1,5 +1,5 @@
+import style from 'ui/about/Headline.module.scss';
 import SectionContainer from 'ui/common/SectionContainer';
-import style from 'ui/home/Headline.module.scss';
 
 const Headline = () => (
   <SectionContainer fullScreenWidth>

@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { supportingServices } from 'configs/services';
-import style from 'ui/home/Service.module.scss';
+import style from 'ui/about/Service.module.scss';
 
 import type { ServiceCompany } from 'configs/services';
 

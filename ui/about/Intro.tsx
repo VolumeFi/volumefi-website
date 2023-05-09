@@ -1,16 +1,16 @@
 import { Button } from 'components/Button';
+import style from 'ui/about/Intro.module.scss';
 import SectionContainer from 'ui/common/SectionContainer';
-import style from 'ui/home/Intro.module.scss';
 
 const Intro = () => (
   <SectionContainer>
     <section className={style.container}>
       <div className={style.textWrapper}>
-        <div className={style.sub}>Your keys, your money.</div>
-        <h1 className={style.title}>Take your private keys wherever you go</h1>
+        <div className={style.sub}>Affordable Private Key Management Software for the Rest of Us</div>
+        <h1 className={style.title}>Make Blockchain Manage Your Keys</h1>
         <p className={style.description}>
-          We’ve been told it’s possible to revolutionize the payment industry. We have not reinvented the wheel, we
-          decided to build upon it - successfully.
+          Unlock the power of the blockchain to manage your private keys so that you will have key control and key
+          security, but without breaking the bank.
         </p>
       </div>
       <Button className={style.join}>Join the waitlist</Button>
