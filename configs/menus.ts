@@ -1,8 +1,9 @@
-import { StaticLink } from 'configs/links';
+import { ExternalLink, StaticLink } from 'configs/links';
 
 interface Menu {
   title: string;
   href?: string;
+  target?: string;
   onClick?: () => void;
   subMenus?: Menu[];
 }
@@ -20,20 +21,25 @@ export const headerMenus: Menu[] = [
     title: 'About',
     href: StaticLink.About,
   },
+  {
+    title: 'Careers',
+    href: StaticLink.Careers,
+  },
 ];
 
 export const footerMenus: Menu[] = [
   {
     title: 'Products',
-    href: StaticLink.Home,
     subMenus: [
       {
         title: 'Paloma Swap',
-        href: StaticLink.Home,
+        href: ExternalLink.PalomaSwap,
+        target: '_blank',
       },
       {
         title: 'Paloma Bot',
-        href: StaticLink.Home,
+        href: ExternalLink.PalomaBot,
+        target: '_blank',
       },
       {
         title: 'Volume SDK',
@@ -43,59 +49,55 @@ export const footerMenus: Menu[] = [
   },
   {
     title: 'Pricing',
-    href: StaticLink.Home,
     subMenus: [
       {
         title: 'Starter',
-        href: StaticLink.Home,
+        href: StaticLink.Pricing,
       },
       {
         title: 'Pro',
-        href: StaticLink.Home,
+        href: StaticLink.Pricing,
       },
       {
         title: 'Business',
-        href: StaticLink.Home,
+        href: StaticLink.Pricing,
       },
       {
         title: 'Enterprise',
-        href: StaticLink.Home,
+        href: StaticLink.Pricing,
       },
     ],
   },
   {
     title: 'Company Assets',
-    href: StaticLink.Home,
     subMenus: [
       {
         title: 'Careers',
-        href: StaticLink.Home,
+        href: StaticLink.Careers,
       },
-      {
-        title: 'Brand Assets',
-        href: StaticLink.Home,
-      },
+      // {
+      //   title: 'Brand Assets',
+      //   href: StaticLink.Home,
+      // },
     ],
   },
   {
     title: 'Social Media',
-    href: StaticLink.Home,
     subMenus: [
       {
-        title: 'Starter',
-        href: StaticLink.Home,
+        title: 'Discord',
+        href: ExternalLink.Discord,
+        target: '_blank',
       },
       {
-        title: 'Pro',
-        href: StaticLink.Home,
+        title: 'Twitter',
+        href: ExternalLink.Twitter,
+        target: '_blank',
       },
       {
-        title: 'Business',
-        href: StaticLink.Home,
-      },
-      {
-        title: 'Enterprise',
-        href: StaticLink.Home,
+        title: 'Linkedin',
+        href: ExternalLink.Linkedin,
+        target: '_blank',
       },
     ],
   },

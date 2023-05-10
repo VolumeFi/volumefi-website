@@ -3,8 +3,7 @@ import { Button } from 'components/Button';
 import { PriceType } from 'configs/services';
 import style from 'ui/pricing/PriceOption.module.scss';
 
-import type { PriceOption} from 'configs/services';
-
+import type { PriceOption } from 'configs/services';
 
 interface PriceOptionProps {
   priceOption: PriceOption;

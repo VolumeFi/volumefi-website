@@ -61,6 +61,11 @@
       margin-bottom: 24px;
     }
 
+    .subMenu {
+      display: flex;
+      flex-direction: column;
+    }
+
     .subMenuLink {
       color: #fff;
       font-weight: 500;
