@@ -21,8 +21,8 @@ const PriceOptionView = ({ priceOption }: PriceOptionProps) => (
       Get Started
     </Button>
     <section className={style.benefits}>
-      {priceOption.benefits.map((item) => (
-        <section key={`${priceOption.name}-${item.name}`} className={style.benefitWrapper}>
+      {priceOption.benefits.map((item, index) => (
+        <section key={`${priceOption.name}-${item.name}-${index}`} className={style.benefitWrapper}>
           {item.disabled ? <img src="/assets/pricing/x.svg" /> : <img src="/assets/pricing/check.svg" />}
           <section className={style.benefitName}>{item.name}</section>
         </section>
