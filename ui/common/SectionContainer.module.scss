@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+
+  &.w-max-full {
+    max-width: var(--max-container-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 32px;
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      padding: 0px;
+    }
+  }
+}

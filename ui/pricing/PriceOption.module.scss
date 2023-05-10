@@ -1,0 +1,121 @@
+.container {
+  padding: 41px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 320px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    padding: 21px 16px;
+  }
+
+  .popular {
+    background: rgba(130, 187, 8, 0.13);
+    border-radius: 10px;
+    color: #82bb08;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: var(--font-headings);
+    font-weight: normal;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 16px;
+    }
+
+    &.show {
+      visibility: visible;
+    }
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 28px;
+    color: #f1f2f0;
+    margin-bottom: 22px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #f1f2f0;
+    margin-bottom: 29px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .price {
+    font-family: var(--font-headings);
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 28px;
+    color: #f1f2f0;
+    margin-bottom: 22px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+
+    .period {
+      font-family: var(--font-text);
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 11px;
+    }
+  }
+
+  .startButton {
+    width: 100%;
+    margin-bottom: 29px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 14px;
+    }
+  }
+
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    .benefitWrapper {
+      display: flex;
+      gap: 12px;
+    }
+
+    .checkIconWrapper {
+      width: 20px;
+      height: 20px;
+      background: #f8f9fb;
+      border: 2px solid #f1f2f0;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        height: 9px;
+        path {
+          fill: #000;
+        }
+      }
+    }
+  }
+}

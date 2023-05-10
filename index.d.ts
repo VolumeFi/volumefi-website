@@ -1,0 +1,3 @@
+interface DefaultComponentProps  {
+  className?: string;
+}

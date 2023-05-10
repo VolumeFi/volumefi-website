@@ -1,0 +1,39 @@
+.container {
+  background: #272828;
+  border-bottom: 1px solid #2e2f2f;
+  width: 100%;
+  height: var(--desktop-header-height);
+}
+
+.headerContainer {
+  width: 100%;
+  height: 100%;
+  max-width: var(--max-container-width);
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding: 0px 32px;
+}
+
+.logo {
+  height: 21px;
+}
+
+.mainWrapper {
+  flex: 1;
+  display: flex;
+  gap: 32px;
+
+  .menu {
+    &.active {
+      color: #9adf06;
+    }
+  }
+}
+
+.communityWrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}

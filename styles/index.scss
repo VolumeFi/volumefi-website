@@ -1,76 +1,54 @@
-@import "libraries/global";
+@import '_font.scss';
 
-@import "components";
-@import "pages";
+:root {
+  --bg-slate-0: #272828;
+  --text-slate-0: #babbbb;
+  --text-slate-1: #f1f2f0;
 
-@import "layout";
+  --font-text: 'Exo';
+  --font-headings: 'Benzin';
+  --font-footer: 'Inter';
+
+  --desktop-header-height: 86px;
+  --mobile-header-height: 56px;
+  --max-container-width: 1440px;
+}
 
 body {
-  background-color: $main_bg_color;
-  color: $main_text_color;
-  font-family: $font-regular;
+  background-color: var(--bg-slate-0);
+  color: var(--text-slate-0);
   overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-text);
 }
 
 body * {
   box-sizing: border-box;
 }
 
-.page-container {
-  padding: 30px 0px;
-  width: 100vw;
-  max-width: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-slate-1);
+  font-family: var(--font-headings);
+  font-weight: bold;
+}
 
-  @media screen and (max-width: 768px) {
-    padding: 30px 0px;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0px;
+  margin: 0px;
 }
 
 a {
   text-decoration: none;
-}
-
-.full-width {
-  width: 100%;
-}
-
-.ml-2 {
-  margin-left: 20px;
-}
-
-h1 {
-  font-size: 60px;
-  font-weight: 600;
-  text-transform: capitalize;
-  text-align: center;
-
-  @media screen and (max-width: 768px) {
-    font-size: 25px;
-  }
-}
-
-h2 {
-  font-size: 36px;
-  font-weight: 600;
-  text-transform: capitalize;
-
-  @media screen and (max-width: 768px) {
-    font-size: 20px;
-  }
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 26px;
-}
-
-p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
-    line-height: 20px;
-  }
 }
