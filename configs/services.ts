@@ -7,14 +7,18 @@ export interface Price {
   name: string;
   value: number;
   period: string;
-  description: string;
+}
+
+export interface PriceBenefits {
+  name: string;
+  disabled?: boolean;
 }
 
 export interface PriceOption {
   name: string;
-  description: string;
   price: Price;
   isPopular: boolean;
+  benefits: PriceBenefits[];
 }
 
 export enum PriceType {
@@ -27,78 +31,193 @@ export enum PriceType {
 export const priceOptions: PriceOption[] = [
   {
     name: PriceType.Starter,
-    description: 'Felis tristique et viverra volutpat ipsum tristique posuere mattis.',
     price: {
       name: 'Free',
       value: 0,
-      description: 'Sed gravida posuere non',
       period: '',
     },
     isPopular: false,
+    benefits: [
+      {
+        name: '25 API Calls/seconds',
+      },
+      {
+        name: '20,000 Call Request',
+      },
+      {
+        name: '1 Blockchain Access',
+      },
+      {
+        name: 'MEV Front-Run Protection',
+        disabled: true,
+      },
+      {
+        name: 'MEV Back-Run Revenue',
+        disabled: true,
+      },
+      {
+        name: 'SDK Access',
+      },
+      {
+        name: 'API Documentation Access',
+      },
+      {
+        name: '1 Bot',
+      },
+      {
+        name: '1 Key',
+      },
+      {
+        name: 'Fiat On-ramp and Off-ramp',
+      },
+      {
+        name: '99% Uptime SLA',
+      },
+      {
+        name: 'Limited Support <48 hour revert',
+      },
+    ],
   },
   {
     name: PriceType.Pro,
-    description: 'Felis tristique et viverra volutpat ipsum tristique posuere mattis.',
     price: {
       name: '$24',
       value: 24,
-      description: 'Sed gravida posuere non',
       period: 'month',
     },
     isPopular: true,
+    benefits: [
+      {
+        name: '100 API Call/seconds',
+      },
+      {
+        name: '100,000 Call Request',
+      },
+      {
+        name: '3 Blockchain Access',
+      },
+      {
+        name: 'MEV Front-Run Protection',
+      },
+      {
+        name: 'MEV Back-Run Revenue',
+      },
+      {
+        name: 'SDK Access',
+      },
+      {
+        name: 'API Documentation Access',
+      },
+      {
+        name: '5 Bots',
+      },
+      {
+        name: '10 Keys',
+      },
+      {
+        name: 'Fiat On-ramp and Off-ramp',
+      },
+      {
+        name: '100% Uptime SLA',
+      },
+      {
+        name: '5 days a week Support, office hours',
+      },
+    ],
   },
   {
     name: PriceType.Business,
-    description: 'Felis tristique et viverra volutpat ipsum tristique posuere mattis.',
     price: {
       name: '$99',
       value: 99,
-      description: 'Sed gravida posuere non',
       period: 'month',
     },
     isPopular: false,
+    benefits: [
+      {
+        name: '200 API Call/seconds',
+      },
+      {
+        name: '500,000 Call Request',
+      },
+      {
+        name: 'Unlimited Blockchain Access',
+      },
+      {
+        name: 'MEV Front-Run Protection',
+      },
+      {
+        name: 'MEV Back-Run Revenue',
+      },
+      {
+        name: 'SDK Access',
+      },
+      {
+        name: 'API Documentation Access',
+      },
+      {
+        name: 'Unlimited',
+      },
+      {
+        name: 'Unlimited',
+      },
+      {
+        name: 'Fiat On-ramp and Off-ramp',
+      },
+      {
+        name: '100% Uptime SLA',
+      },
+      {
+        name: 'Priority Support',
+      },
+    ],
   },
   {
     name: PriceType.Enterprise,
-    description: 'Felis tristique et viverra volutpat ipsum tristique posuere mattis.',
     price: {
-      name: '$199',
+      name: 'Contact Sales',
       value: 199,
-      description: 'Sed gravida posuere non',
-      period: 'month',
+      period: '',
     },
     isPopular: false,
-  },
-];
-
-export const benefitOptions: ServiceAvailable[] = [
-  {
-    name: 'Intelligent Cotton Car',
-    available: [PriceType.Starter, PriceType.Pro, PriceType.Business, PriceType.Enterprise],
-  },
-  {
-    name: 'Intelligent Rubber Pants',
-    available: [PriceType.Starter, PriceType.Pro, PriceType.Business, PriceType.Enterprise],
-  },
-  {
-    name: 'Rustic Rubber Car',
-    available: [PriceType.Pro, PriceType.Business, PriceType.Enterprise],
-  },
-  {
-    name: 'Refined Fresh Towels',
-    available: [PriceType.Pro, PriceType.Business, PriceType.Enterprise],
-  },
-  {
-    name: 'Practical Soft Shirt',
-    available: [PriceType.Business, PriceType.Enterprise],
-  },
-  {
-    name: 'Ergonomic Granite Soap',
-    available: [PriceType.Business, PriceType.Enterprise],
-  },
-  {
-    name: 'Licensed Frozen Hat',
-    available: [PriceType.Enterprise],
+    benefits: [
+      {
+        name: 'Call us',
+      },
+      {
+        name: 'Call us',
+      },
+      {
+        name: 'Call us',
+      },
+      {
+        name: 'MEV Front-Run Protection',
+      },
+      {
+        name: 'MEV Back-Run Revenue',
+      },
+      {
+        name: 'SDK Access',
+      },
+      {
+        name: 'API Documentation Access',
+      },
+      {
+        name: 'Unlimited',
+      },
+      {
+        name: 'Unlimited',
+      },
+      {
+        name: 'Fiat On-ramp and Off-ramp',
+      },
+      {
+        name: '100% Uptime SLA',
+      },
+      {
+        name: 'Priority Support',
+      },
+    ],
   },
 ];
 

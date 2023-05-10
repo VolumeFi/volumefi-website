@@ -4,13 +4,21 @@
   flex-direction: column;
   align-items: center;
   max-width: 320px;
+  background: #303030;
+
+  &.popular {
+    background: rgba(86, 101, 53, 0.15);
+    border: 1px solid #82bb08;
+    border-radius: 5px;
+  }
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
     padding: 21px 16px;
+    border-radius: 5px;
   }
 
-  .popular {
+  .popularBadge {
     background: rgba(130, 187, 8, 0.13);
     border-radius: 10px;
     color: #82bb08;
@@ -39,24 +47,10 @@
     font-size: 32px;
     line-height: 28px;
     color: #f1f2f0;
-    margin-bottom: 22px;
+    margin-bottom: 28px;
 
     @media screen and (max-width: 768px) {
       font-size: 24px;
-    }
-  }
-
-  .text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #f1f2f0;
-    margin-bottom: 29px;
-    text-align: center;
-
-    @media screen and (max-width: 768px) {
-      font-size: 16px;
-      margin-bottom: 15px;
     }
   }
 
@@ -67,6 +61,10 @@
     line-height: 28px;
     color: #f1f2f0;
     margin-bottom: 22px;
+
+    &.small {
+      font-size: 20px;
+    }
 
     @media screen and (max-width: 768px) {
       font-size: 24px;
@@ -98,17 +96,7 @@
     .benefitWrapper {
       display: flex;
       gap: 12px;
-    }
-
-    .checkIconWrapper {
-      width: 20px;
-      height: 20px;
-      background: #f8f9fb;
-      border: 2px solid #f1f2f0;
-      border-radius: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      align-items: flex-start;
 
       svg {
         height: 9px;
