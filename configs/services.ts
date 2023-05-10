@@ -137,7 +137,7 @@ export const supportingServices: ServiceAvailable[] = [
     available: ['Volume', 'Fireblocks'],
   },
   {
-    name: 'Self-Serve Policy Engin & Workflow Authorization',
+    name: 'Self-Serve Policy Engine & Workflow Authorization',
     available: ['Volume', 'Fireblocks'],
   },
   {
