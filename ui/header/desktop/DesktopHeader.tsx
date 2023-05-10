@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { Button } from 'components/Button';
 import { Link } from 'components/Link';
-import { StaticLink } from 'configs/links';
+import { ExternalLink, StaticLink } from 'configs/links';
 import { headerMenus } from 'configs/menus';
 import { useRouter } from 'next/router';
 import style from 'ui/header/desktop/DesktopHeader.module.scss';
@@ -26,7 +26,7 @@ const DesktopHeader = () => {
           ))}
         </section>
         <section className={style.communityWrapper}>
-          <Link href={StaticLink.Home} label="Community" />
+          <Link href={ExternalLink.Discord} target="_blank" label="Community" />
           <Button label="Join the Waitlist" />
         </section>
       </section>
