@@ -8,6 +8,8 @@
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin: 13px auto 32px;
+    margin: 13px 16px 32px;
+    gap: 50px;
+    background: transparent;
   }
 }
