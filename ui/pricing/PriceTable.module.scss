@@ -5,4 +5,9 @@
   display: flex;
   justify-content: space-around;
   margin: 13px auto 77px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin: 13px auto 32px;
+  }
 }

@@ -1,13 +1,22 @@
 import { useState } from 'react';
 
+import classNames from 'classnames';
 import { Button } from 'components/Button';
 import { Link } from 'components/Link';
 import { StaticLink } from 'configs/links';
 import { headerMenus } from 'configs/menus';
+import { useRouter } from 'next/router';
 import style from 'ui/header/mobile/MobileHeader.module.scss';
 
 const MobileHeader = () => {
+  const router = useRouter();
+
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+  const handleClickMenu = (href: string) => {
+    router.push(href);
+    setShowMobileMenu(false);
+  };
 
   const handleToggleMobileMenu = () => {
     setShowMobileMenu(!showMobileMenu);
@@ -35,7 +44,14 @@ const MobileHeader = () => {
           </section>
           <section className={style.menuWrapper}>
             {headerMenus.map((menu) => (
-              <Link key={menu.title} href={menu.href} label={menu.title} className={style.menu} />
+              <Button
+                key={menu.title}
+                variant="link"
+                className={classNames(style.menu, { [style.active]: menu.href && router.route.includes(menu.href) })}
+                onClick={() => handleClickMenu(menu.href ?? '')}
+              >
+                {menu.title}
+              </Button>
             ))}
           </section>
         </section>

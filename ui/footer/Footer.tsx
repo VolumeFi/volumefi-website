@@ -10,9 +10,8 @@ const Footer = () => (
       <section className={style.section}>
         <section className={style.logoWrapper}>
           <Link href={StaticLink.Home}>
-            <img className={style.logo} src="/assets/footer/volume-logo.svg" alt="Logo of Volume" />
+            <img className={style.logo} src="/assets/volume-logo.svg" alt="Logo of Volume" />
           </Link>
-          <p className={style.text}>Generate outside the box thinking with the possibility to targtet the low.</p>
         </section>
         <section className={style.menuWrapper}>
           {footerMenus.map((parentFooterMenu) => (

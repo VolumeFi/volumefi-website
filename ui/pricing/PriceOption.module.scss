@@ -5,6 +5,11 @@
   align-items: center;
   max-width: 320px;
 
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    padding: 21px 16px;
+  }
+
   .popular {
     background: rgba(130, 187, 8, 0.13);
     border-radius: 10px;
@@ -21,6 +26,10 @@
     visibility: hidden;
     margin-bottom: 32px;
 
+    @media screen and (max-width: 768px) {
+      margin-bottom: 16px;
+    }
+
     &.show {
       visibility: visible;
     }
@@ -31,6 +40,10 @@
     line-height: 28px;
     color: #f1f2f0;
     margin-bottom: 22px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   .text {
@@ -40,6 +53,11 @@
     color: #f1f2f0;
     margin-bottom: 29px;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
   }
 
   .price {
@@ -50,17 +68,26 @@
     color: #f1f2f0;
     margin-bottom: 22px;
 
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+
     .period {
       font-family: var(--font-text);
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
+      margin-bottom: 11px;
     }
   }
 
   .startButton {
     width: 100%;
     margin-bottom: 29px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 14px;
+    }
   }
 
   .benefits {

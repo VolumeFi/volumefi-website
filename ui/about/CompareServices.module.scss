@@ -4,10 +4,21 @@
   align-items: center;
   margin-top: 151px;
 
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+    padding: 0px 16px;
+  }
+
   .title {
     font-size: 32px;
     line-height: 40px;
     font-weight: bold;
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      line-height: 34px;
+      text-align: center;
+    }
   }
 
   .description {
@@ -17,6 +28,16 @@
     margin-top: 16px;
     max-width: 800px;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .scrollWrapper {
+    width: 100%;
+    overflow-x: auto;
   }
 
   .serviceContainer {
@@ -25,5 +46,11 @@
     width: 100%;
     justify-content: space-around;
     margin-top: 98px;
+
+    @media screen and (max-width: 768px) {
+      width: fit-content;
+      margin-top: 50px;
+      justify-content: flex-start;
+    }
   }
 }

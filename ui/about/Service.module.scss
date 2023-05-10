@@ -3,6 +3,11 @@
   flex: 1;
   color: #f1f1ef;
 
+  @media screen and (max-width: 768px) {
+    width: 130px;
+    flex: unset;
+  }
+
   &.border {
     border: 2px solid #8abd1f;
     border-radius: 16px;
@@ -11,6 +16,11 @@
   &.header {
     max-width: 277px;
     flex: auto;
+
+    @media screen and (max-width: 768px) {
+      width: 190px;
+      max-width: unset;
+    }
   }
 
   .company {
@@ -20,8 +30,16 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 768px) {
+      height: 60px;
+    }
+
     .logo {
       width: 50%;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
     }
   }
 
@@ -37,6 +55,11 @@
     background: #323333;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+      font-weight: 16px;
+    }
 
     &.center {
       justify-content: center;

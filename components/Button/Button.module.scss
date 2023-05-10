@@ -26,4 +26,12 @@
   &.text {
     background: transparent;
   }
+
+  &.link {
+    background: transparent;
+    font-size: 15px;
+    line-height: 22px;
+    color: #babbbb;
+    height: fit-content;
+  }
 }
