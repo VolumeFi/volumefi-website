@@ -13,6 +13,8 @@ interface ButtonProps {
   target?: string;
   className?: string;
   onClick?: () => void;
+  disabled?: boolean;
+  fullWidth?: boolean;
 }
 
 export const Button = ({
@@ -22,12 +24,19 @@ export const Button = ({
   className,
   onClick,
   children,
+  disabled,
+  fullWidth,
 }: PropsWithChildren<ButtonProps>) => {
   const content = children ?? label;
 
   return (
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    <button type={type} className={classNames(style.container, style[variant], className)} onClick={(e) => onClick?.()}>
+    <button
+      type={type}
+      className={classNames(style.container, style[variant], className, { [style.fullWidth]: fullWidth })}
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      onClick={(e) => onClick?.()}
+      disabled={disabled}
+    >
       {content}
     </button>
   );

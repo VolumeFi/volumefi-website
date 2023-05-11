@@ -9,6 +9,10 @@ import style from 'ui/header/desktop/DesktopHeader.module.scss';
 const DesktopHeader = () => {
   const router = useRouter();
 
+  const handleJoinWaitlist = () => {
+    router.push(StaticLink.Signup);
+  };
+
   return (
     <section className={style.container}>
       <section className={style.headerContainer}>
@@ -27,7 +31,7 @@ const DesktopHeader = () => {
         </section>
         <section className={style.communityWrapper}>
           <Link href={ExternalLink.Discord} target="_blank" label="Community" />
-          <Button label="Join the Waitlist" />
+          <Button label="Join the Waitlist" onClick={handleJoinWaitlist} />
         </section>
       </section>
     </section>

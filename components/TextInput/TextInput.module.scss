@@ -1,0 +1,23 @@
+.input {
+  border: 1px solid #f1f2f0;
+  border-radius: 5px;
+  color: #fff;
+  background: #303030;
+  outline: none;
+  padding: 0px 8px;
+  height: 46px;
+
+  &:disabled {
+    color: #565656;
+    cursor: not-allowed;
+  }
+
+  &.textarea {
+    height: fit-content;
+    padding: 8px;
+  }
+
+  &.fullWidth {
+    width: 100%;
+  }
+}

@@ -8,6 +8,10 @@
   line-height: 24px;
   cursor: pointer;
 
+  &.fullWidth {
+    width: 100%;
+  }
+
   &.primary {
     background: #8abd1f;
     color: #272828;
@@ -33,5 +37,10 @@
     line-height: 22px;
     color: #babbbb;
     height: fit-content;
+  }
+
+  &:disabled {
+    background: #565656;
+    cursor: not-allowed;
   }
 }
