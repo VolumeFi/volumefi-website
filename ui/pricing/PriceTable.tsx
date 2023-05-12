@@ -1,4 +1,4 @@
-import { priceOptions } from 'configs/services';
+import { priceOptions } from 'shared/configs/services';
 import SectionContainer from 'ui/common/SectionContainer';
 import PriceOption from 'ui/pricing/PriceOption';
 import style from 'ui/pricing/PriceTable.module.scss';

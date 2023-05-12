@@ -1,13 +1,17 @@
 import classNames from 'classnames';
 import { Button } from 'components/Button';
 import { Link } from 'components/Link';
-import { ExternalLink, StaticLink } from 'configs/links';
-import { headerMenus } from 'configs/menus';
 import { useRouter } from 'next/router';
+import { ExternalLink, StaticLink } from 'shared/configs/links';
+import { headerMenus } from 'shared/configs/menus';
 import style from 'ui/header/desktop/DesktopHeader.module.scss';
 
 const DesktopHeader = () => {
   const router = useRouter();
+
+  const handleJoinWaitlist = () => {
+    router.push(StaticLink.Signup);
+  };
 
   return (
     <section className={style.container}>
@@ -27,7 +31,7 @@ const DesktopHeader = () => {
         </section>
         <section className={style.communityWrapper}>
           <Link href={ExternalLink.Discord} target="_blank" label="Community" />
-          <Button label="Join the Waitlist" />
+          <Button label="Join the Waitlist" onClick={handleJoinWaitlist} />
         </section>
       </section>
     </section>

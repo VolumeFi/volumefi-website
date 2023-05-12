@@ -1,5 +1,5 @@
 import { Box } from 'components/Box';
-import { productsAndService } from 'configs/home';
+import { productsAndService } from 'shared/configs/home';
 import style from 'ui/about/ProductsAndService.module.scss';
 import SectionContainer from 'ui/common/SectionContainer';
 

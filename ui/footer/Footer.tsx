@@ -1,6 +1,6 @@
 import { Link } from 'components/Link';
-import { StaticLink } from 'configs/links';
-import { footerMenus } from 'configs/menus';
+import { StaticLink } from 'shared/configs/links';
+import { footerMenus } from 'shared/configs/menus';
 import SectionContainer from 'ui/common/SectionContainer';
 import style from 'ui/footer/Footer.module.scss';
 

@@ -1,8 +1,8 @@
 import classNames from 'classnames';
-import { supportingServices } from 'configs/services';
+import { supportingServices } from 'shared/configs/services';
 import style from 'ui/about/Service.module.scss';
 
-import type { ServiceCompany } from 'configs/services';
+import type { ServiceCompany } from 'shared/configs/services';
 
 interface ServiceProps {
   serviceCompany?: ServiceCompany;
