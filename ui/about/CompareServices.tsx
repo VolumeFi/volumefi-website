@@ -1,4 +1,4 @@
-import { serviceCompanies } from 'configs/services';
+import { serviceCompanies } from 'shared/configs/services';
 import style from 'ui/about/CompareServices.module.scss';
 import Service from 'ui/about/Service';
 import SectionContainer from 'ui/common/SectionContainer';

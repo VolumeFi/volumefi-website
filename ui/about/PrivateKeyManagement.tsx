@@ -1,5 +1,5 @@
 import { Box } from 'components/Box';
-import { privateKeyManagement } from 'configs/home';
+import { privateKeyManagement } from 'shared/configs/home';
 import style from 'ui/about/PrivateKeyManagement.module.scss';
 import SectionContainer from 'ui/common/SectionContainer';
 

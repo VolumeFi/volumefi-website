@@ -1,5 +1,5 @@
-import { envParam } from 'configs/constants';
 import { api } from 'services';
+import { envParam } from 'shared/configs/constants';
 
 const injectedRtkApi = api.injectEndpoints({
   endpoints: (build) => ({

@@ -1,6 +1,6 @@
 import { Button } from 'components/Button';
-import { StaticLink } from 'configs/links';
 import { useRouter } from 'next/router';
+import { StaticLink } from 'shared/configs/links';
 import style from 'ui/about/Intro.module.scss';
 import SectionContainer from 'ui/common/SectionContainer';
 

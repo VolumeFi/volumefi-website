@@ -1,5 +1,5 @@
-import { StaticLink } from 'configs/links';
 import { useRouter } from 'next/router';
+import { StaticLink } from 'shared/configs/links';
 import style from 'ui/about/index.module.scss';
 import Panel from 'ui/common/Panel';
 import Intro from 'ui/pricing/Intro';

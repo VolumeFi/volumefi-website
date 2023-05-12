@@ -1,4 +1,4 @@
-import { ExternalLink, StaticLink } from 'configs/links';
+import { ExternalLink, StaticLink } from 'shared/configs/links';
 
 interface Menu {
   title: string;

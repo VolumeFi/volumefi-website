@@ -1,17 +1,11 @@
 import type { PropsWithChildren } from 'react';
 
+import Head from 'next/head';
 import Footer from 'ui/footer/Footer';
 import Header from 'ui/header';
 import style from 'ui/main/Main.module.scss';
 
-import type { Router } from 'next/router';
-import Head from 'next/head';
-
-interface MainContainerProps {
-  router: Router;
-}
-
-const MainContainer = ({ children }: PropsWithChildren<MainContainerProps>) => (
+const MainContainer = ({ children }: PropsWithChildren) => (
   <>
     <Head>
       <title>Volume</title>

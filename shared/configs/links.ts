@@ -4,6 +4,7 @@ export enum StaticLink {
   Pricing = '/pricing',
   Careers = '/careers',
   Signup = '/signup',
+  SignupSuccess = '/signup/success',
 }
 
 export enum ExternalLink {

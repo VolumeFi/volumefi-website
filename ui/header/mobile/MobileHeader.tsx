@@ -3,9 +3,9 @@ import { useState } from 'react';
 import classNames from 'classnames';
 import { Button } from 'components/Button';
 import { Link } from 'components/Link';
-import { StaticLink } from 'configs/links';
-import { headerMenus } from 'configs/menus';
 import { useRouter } from 'next/router';
+import { StaticLink } from 'shared/configs/links';
+import { headerMenus } from 'shared/configs/menus';
 import style from 'ui/header/mobile/MobileHeader.module.scss';
 
 const MobileHeader = () => {

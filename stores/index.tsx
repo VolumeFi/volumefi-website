@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { api } from 'services';
+import requestTool from 'shared/tools/request';
 import commonReducer from 'stores/common';
-import requestTool from 'tools/request';
 
 const store = configureStore({
   reducer: {

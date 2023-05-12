@@ -1,9 +1,9 @@
 import classNames from 'classnames';
 import { Button } from 'components/Button';
-import { PriceType } from 'configs/services';
+import { PriceType } from 'shared/configs/services';
 import style from 'ui/pricing/PriceOption.module.scss';
 
-import type { PriceOption } from 'configs/services';
+import type { PriceOption } from 'shared/configs/services';
 
 interface PriceOptionProps {
   priceOption: PriceOption;

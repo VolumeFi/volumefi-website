@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 
 import { FormInput, FormSelect } from 'components/Form';
-import { signupSchema } from 'configs/schemas';
-import { businessSectorOptions } from 'configs/signup';
 import { useFormik } from 'formik';
+import { signupSchema } from 'shared/configs/schemas';
+import { businessSectorOptions } from 'shared/configs/signup';
 import style from 'ui/signup/SignupForm.module.scss';
 
 export interface FormValue {

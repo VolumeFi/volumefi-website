@@ -1,4 +1,4 @@
-import { ExternalLink } from 'configs/links';
+import { ExternalLink } from 'shared/configs/links';
 import style from 'ui/careers/index.module.scss';
 import SectionContainer from 'ui/common/SectionContainer';
 
