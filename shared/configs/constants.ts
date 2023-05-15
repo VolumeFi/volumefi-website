@@ -3,10 +3,10 @@ export enum Environment {
   Development = 'development',
 }
 
-const envParam = {
+const envParams = {
   environment: process.env.ENVIRONMENT ?? Environment.Production,
   baseUrl: process.env.BASE_URL ?? '',
-  palomaNestServiceAPIBaseUrl: process.env.PALOMA_NEST_SERVICE_API_BASE_URL ?? '',
+  apiVolumeService: process.env.API_VOLUME_SERVICE ?? '',
 };
 
-export { envParam };
+export { envParams };
