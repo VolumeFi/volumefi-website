@@ -13,7 +13,7 @@ export interface FormValue {
   email?: string;
   jobTitle?: string;
   businessSector?: string;
-  hearFrom?: string;
+  hearAboutUs?: string;
 }
 
 interface SignupFormProps {
@@ -111,10 +111,10 @@ const SignupForm = ({ showErrors, initialValues, onUpdate }: SignupFormProps) =>
           stacked
           type="textarea"
           title="How did you hear about us?"
-          value={formik.values.hearFrom ?? ''}
-          error={formik.errors.hearFrom}
+          value={formik.values.hearAboutUs ?? ''}
+          error={formik.errors.hearAboutUs}
           showErrors={showErrors}
-          onChange={async (val) => formik.setFieldValue('hearFrom', val)}
+          onChange={async (val) => formik.setFieldValue('hearAboutUs', val)}
         />
       </section>
     </section>

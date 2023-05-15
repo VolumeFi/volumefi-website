@@ -1,0 +1,76 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/users/signup": {
+      "post": {
+        "operationId": "UserController_create",
+        "summary": "Signup new user",
+        "description": "Creates a new signup user to Volume.",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": { "application/json": { "schema": { "$ref": "#/components/schemas/CreateUserDto" } } }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": { "schema": { "$ref": "#/components/schemas/CreateUserSuccessResponseDto" } }
+            }
+          },
+          "400": {
+            "description": "Error creating user in db, check the createUserDto for more details.",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/BadRequestResponseDto" } } }
+          }
+        },
+        "tags": ["Users"]
+      }
+    }
+  },
+  "info": { "title": "Volume API", "description": "API for Volume Service", "version": "1.0", "contact": {} },
+  "tags": [],
+  "servers": [{ "url": "http://localhost:4201" }],
+  "components": {
+    "schemas": {
+      "CreateUserDto": {
+        "type": "object",
+        "properties": {
+          "firstName": { "type": "string", "description": "First name for user", "example": "John" },
+          "lastName": { "type": "string", "description": "Last name for user", "example": "Smith" },
+          "companyName": { "type": "string", "description": "Company name for user", "example": "Company A" },
+          "email": { "type": "string", "description": "Email for user", "example": "john@mail.com" },
+          "jobTitle": { "type": "string", "description": "Job title for user", "example": "Head of Engineering" },
+          "businessSector": {
+            "type": "string",
+            "description": "Business sector for user",
+            "example": "CRYPTO_TRADING"
+          },
+          "hearAboutUs": { "type": "string", "description": "How did you hear about us?", "example": "Twitter" }
+        },
+        "required": ["firstName", "lastName", "companyName", "email", "jobTitle", "businessSector", "hearAboutUs"]
+      },
+      "CreateUserSuccessResponseDto": {
+        "type": "object",
+        "properties": {
+          "success": { "type": "boolean", "description": "Is Success?", "example": true },
+          "message": { "type": "string", "description": "Success message", "example": "Create a new user successfully" }
+        },
+        "required": ["success", "message"]
+      },
+      "BadRequestResponseDto": {
+        "type": "object",
+        "properties": {
+          "statusCode": { "type": "number", "description": "The status code of the error.", "example": 400 },
+          "message": {
+            "description": "The error message",
+            "example": "Invalid data",
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "error": { "type": "string", "description": "The error type.", "example": "Bad Request" }
+        },
+        "required": ["statusCode", "message", "error"]
+      }
+    }
+  }
+}

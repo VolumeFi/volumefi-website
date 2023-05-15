@@ -2,6 +2,7 @@
 import { isRejectedWithValue } from '@reduxjs/toolkit';
 
 import type { MiddlewareAPI, Action } from '@reduxjs/toolkit';
+import type { FetchArgs } from '@reduxjs/toolkit/dist/query';
 
 const exceptionEndpoints = [];
 const rtkQueryErrorHandler =
@@ -18,8 +19,15 @@ const rtkQueryErrorHandler =
     return next(action);
   };
 
+const buildAdjestedRequestUrl = (baseUrl: string | undefined, args: string | FetchArgs) => {
+  const urlEnd = typeof args === 'string' ? args : args.url;
+  const adjustedUrl = `${baseUrl ?? ''}${urlEnd}`;
+  const adjustedArgs = typeof args === 'string' ? adjustedUrl : { ...args, url: adjustedUrl };
+  return adjustedArgs;
+};
 const request = {
   rtkQueryErrorHandler,
+  buildAdjestedRequestUrl,
 };
 
 export default request;

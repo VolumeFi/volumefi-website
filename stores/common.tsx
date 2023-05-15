@@ -11,12 +11,10 @@ interface Message {
 
 export interface CommonState {
   messages: Message[];
-  showSideBar: boolean;
 }
 
 const initialState: CommonState = {
   messages: [],
-  showSideBar: false,
 };
 
 const addMessage = (state: CommonState, action: PayloadAction<Message>) => {

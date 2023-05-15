@@ -1,17 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { api } from 'services';
+import { volumeApi } from 'services/volume';
 import requestTool from 'shared/tools/request';
 import commonReducer from 'stores/common';
 
 const store = configureStore({
   reducer: {
     common: commonReducer,
-    [api.reducerPath]: api.reducer,
+    [volumeApi.reducerPath]: volumeApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: false,
-    }).concat(api.middleware, requestTool.rtkQueryErrorHandler),
+    }).concat(volumeApi.middleware, requestTool.rtkQueryErrorHandler),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

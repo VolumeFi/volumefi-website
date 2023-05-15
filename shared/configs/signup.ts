@@ -3,30 +3,30 @@ import type { SelectOption } from 'components/Select';
 export const businessSectorOptions: SelectOption[] = [
   {
     label: 'Crypto Trading',
-    value: 'Crypto Trading',
+    value: 'CRYPTO_TRADING',
   },
   {
     label: 'Retail Services',
-    value: 'Retail Services',
+    value: 'RETAIL_SERVICES',
   },
   {
     label: 'Bank',
-    value: 'Bank',
+    value: 'BANK',
   },
   {
     label: 'Financial Market Infrastructure',
-    value: 'Financial Market Infrastructure',
+    value: 'FINANCIAL_MARKET_INFRASTRUCTURE',
   },
   {
     label: 'Payments',
-    value: 'Payments',
+    value: 'PAYMENTS',
   },
   {
     label: 'Financial Services',
-    value: 'Financial Services',
+    value: 'FINANCIAL_SERVICES',
   },
   {
     label: 'Non-Financial',
-    value: 'Non-Financial',
+    value: 'NON_FINANCIAL',
   },
 ];
