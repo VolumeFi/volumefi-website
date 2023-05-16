@@ -39,10 +39,10 @@ export const priceOptions: PriceOption[] = [
     isPopular: false,
     benefits: [
       {
-        name: '25 API Calls/seconds',
+        name: '25 API Calls/second',
       },
       {
-        name: '20,000 Call Request',
+        name: '20,000 Call Requests',
       },
       {
         name: '1 Blockchain Access',
@@ -71,7 +71,7 @@ export const priceOptions: PriceOption[] = [
         name: 'Fiat On-ramp and Off-ramp',
       },
       {
-        name: '99% Uptime SLA',
+        name: '100% Uptime SLA',
       },
       {
         name: 'Limited Support <48 hour revert',
@@ -88,10 +88,10 @@ export const priceOptions: PriceOption[] = [
     isPopular: true,
     benefits: [
       {
-        name: '100 API Call/seconds',
+        name: '100 API Calls/second',
       },
       {
-        name: '100,000 Call Request',
+        name: '100,000 Call Requests',
       },
       {
         name: '3 Blockchain Access',
@@ -121,24 +121,24 @@ export const priceOptions: PriceOption[] = [
         name: '100% Uptime SLA',
       },
       {
-        name: '5 days a week Support, office hours',
+        name: '5 Days a week Support, office hours',
       },
     ],
   },
   {
     name: PriceType.Business,
     price: {
-      name: '$99',
-      value: 99,
+      name: '$299',
+      value: 299,
       period: 'month',
     },
     isPopular: false,
     benefits: [
       {
-        name: '200 API Call/seconds',
+        name: '200 API Calls/second',
       },
       {
-        name: '500,000 Call Request',
+        name: '500,000 Call Requests',
       },
       {
         name: 'Unlimited Blockchain Access',
