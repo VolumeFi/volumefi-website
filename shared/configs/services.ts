@@ -39,10 +39,10 @@ export const priceOptions: PriceOption[] = [
     isPopular: false,
     benefits: [
       {
-        name: '25 API Calls/seconds',
+        name: '25 API Calls/second',
       },
       {
-        name: '20,000 Call Request',
+        name: '20,000 Call Requests',
       },
       {
         name: '1 Blockchain Access',
@@ -88,10 +88,10 @@ export const priceOptions: PriceOption[] = [
     isPopular: true,
     benefits: [
       {
-        name: '100 API Call/seconds',
+        name: '100 API Calls/second',
       },
       {
-        name: '100,000 Call Request',
+        name: '100,000 Call Requests',
       },
       {
         name: '3 Blockchain Access',
@@ -135,10 +135,10 @@ export const priceOptions: PriceOption[] = [
     isPopular: false,
     benefits: [
       {
-        name: '200 API Call/seconds',
+        name: '200 API Calls/second',
       },
       {
-        name: '500,000 Call Request',
+        name: '500,000 Call Requests',
       },
       {
         name: 'Unlimited Blockchain Access',
