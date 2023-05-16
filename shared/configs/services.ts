@@ -71,7 +71,7 @@ export const priceOptions: PriceOption[] = [
         name: 'Fiat On-ramp and Off-ramp',
       },
       {
-        name: '99% Uptime SLA',
+        name: '100% Uptime SLA',
       },
       {
         name: 'Limited Support <48 hour revert',
@@ -121,7 +121,7 @@ export const priceOptions: PriceOption[] = [
         name: '100% Uptime SLA',
       },
       {
-        name: '5 days a week Support, office hours',
+        name: '5 Days a week Support, office hours',
       },
     ],
   },
