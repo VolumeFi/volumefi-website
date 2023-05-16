@@ -128,8 +128,8 @@ export const priceOptions: PriceOption[] = [
   {
     name: PriceType.Business,
     price: {
-      name: '$99',
-      value: 99,
+      name: '$299',
+      value: 299,
       period: 'month',
     },
     isPopular: false,
