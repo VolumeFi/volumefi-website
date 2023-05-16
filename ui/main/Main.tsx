@@ -15,7 +15,7 @@ const MainContainer = ({ children }: PropsWithChildren) => (
     <main>
       <section className={style.container}>
         <Header />
-        {children}
+        <section className={style.pageContainer}>{children}</section>
         <Footer />
       </section>
     </main>
