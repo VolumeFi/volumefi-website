@@ -5,6 +5,9 @@ export enum StaticLink {
   Careers = '/careers',
   Signup = '/signup',
   SignupSuccess = '/signup/success',
+  PalomaSwap = '/products/paloma-swap',
+  PalomaBot = '/products/paloma-bot',
+  VolumeSDK = '/products/volume-sdk',
 }
 
 export enum ExternalLink {

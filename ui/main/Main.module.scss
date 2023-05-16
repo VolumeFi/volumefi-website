@@ -2,3 +2,11 @@
   width: 100vw;
   max-width: 100%;
 }
+
+.pageContainer {
+  min-height: calc(100vh - var(--desktop-header-height) - 408px);
+
+  @media screen and (max-width: 768px) {
+    min-height: calc(100vh - var(--mobile-header-height) - 691px);
+  }
+}

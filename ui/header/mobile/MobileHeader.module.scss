@@ -53,4 +53,12 @@
       color: #9adf06;
     }
   }
+
+  .subMenuWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    padding-left: 16px;
+  }
 }

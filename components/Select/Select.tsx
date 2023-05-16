@@ -5,7 +5,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import style from 'components/Select/Select.module.scss';
-import { useOutsideAlerter } from 'shared/hooks';
+import { useOnClickOutside } from 'shared/hooks';
 
 import type { SelectOption } from 'components/Select/types';
 
@@ -31,7 +31,7 @@ export const Select = ({
   const ref = useRef(null);
   const [showOptions, setShowOptions] = useState(false);
 
-  useOutsideAlerter(ref, () => {
+  useOnClickOutside(ref, () => {
     setShowOptions(false);
   });
 

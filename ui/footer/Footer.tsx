@@ -15,18 +15,14 @@ const Footer = () => (
         </section>
         <section className={style.menuWrapper}>
           {footerMenus.map((parentFooterMenu) => (
-            <section key={parentFooterMenu.title} className={style.menuBlock}>
-              {parentFooterMenu.href ? (
-                <Link className={style.menuLink} href={parentFooterMenu.href} target={parentFooterMenu.target}>
-                  {parentFooterMenu.title}
-                </Link>
-              ) : (
-                <div className={style.menuLink}>{parentFooterMenu.title}</div>
-              )}
+            <section key={parentFooterMenu.id} className={style.menuBlock}>
+              <Link className={style.menuLink} href={parentFooterMenu.href} target={parentFooterMenu.target}>
+                {parentFooterMenu.title}
+              </Link>
               <section className={style.subMenu}>
                 {parentFooterMenu.subMenus?.map((subFooterMenu) => (
                   <Link
-                    key={`${parentFooterMenu.title}-${subFooterMenu.title}`}
+                    key={subFooterMenu.id}
                     className={style.subMenuLink}
                     href={subFooterMenu.href}
                     target={subFooterMenu.target}
