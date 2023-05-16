@@ -1,3 +1,5 @@
+import VolumeSDKContainer from 'ui/products/volume-sdk';
+
 export default function VolumeSDKPage() {
-  return <div></div>;
+  return <VolumeSDKContainer />;
 }

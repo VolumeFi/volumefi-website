@@ -10,27 +10,27 @@ interface Menu {
 }
 
 export const headerMenus: Menu[] = [
-  {
-    id: 'products',
-    title: 'Volume Products',
-    subMenus: [
-      {
-        id: 'products/paloma-swap',
-        title: 'PalomaSwap',
-        href: StaticLink.PalomaSwap,
-      },
-      {
-        id: 'products/paloma-bot',
-        title: 'Paloma Bot',
-        href: StaticLink.PalomaBot,
-      },
-      {
-        id: 'products/volume-sdk',
-        title: 'Volume SDK',
-        href: StaticLink.VolumeSDK,
-      },
-    ],
-  },
+  // {
+  //   id: 'products',
+  //   title: 'Volume Products',
+  //   subMenus: [
+  //     {
+  //       id: 'products/paloma-swap',
+  //       title: 'PalomaSwap',
+  //       href: StaticLink.PalomaSwap,
+  //     },
+  //     {
+  //       id: 'products/paloma-bot',
+  //       title: 'Paloma Bot',
+  //       href: StaticLink.PalomaBot,
+  //     },
+  //     {
+  //       id: 'products/volume-sdk',
+  //       title: 'Volume SDK',
+  //       href: StaticLink.VolumeSDK,
+  //     },
+  //   ],
+  // },
   {
     id: 'pricing',
     title: 'Pricing',
