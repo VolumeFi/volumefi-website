@@ -1,0 +1,31 @@
+.container {
+  margin-top: 91px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 32px;
+    padding: 0px 16px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+    color: #f1f2f0;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+      line-height: 46px;
+    }
+  }
+
+  .blogListWrapper {
+    margin-top: 63px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 32px;
+    }
+  }
+}
