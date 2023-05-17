@@ -19,19 +19,21 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
+    max-width: 734px;
+    margin: 0px auto;
   }
 
   .intro {
-    margin-top: 30px;
+    margin: 30px auto 0px;
     max-width: 734px;
 
     @media screen and (max-width: 768px) {
-      margin-top: 15px;
+      margin: 15px auto 0px;
     }
   }
 
   .post {
-    margin-top: 30px;
+    margin: 30px auto 0px;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
@@ -39,7 +41,7 @@
     max-width: 734px;
 
     @media screen and (max-width: 768px) {
-      margin-top: 15px;
+      margin: 15px auto 0px;
       font-size: 15px;
       line-height: 21px;
     }
