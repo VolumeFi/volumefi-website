@@ -7,6 +7,7 @@ const envParams = {
   environment: process.env.ENVIRONMENT ?? Environment.Production,
   baseUrl: process.env.BASE_URL ?? '',
   apiVolumeService: process.env.API_VOLUME_SERVICE ?? '',
+  storyblokAccessToken: process.env.STORYBLOK_ACCESS_TOKEN ?? '',
 };
 
 export { envParams };

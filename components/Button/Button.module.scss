@@ -31,6 +31,12 @@
     background: transparent;
   }
 
+  &.outline {
+    border: 1px solid #8abd1f;
+    background: transparent;
+    color: #8abd1f;
+  }
+
   &.link {
     background: transparent;
     font-size: 15px;

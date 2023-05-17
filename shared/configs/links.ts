@@ -8,6 +8,7 @@ export enum StaticLink {
   PalomaSwap = '/products/paloma-swap',
   PalomaBot = '/products/paloma-bot',
   VolumeSDK = '/products/volume-sdk',
+  Blog = '/blog',
 }
 
 export enum ExternalLink {
@@ -18,3 +19,5 @@ export enum ExternalLink {
   PalomaBot = 'https://www.palomabot.ai/',
   Lever = 'https://jobs.lever.co/volume-finance',
 }
+
+export const getBlogDetailLink = (slug: string) => `${StaticLink.Blog}/${slug}`;
