@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Head from 'next/head';
 
 const BlogHeadSeo = ({ description, title, content }) => {
@@ -7,7 +8,7 @@ const BlogHeadSeo = ({ description, title, content }) => {
   let metaImage = content ? content.image : '';
   metaImage = 'http:' + metaImage;
 
-  let pageTitle = content ? content.title : 'Volume Finance';
+  const pageTitle = content ? content.title : 'Volume Finance';
 
   return (
     <Head>

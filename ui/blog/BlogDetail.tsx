@@ -1,14 +1,12 @@
 import { useEffect } from 'react';
-import { render, NODE_IMAGE } from 'storyblok-rich-text-react-renderer';
 
-import { useStoryBlok } from 'services/storyblok';
-import style from 'ui/blog/BlogDetail.module.scss';
-import SectionContainer from 'ui/common/SectionContainer';
-
-import BlogItem from 'ui/blog/BlogItem';
 import { useRouter } from 'next/router';
-import BlogHeadSeo from 'ui/blog/BlogHeadSeo';
+import { useStoryBlok } from 'services/storyblok';
 import dateTools from 'shared/tools/date';
+import { render, NODE_IMAGE } from 'storyblok-rich-text-react-renderer';
+import style from 'ui/blog/BlogDetail.module.scss';
+import BlogHeadSeo from 'ui/blog/BlogHeadSeo';
+import SectionContainer from 'ui/common/SectionContainer';
 
 const BlogDetail = () => {
   const router = useRouter();
@@ -20,8 +18,8 @@ const BlogDetail = () => {
     fetchBlogs();
   }, [slug]);
 
-  if (isLoading || !post) return;
-  console.log(post);
+  if (isLoading || !post) return null;
+
   return (
     <>
       <BlogHeadSeo title="Volume Finance" description="" content={post.content} />
