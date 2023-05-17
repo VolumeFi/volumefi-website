@@ -1,0 +1,100 @@
+.container {
+  margin-top: 91px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 32px;
+    padding: 0px 16px;
+  }
+
+  .image {
+    width: 100%;
+    margin-bottom: 58px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 29px;
+    }
+  }
+
+  .date {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .intro {
+    margin-top: 30px;
+    max-width: 734px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 15px;
+    }
+  }
+
+  .post {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    max-width: 734px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 15px;
+      font-size: 15px;
+      line-height: 21px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 29px;
+      margin-bottom: 15px;
+      font-family: var(--font-text);
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .embed-responsive {
+      display: block;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+      width: 100%;
+    }
+
+    .embed-responsive-16by9:before {
+      padding-top: 56.25%;
+    }
+
+    .embed-responsive:before {
+      content: '';
+      display: block;
+    }
+
+    .embed-responsive .embed-responsive-item,
+    .embed-responsive embed,
+    .embed-responsive iframe,
+    .embed-responsive object,
+    .embed-responsive video {
+      border: 0;
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}

@@ -7,9 +7,9 @@
   gap: 40px;
 
   @media screen and (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 20px;
-    padding: 25px 22px;
+    padding: 0px;
     min-height: 230px;
   }
 
@@ -18,6 +18,10 @@
     flex-direction: column;
     gap: 10px;
     flex: 1;
+
+    @media screen and (max-width: 768px) {
+      padding: 15px;
+    }
   }
 
   .date {

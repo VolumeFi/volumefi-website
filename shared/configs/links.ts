@@ -19,3 +19,5 @@ export enum ExternalLink {
   PalomaBot = 'https://www.palomabot.ai/',
   Lever = 'https://jobs.lever.co/volume-finance',
 }
+
+export const getBlogDetailLink = (slug: string) => `${StaticLink.Blog}/${slug}`;

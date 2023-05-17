@@ -10,9 +10,14 @@ const Storyblok = new StoryblokClient({
   accessToken: envParams.storyblokAccessToken,
 });
 
-export const useStoryBlok = () => {
+interface useStoryBlokProps {
+  getBlogDetailBySlug?: string;
+}
+
+export const useStoryBlok = ({ getBlogDetailBySlug }: useStoryBlokProps) => {
   const [isLoading, setLoading] = useState(false);
   const [data, setData] = useState<any[]>([]);
+  const [detail, setDetail] = useState<any>();
 
   const fetchBlogs = async () => {
     setLoading(true);
@@ -27,6 +32,10 @@ export const useStoryBlok = () => {
       if (story.published_at != null) {
         if (story.full_slug.startsWith('blog/') && !story.full_slug.endsWith('blog/')) {
           blogs.push(story);
+
+          if (getBlogDetailBySlug && story.slug === getBlogDetailBySlug) {
+            setDetail(story);
+          }
         }
       }
     }
@@ -45,6 +54,7 @@ export const useStoryBlok = () => {
 
   return {
     data,
+    detail,
     isLoading,
     fetchBlogs,
   };
