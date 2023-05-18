@@ -3,6 +3,8 @@
   height: 224px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
   max-width: 1074px;
   margin: 191px auto 0px;
   padding: 40px 64px 40px 115px;
@@ -13,7 +15,7 @@
     padding: 30px 16px;
     height: auto;
     flex-direction: column;
-    max-width: 100%;
+    max-width: calc(100% - 32px);
 
     br {
       display: none;
@@ -50,11 +52,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    width: 100%;
+    max-width: 213px;
 
     @media screen and (max-width: 768px) {
       width: 100%;
       margin-top: 30px;
+      max-width: 100%;
     }
   }
 }

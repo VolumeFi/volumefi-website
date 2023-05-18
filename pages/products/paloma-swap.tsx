@@ -1,4 +1,4 @@
-import PalomaSwapContainer from 'ui/products/paloma-swap';
+import PalomaSwapContainer from 'ui/products/PalomaSwap';
 
 export default function PalomaSwapPage() {
   return <PalomaSwapContainer />;

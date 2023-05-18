@@ -1,7 +1,6 @@
 import { fetchBlogs } from 'services/storyblok/utils';
 import BlogDetailContainer from 'ui/blog/BlogDetail';
 
-
 export default function BlogDetailPage({ blog }) {
   return <BlogDetailContainer blog={blog} />;
 }
