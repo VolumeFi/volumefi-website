@@ -7,10 +7,10 @@ import SectionContainer from 'ui/common/SectionContainer';
 import BlogItem from './BlogItem';
 
 const BlogContainer = () => {
-  const { fetchBlogs, data: blogs } = useStoryBlok({});
+  const { getBlogs, data: blogs } = useStoryBlok({});
 
   useEffect(() => {
-    fetchBlogs();
+    getBlogs();
   }, []);
 
   return (
