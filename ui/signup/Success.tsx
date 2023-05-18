@@ -3,7 +3,7 @@ import { useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { StaticLink } from 'shared/configs/links';
 import { RouterContext as routerContext } from 'shared/context';
-import PalomaBot from 'ui/common/banners/PalomaBot';
+import PalomaBotBanner from 'ui/common/banners/PalomaBotBanner';
 import style from 'ui/signup/Success.module.scss';
 
 const Success = () => {
@@ -22,7 +22,7 @@ const Success = () => {
         <h1 className={style.title}>Thank you for signing up!</h1>
         <p className={style.sub}>You&apos;ll be notified when we open for subscriptions.</p>
       </section>
-      <PalomaBot className={style.banner} />
+      <PalomaBotBanner className={style.banner} />
     </section>
   );
 };

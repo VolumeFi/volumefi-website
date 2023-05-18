@@ -10,27 +10,27 @@ interface Menu {
 }
 
 export const headerMenus: Menu[] = [
-  // {
-  //   id: 'products',
-  //   title: 'Volume Products',
-  //   subMenus: [
-  //     {
-  //       id: 'products/paloma-swap',
-  //       title: 'PalomaSwap',
-  //       href: StaticLink.PalomaSwap,
-  //     },
-  //     {
-  //       id: 'products/paloma-bot',
-  //       title: 'Paloma Bot',
-  //       href: StaticLink.PalomaBot,
-  //     },
-  //     {
-  //       id: 'products/volume-sdk',
-  //       title: 'Volume SDK',
-  //       href: StaticLink.VolumeSDK,
-  //     },
-  //   ],
-  // },
+  {
+    id: 'products',
+    title: 'Volume Products',
+    subMenus: [
+      {
+        id: 'products/paloma-swap',
+        title: 'PalomaSwap',
+        href: StaticLink.PalomaSwap,
+      },
+      {
+        id: 'products/paloma-bot',
+        title: 'Paloma Bot',
+        href: StaticLink.PalomaBot,
+      },
+      {
+        id: 'products/volume-sdk',
+        title: 'Volume SDK',
+        href: StaticLink.VolumeSDK,
+      },
+    ],
+  },
   {
     id: 'pricing',
     title: 'Pricing',
@@ -61,19 +61,17 @@ export const footerMenus: Menu[] = [
       {
         id: 'footer/products/paloma-swap',
         title: 'Paloma Swap',
-        href: ExternalLink.PalomaSwap,
-        target: '_blank',
+        href: StaticLink.PalomaSwap,
       },
       {
         id: 'footer/products/paloma-bot',
         title: 'Paloma Bot',
-        href: ExternalLink.PalomaBot,
-        target: '_blank',
+        href: StaticLink.PalomaBot,
       },
       {
         id: 'footer/products/volume-sdk',
         title: 'Volume SDK',
-        href: StaticLink.Home,
+        href: StaticLink.VolumeSDK,
       },
     ],
   },

@@ -1,0 +1,47 @@
+.container {
+  background: #f9ddfb;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 927px;
+  height: 122px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 31px;
+  background: linear-gradient(99.5deg, rgba(0, 0, 0, 0.2) 0%, rgba(128, 164, 255, 0.2) 100%),
+    url('/assets/products/grid.png');
+  background-repeat: repeat;
+  margin: 0px auto;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 16px;
+    align-items: flex-start;
+    height: fit-content;
+    gap: 12px;
+
+    .image {
+      display: none;
+    }
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 40px;
+    font-family: var(--font-headings);
+    font-weight: 500;
+    color: #ffffff;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  .button {
+    background: #f9ddfb;
+    border-radius: 8px;
+    color: #272828;
+  }
+}

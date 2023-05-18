@@ -1,0 +1,65 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .palomaSwapIntroGrid {
+    width: 100%;
+    background: linear-gradient(277.96deg, rgba(255, 98, 196, 0.2) 0%, rgba(0, 0, 0, 0) 101.79%),
+      url('/assets/products/grid.png');
+    background-repeat: repeat;
+  }
+  .palomaSwapIntroButton {
+    background: #ffa6de;
+    color: #292829;
+  }
+  .palomaSwapProductsList {
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .palomaBotIntroGrid {
+    width: 100%;
+    background: linear-gradient(99.26deg, rgba(0, 0, 0, 0.2) 0%, rgba(128, 164, 255, 0.2) 137.77%),
+      url('/assets/products/grid.png');
+    background-repeat: repeat;
+  }
+  .palomaBotIntroButton {
+    background: #f9ddfb;
+    color: #272828;
+  }
+  .palomaBotProductsList {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .volumeSDKIntroGrid {
+    width: 100%;
+    background: linear-gradient(99.79deg, rgba(0, 0, 0, 0.2) 0%, rgba(130, 187, 8, 0.2) 155.99%),
+      url('/assets/products/grid.png');
+    background-repeat: repeat;
+  }
+  .volumeSDKProductsList {
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .bannerWrapper {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .volumeSDKBanner {
+    margin-top: 0px;
+  }
+}

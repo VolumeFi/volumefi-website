@@ -1,5 +1,4 @@
 .container {
-  background: #f9ddfb;
   border-radius: 10px;
   width: 100%;
   max-width: 927px;
@@ -7,7 +6,12 @@
   padding: 0px 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 31px;
+  background: linear-gradient(277.96deg, rgba(255, 98, 196, 0.2) 0%, rgba(0, 0, 0, 0) 101.79%),
+    url('/assets/products/grid.png');
+  background-repeat: repeat;
+  margin: 0px auto;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -26,11 +30,17 @@
     line-height: 40px;
     font-family: var(--font-headings);
     font-weight: 500;
-    color: #303030;
+    color: #ffffff;
 
     @media screen and (max-width: 768px) {
       font-size: 20px;
       line-height: 28px;
     }
+  }
+
+  .button {
+    color: #272828;
+    background: #ffa6de;
+    border-radius: 8px;
   }
 }

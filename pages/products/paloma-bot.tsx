@@ -1,4 +1,4 @@
-import PalomaBotContainer from 'ui/products/paloma-bot';
+import PalomaBotContainer from 'ui/products/PalomaBot';
 
 export default function PalomaBotPage() {
   return <PalomaBotContainer />;
