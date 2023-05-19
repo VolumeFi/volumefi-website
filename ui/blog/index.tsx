@@ -1,13 +1,12 @@
 import { useEffect } from 'react';
 
 import { useStoryBlok } from 'services/storyblok';
+import BlogItem from 'ui/blog/BlogItem';
 import style from 'ui/blog/index.module.scss';
 import SectionContainer from 'ui/common/SectionContainer';
 
-import BlogItem from './BlogItem';
-
 const BlogContainer = () => {
-  const { getBlogs, data: blogs } = useStoryBlok({});
+  const { getBlogs, blogs } = useStoryBlok({});
 
   useEffect(() => {
     getBlogs();

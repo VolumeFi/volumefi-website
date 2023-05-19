@@ -9,6 +9,7 @@ export enum StaticLink {
   PalomaBot = '/products/paloma-bot',
   VolumeSDK = '/products/volume-sdk',
   Blog = '/blog',
+  Events = '/events',
 }
 
 export enum ExternalLink {

@@ -1,4 +1,6 @@
 import classNames from 'classnames';
+import { useRouter } from 'next/router';
+import { StaticLink } from 'shared/configs/links';
 import { volumeSDKProducts } from 'shared/configs/products';
 import Panel from 'ui/common/Panel';
 import SectionContainer from 'ui/common/SectionContainer';
@@ -7,6 +9,8 @@ import ProductList from 'ui/products/common/ProductList';
 import style from 'ui/products/products.module.scss';
 
 const VolumeSDKContainer = () => {
+  const router = useRouter();
+
   return (
     <SectionContainer fullScreenWidth>
       <section className={style.container}>
@@ -15,6 +19,7 @@ const VolumeSDKContainer = () => {
           description="Programmable DeFi with the Volume SDK enables any developer to build and deploy decentralized key management applications with Volume."
           button={{
             text: 'Build now',
+            onClick: async () => router.push(StaticLink.Signup),
           }}
           className={classNames(style.volumeSDKIntroGrid)}
         />
