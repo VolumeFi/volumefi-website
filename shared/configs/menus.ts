@@ -51,6 +51,11 @@ export const headerMenus: Menu[] = [
     title: 'Blog',
     href: StaticLink.Blog,
   },
+  {
+    id: 'event',
+    title: 'Events',
+    href: StaticLink.Events,
+  },
 ];
 
 export const footerMenus: Menu[] = [

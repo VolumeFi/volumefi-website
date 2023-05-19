@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 32px;
+    padding: 0px 16px;
+  }
+
+  .title {
+    margin-top: 107px;
+    font-size: 32px;
+    line-height: 40px;
+    color: #f1f2f0;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+      line-height: 46px;
+      margin-top: 51px;
+    }
+  }
+
+  .eventListWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 37px;
+    margin: 63px auto 0px;
+
+    @media screen and (max-width: 768px) {
+      margin: 32px auto 0px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .noEvents {
+    margin-top: 107px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 51px;
+    }
+  }
+}

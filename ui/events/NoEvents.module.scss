@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .image {
+    height: 95px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #989898;
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: #989898;
+    text-align: center;
+  }
+
+  .join {
+    margin-top: 43px;
+  }
+}
