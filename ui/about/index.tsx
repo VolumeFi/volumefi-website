@@ -4,6 +4,7 @@ import Intro from 'ui/about/Intro';
 import PrivateKeyManagement from 'ui/about/PrivateKeyManagement';
 import ProductsAndService from 'ui/about/ProductsAndService';
 import Panel from 'ui/common/Panel';
+import Testimonials from 'ui/about/Testimonials';
 
 const AboutContainer = () => (
   <section className={style.container}>
@@ -11,6 +12,7 @@ const AboutContainer = () => (
     <ProductsAndService />
     {/* <TotalTransactions /> */}
     <PrivateKeyManagement />
+    <Testimonials />
     <CompareServices />
     <Panel
       title={
