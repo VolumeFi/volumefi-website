@@ -1,0 +1,11 @@
+.container {
+  tr {
+    background: #323333;
+    height: 67px;
+    color: #ffffff;
+
+    &:nth-child(even) {
+      background: #3a3a3a;
+    }
+  }
+}

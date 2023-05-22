@@ -5,6 +5,7 @@
   align-items: center;
   max-width: 320px;
   background: #303030;
+  gap: 28px;
 
   &.popular {
     background: rgba(86, 101, 53, 0.15);
@@ -32,7 +33,6 @@
     justify-content: center;
     align-items: center;
     visibility: hidden;
-    margin-bottom: 32px;
 
     @media screen and (max-width: 768px) {
       margin-bottom: 16px;
@@ -47,7 +47,6 @@
     font-size: 32px;
     line-height: 28px;
     color: #f1f2f0;
-    margin-bottom: 28px;
 
     @media screen and (max-width: 768px) {
       font-size: 24px;
@@ -60,7 +59,6 @@
     font-size: 32px;
     line-height: 28px;
     color: #f1f2f0;
-    margin-bottom: 22px;
 
     &.small {
       font-size: 20px;
@@ -75,35 +73,29 @@
       font-weight: normal;
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 11px;
     }
+  }
+
+  .divider {
+    width: 100%;
+    color: #f1f2f0;
   }
 
   .startButton {
     width: 100%;
-    margin-bottom: 29px;
-
-    @media screen and (max-width: 768px) {
-      margin-bottom: 14px;
-    }
   }
 
-  .benefits {
+  .descripitons {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    flex: 1;
 
-    .benefitWrapper {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-
-      svg {
-        height: 9px;
-        path {
-          fill: #000;
-        }
-      }
+    .description {
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #f1f2f0;
     }
   }
 }

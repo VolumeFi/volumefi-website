@@ -5,9 +5,10 @@ const Intro = () => (
   <SectionContainer>
     <section className={style.container}>
       <div className={style.textWrapper}>
-        <div className={style.sub}>Your keys, your money</div>
-        <h1 className={style.title}>Start Managing your Private Keys with Volume Now</h1>
-        <p className={style.description}>Contact us for a customized plan if you are ready to scale.</p>
+        <h1 className={style.title}>Volume Private Key Management</h1>
+        <p className={style.description}>
+          Start managing your Private Key Workflows on any target chain, today. The Volume team is here to help.
+        </p>
       </div>
     </section>
   </SectionContainer>
