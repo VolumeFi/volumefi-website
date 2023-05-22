@@ -37,7 +37,8 @@ export const privateKeyManagement = [
 export const testimonials = [
   {
     photo: '/assets/testimonials/matt.png',
-    saying: `"Volume's Decentralized Private Key Worfklow makes it easy and painless for me to receive digital payments from my institutional investors. No matter what stable token my wallets receive, I am automtically offramped into fiat without any need to sit and sign my transactions each time. What a time saver!”`,
+    saying:
+      '"Volume\'s Decentralized Private Key Worfklow makes it easy and painless for me to receive digital payments from my institutional investors. No matter what stable token my wallets receive, I am automtically offramped into fiat without any need to sit and sign my transactions each time. What a time saver!”',
     name: 'Matt Paterson',
     title: 'CEO Confluence',
   },

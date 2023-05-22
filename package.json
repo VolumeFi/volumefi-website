@@ -51,6 +51,7 @@
     "storyblok-js-client": "^5.10.5",
     "storyblok-rich-text-react-renderer": "^2.8.0",
     "styled-components": "^5.3.0",
+    "uuid": "^9.0.0",
     "yup": "^1.1.1"
   },
   "devDependencies": {

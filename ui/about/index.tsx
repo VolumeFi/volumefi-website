@@ -3,8 +3,8 @@ import style from 'ui/about/index.module.scss';
 import Intro from 'ui/about/Intro';
 import PrivateKeyManagement from 'ui/about/PrivateKeyManagement';
 import ProductsAndService from 'ui/about/ProductsAndService';
-import Panel from 'ui/common/Panel';
 import Testimonials from 'ui/about/Testimonials';
+import Panel from 'ui/common/Panel';
 
 const AboutContainer = () => (
   <section className={style.container}>

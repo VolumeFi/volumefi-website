@@ -1,7 +1,7 @@
+import { testimonials } from 'shared/configs/home';
 import style from 'ui/about/Testimonials.module.scss';
 import SectionContainer from 'ui/common/SectionContainer';
 
-import { testimonials } from 'shared/configs/home';
 const Testimonials = () => (
   <SectionContainer>
     <section className={style.container}>
