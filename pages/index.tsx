@@ -8,7 +8,7 @@ export default function HomePage() {
 
   useEffect(() => {
     if (router.route === '/') {
-      router.push(StaticLink.About);
+      router.push(StaticLink.Events);
     }
   }, [router]);
 }

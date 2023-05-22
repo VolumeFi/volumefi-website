@@ -1,4 +1,5 @@
 import { ExternalLink, StaticLink } from 'shared/configs/links';
+import { envParams } from './constants';
 
 interface Menu {
   id: string;
@@ -17,39 +18,39 @@ export const headerMenus: Menu[] = [
       {
         id: 'products/paloma-swap',
         title: 'PalomaSwap',
-        href: StaticLink.PalomaSwap,
+        href: `${envParams.baseUrl}${StaticLink.PalomaSwap}`,
       },
       {
         id: 'products/paloma-bot',
         title: 'Paloma Bot',
-        href: StaticLink.PalomaBot,
+        href: `${envParams.baseUrl}${StaticLink.PalomaBot}`,
       },
       {
         id: 'products/volume-sdk',
         title: 'Volume SDK',
-        href: StaticLink.VolumeSDK,
+        href: `${envParams.baseUrl}${StaticLink.VolumeSDK}`,
       },
     ],
   },
   {
     id: 'pricing',
     title: 'Pricing',
-    href: StaticLink.Pricing,
+    href: `${envParams.baseUrl}${StaticLink.Pricing}`,
   },
   {
     id: 'about',
     title: 'About',
-    href: StaticLink.About,
+    href: `${envParams.baseUrl}${StaticLink.About}`,
   },
   {
     id: 'careers',
     title: 'Careers',
-    href: StaticLink.Careers,
+    href: `${envParams.baseUrl}${StaticLink.Careers}`,
   },
   {
     id: 'blog',
     title: 'Blog',
-    href: StaticLink.Blog,
+    href: `${envParams.baseUrl}${StaticLink.Blog}`,
   },
   {
     id: 'event',
@@ -66,17 +67,17 @@ export const footerMenus: Menu[] = [
       {
         id: 'footer/products/paloma-swap',
         title: 'Paloma Swap',
-        href: StaticLink.PalomaSwap,
+        href: `${envParams.baseUrl}${StaticLink.PalomaSwap}`,
       },
       {
         id: 'footer/products/paloma-bot',
         title: 'Paloma Bot',
-        href: StaticLink.PalomaBot,
+        href: `${envParams.baseUrl}${StaticLink.PalomaBot}`,
       },
       {
         id: 'footer/products/volume-sdk',
         title: 'Volume SDK',
-        href: StaticLink.VolumeSDK,
+        href: `${envParams.baseUrl}${StaticLink.VolumeSDK}`,
       },
     ],
   },
@@ -87,22 +88,22 @@ export const footerMenus: Menu[] = [
       {
         id: 'footer/pricing/starter',
         title: 'Starter',
-        href: StaticLink.Pricing,
+        href: `${envParams.baseUrl}${StaticLink.Pricing}`,
       },
       {
         id: 'footer/pricing/pro',
         title: 'Pro',
-        href: StaticLink.Pricing,
+        href: `${envParams.baseUrl}${StaticLink.Pricing}`,
       },
       {
         id: 'footer/pricing/business',
         title: 'Business',
-        href: StaticLink.Pricing,
+        href: `${envParams.baseUrl}${StaticLink.Pricing}`,
       },
       {
         id: 'footer/pricing/enterprise',
         title: 'Enterprise',
-        href: StaticLink.Pricing,
+        href: `${envParams.baseUrl}${StaticLink.Pricing}`,
       },
     ],
   },
@@ -113,11 +114,11 @@ export const footerMenus: Menu[] = [
       {
         id: 'footer/company-assets/careers',
         title: 'Careers',
-        href: StaticLink.Careers,
+        href: `${envParams.baseUrl}${StaticLink.Careers}`,
       },
       // {
       //   title: 'Brand Assets',
-      //   href: StaticLink.Home,
+      //   href: `${envParams.baseUrl}${StaticLink.Home,
       // },
     ],
   },
@@ -128,19 +129,19 @@ export const footerMenus: Menu[] = [
       {
         id: 'footer/social-media/discord',
         title: 'Discord',
-        href: ExternalLink.Discord,
+        href: `${envParams.baseUrl}${ExternalLink.Discord}`,
         target: '_blank',
       },
       {
         id: 'footer/social-media/twitter',
         title: 'Twitter',
-        href: ExternalLink.Twitter,
+        href: `${envParams.baseUrl}${ExternalLink.Twitter}`,
         target: '_blank',
       },
       {
         id: 'footer/social-media/linkedin',
         title: 'Linkedin',
-        href: ExternalLink.Linkedin,
+        href: `${envParams.baseUrl}${ExternalLink.Linkedin}`,
         target: '_blank',
       },
     ],
