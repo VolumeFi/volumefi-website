@@ -3,7 +3,7 @@
 // any dev should be able to pick up this PR and understand its purpose and testing requirements.
 
 ## Issue number
-https://github.com/palomachain/paloma/issues/<ticket>
+https://github.com/VolumeFi/paloma/issues/<ticket>
 
 ## Testing steps for reviewer
 // Add a bulleted list of steps / test cases that you would like the reviewer
