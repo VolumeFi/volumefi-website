@@ -6,7 +6,8 @@
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    padding: 46px;
+    padding: 0px 16px;
+    margin: 46px 0px;
   }
 
   .title {
@@ -33,6 +34,10 @@
     min-height: 328px;
     color: #f1f2f0;
     border-radius: 10px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
 
     .imageWrapper {
       height: 83px;

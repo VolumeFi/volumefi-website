@@ -62,4 +62,12 @@
   .volumeSDKBanner {
     margin-top: 0px;
   }
+
+  .volumeCustodyIntroImage {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: calc(50% - 30px);
+    max-width: 600px;
+  }
 }
