@@ -21,8 +21,7 @@ const PricingContainer = () => {
       <Panel
         title={
           <>
-            Start building now{' '}
-            <br />
+            Start building now <br />
             using Volume SDK
           </>
         }

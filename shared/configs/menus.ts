@@ -42,6 +42,11 @@ export const headerMenus: Menu[] = [
     href: StaticLink.Pricing,
   },
   {
+    id: 'team',
+    title: 'Team',
+    href: StaticLink.Team,
+  },
+  {
     id: 'about',
     title: 'About',
     href: StaticLink.About,
