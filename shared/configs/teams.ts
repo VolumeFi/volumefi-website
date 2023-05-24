@@ -66,7 +66,7 @@ export const teamMembers: TeamMember[] = [
     photo: '/assets/teams/Cesar.png',
   },
   {
-    name: 'Jose manrique',
+    name: 'Jose Manrique',
     title: 'Business Development',
     photo: '/assets/teams/Jose.png',
   },
