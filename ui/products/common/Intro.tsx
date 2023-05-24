@@ -13,10 +13,11 @@ interface IntroProps {
     onClick?: () => void;
   };
   image?: string;
+  imageClassName?: string;
   className?: string;
 }
 
-const Intro = ({ title, description, button, image, className }: IntroProps) => (
+const Intro = ({ title, description, button, image, className, imageClassName }: IntroProps) => (
   <section className={classNames(style.container, className)}>
     <section className={style.titleWrapper}>
       <h1 className={style.title}>{title}</h1>
@@ -27,7 +28,7 @@ const Intro = ({ title, description, button, image, className }: IntroProps) => 
       </Button>
     </section>
     <section className={style.imageWrapper}>
-      <img src={image} />
+      <img src={image} className={imageClassName} />
     </section>
   </section>
 );

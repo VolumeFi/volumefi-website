@@ -17,10 +17,19 @@ const ProductList = ({ title, products, theme, className }: ProductListProps) =>
     <h2 className={style.title}>{title}</h2>
     <section className={classNames(style.productListWrapper, className)}>
       {products.map((item, index) => (
-        <Box key={`${item.text}-${index}`} className={style.product} fill="outline" color={theme}>
+        <Box key={`${item.title}-${index}`} className={style.product} fill="outline" color={theme}>
           <div className={style.imageWrapper}>{item.image && <img src={item.image} />}</div>
           <div className={style.productTitle}>{item.title}</div>
-          <p className={style.productText}>{item.text}</p>
+          {Array.isArray(item.text) && (
+            <ul>
+              {item.text.map((text, index2) => (
+                <li key={`${item.title}-${index}-${index2}`} className={style.productText}>
+                  {text}
+                </li>
+              ))}
+            </ul>
+          )}
+          {!Array.isArray(item.text) && <p className={style.productText}>{item.text}</p>}
         </Box>
       ))}
     </section>

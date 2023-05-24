@@ -8,8 +8,10 @@ export enum StaticLink {
   PalomaSwap = '/products/paloma-swap',
   PalomaBot = '/products/paloma-bot',
   VolumeSDK = '/products/volume-sdk',
+  VolumeCustody = '/products/volume-custody',
   Blog = '/blog',
   Events = '/events',
+  Team = '/team',
 }
 
 export enum ExternalLink {

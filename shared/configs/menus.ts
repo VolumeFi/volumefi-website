@@ -30,12 +30,22 @@ export const headerMenus: Menu[] = [
         title: 'Volume SDK',
         href: `${envParams.baseUrl}${StaticLink.VolumeSDK}`,
       },
+      {
+        id: 'products/volume-custodyu',
+        title: 'Volume Custody',
+        href: StaticLink.VolumeCustody,
+      },
     ],
   },
   {
     id: 'pricing',
     title: 'Pricing',
     href: `${envParams.baseUrl}${StaticLink.Pricing}`,
+  },
+  {
+    id: 'team',
+    title: 'Team',
+    href: StaticLink.Team,
   },
   {
     id: 'about',
