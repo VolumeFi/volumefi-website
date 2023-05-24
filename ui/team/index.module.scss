@@ -1,0 +1,55 @@
+.container {
+  margin: 88px auto;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    margin: 50px auto 0px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+      line-height: 46px;
+    }
+  }
+
+  .teamWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px;
+    max-width: 824px;
+    margin: 53px auto 0px;
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+
+  .memberWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+
+    .photo {
+      height: 142px;
+    }
+
+    .name {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    .title {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

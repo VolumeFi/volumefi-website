@@ -11,6 +11,7 @@ export enum StaticLink {
   VolumeCustody = '/products/volume-custody',
   Blog = '/blog',
   Events = '/events',
+  Team = '/team',
 }
 
 export enum ExternalLink {
