@@ -1,6 +1,5 @@
 export enum StaticLink {
   Home = '/',
-  About = '/about',
   Pricing = '/pricing',
   Careers = '/careers',
   Signup = '/signup',
@@ -15,7 +14,8 @@ export enum StaticLink {
 }
 
 export enum ExternalLink {
-  Discord = 'https://discord.gg/Ebh6YjMShu',
+  VolumeDiscord = 'https://discord.gg/Ebh6YjMShu',
+  PalomaDiscord = 'https://discord.gg/tNqkNHvVNc',
   Twitter = 'https://twitter.com/volumefi',
   Linkedin = 'https://www.linkedin.com/company/volumefi/',
   PalomaSwap = 'https://www.palomaswap.com/',

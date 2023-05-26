@@ -95,7 +95,7 @@ const DesktopHeader = () => {
           ))}
         </section>
         <section className={style.communityWrapper}>
-          <Link href={ExternalLink.Discord} target="_blank" label="Community" />
+          <Link href={ExternalLink.VolumeDiscord} target="_blank" label="Community" />
           <Button label="Join the Waitlist" onClick={handleJoinWaitlist} />
         </section>
       </section>
