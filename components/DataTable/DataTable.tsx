@@ -10,6 +10,7 @@ interface DataTableProps {
   columns: string[];
   data: any[];
   pagination?: React.ReactNode;
+  renderHeaders?: () => React.ReactNode;
   renderCells?: (item: any, index: number) => React.ReactNode;
   noContent?: React.ReactNode;
   className?: string;
@@ -20,6 +21,7 @@ export const DataTable = ({
   columns,
   data,
   pagination,
+  renderHeaders,
   renderCells,
   noContent,
   className,
@@ -29,9 +31,7 @@ export const DataTable = ({
       <table cellPadding={0} cellSpacing={0} className={style.table}>
         <thead>
           <tr className={style.header}>
-            {columns.map((col) => (
-              <HeadCell key={col} column={col} />
-            ))}
+            {renderHeaders ? renderHeaders() : columns.map((col) => <HeadCell key={col} column={col} />)}
           </tr>
         </thead>
         {!loading && <DataTableBody data={data} renderCells={renderCells} />}
