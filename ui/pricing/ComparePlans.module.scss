@@ -30,6 +30,10 @@
     min-width: 768px;
   }
 
+  .highlight {
+    color: #82bb08;
+  }
+
   .column {
     font-weight: 700;
     font-size: 16px;
@@ -56,6 +60,10 @@
 
     .checkIcon {
       height: 20px;
+
+      &.disabled {
+        opacity: 0.5;
+      }
     }
 
     .text {

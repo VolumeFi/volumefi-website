@@ -1,14 +1,5 @@
-import { useEffect } from 'react';
-
-import { useRouter } from 'next/router';
-import { StaticLink } from 'shared/configs/links';
+import AboutContainer from 'ui/about';
 
 export default function HomePage() {
-  const router = useRouter();
-
-  useEffect(() => {
-    if (router.route === '/') {
-      router.push(StaticLink.About);
-    }
-  }, [router]);
+  return <AboutContainer />;
 }

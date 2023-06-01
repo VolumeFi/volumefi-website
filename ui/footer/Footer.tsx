@@ -12,6 +12,10 @@ const Footer = () => (
           <Link href={StaticLink.Home}>
             <img className={style.logo} src="/assets/volume-logo.svg" alt="Logo of Volume" />
           </Link>
+          <p className={style.text}>
+            For web3 users that want decentralized computation & storage to manage private keys, Volume delivers a new
+            approach that promises 100% uptime at the lowest cost.
+          </p>
         </section>
         <section className={style.menuWrapper}>
           {footerMenus.map((parentFooterMenu) => (

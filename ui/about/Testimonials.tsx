@@ -5,7 +5,7 @@ import SectionContainer from 'ui/common/SectionContainer';
 const Testimonials = () => (
   <SectionContainer>
     <section className={style.container}>
-      <h1 className={style.title}>What Clients Say</h1>
+      <h1 className={style.title}>Feedback from Volume Clients</h1>
       <section className={style.testimonialsWrapper}>
         {testimonials.map((item, index) => (
           <section key={`testimonial-${index}`} className={style.testimonial}>

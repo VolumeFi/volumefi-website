@@ -47,11 +47,6 @@ export const headerMenus: Menu[] = [
     href: StaticLink.Team,
   },
   {
-    id: 'about',
-    title: 'About',
-    href: StaticLink.About,
-  },
-  {
     id: 'careers',
     title: 'Careers',
     href: StaticLink.Careers,
@@ -88,6 +83,11 @@ export const footerMenus: Menu[] = [
         title: 'Volume SDK',
         href: StaticLink.VolumeSDK,
       },
+      {
+        id: 'footer/products/volume-custody',
+        title: 'Volume Custody',
+        href: StaticLink.VolumeCustody,
+      },
     ],
   },
   {
@@ -117,18 +117,29 @@ export const footerMenus: Menu[] = [
     ],
   },
   {
-    id: 'footer/company-assets',
-    title: 'Company Assets',
+    id: 'footer/company',
+    title: 'Company',
     subMenus: [
       {
-        id: 'footer/company-assets/careers',
+        id: 'footer/company/team',
+        title: 'Team',
+        href: StaticLink.Team,
+      },
+      {
+        id: 'footer/company/events',
+        title: 'Events',
+        href: StaticLink.Events,
+      },
+      {
+        id: 'footer/company/blog',
+        title: 'Blog',
+        href: StaticLink.Blog,
+      },
+      {
+        id: 'footer/company/careers',
         title: 'Careers',
         href: StaticLink.Careers,
       },
-      // {
-      //   title: 'Brand Assets',
-      //   href: StaticLink.Home,
-      // },
     ],
   },
   {
@@ -136,9 +147,15 @@ export const footerMenus: Menu[] = [
     title: 'Social Media',
     subMenus: [
       {
-        id: 'footer/social-media/discord',
-        title: 'Discord',
-        href: ExternalLink.Discord,
+        id: 'footer/social-media/volume-discord',
+        title: 'Volume Discord',
+        href: ExternalLink.VolumeDiscord,
+        target: '_blank',
+      },
+      {
+        id: 'footer/social-media/paloma-discord',
+        title: 'Paloma Discord',
+        href: ExternalLink.PalomaDiscord,
         target: '_blank',
       },
       {
