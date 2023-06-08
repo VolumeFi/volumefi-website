@@ -12,6 +12,8 @@ const MainContainer = ({ children }: PropsWithChildren) => (
       description="Affordable Private Key Management Software for the Rest of Us"
       openGraph={{
         type: 'website',
+        title: "Volume",
+        description: "Affordable Private Key Management Software for the Rest of Us",
         images: [
           {
             url: 'https://volume.finance/favicon.ico',
