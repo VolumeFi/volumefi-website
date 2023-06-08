@@ -1,17 +1,24 @@
+import { DefaultSeo } from 'next-seo';
 import type { PropsWithChildren } from 'react';
 
-import Head from 'next/head';
 import Footer from 'ui/footer/Footer';
 import Header from 'ui/header';
 import style from 'ui/main/Main.module.scss';
 
 const MainContainer = ({ children }: PropsWithChildren) => (
   <>
-    <Head>
-      <title>Volume</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-    </Head>
+    <DefaultSeo
+      title="Volume"
+      description="Affordable Private Key Management Software for the Rest of Us"
+      openGraph={{
+        type: 'website',
+        images: [
+          {
+            url: 'https://volume.finance/favicon.ico',
+          },
+        ],
+      }}
+    />
     <main>
       <section className={style.container}>
         <Header />
