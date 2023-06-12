@@ -8,7 +8,9 @@ import { useEffect } from 'react';
 import Mixpanel from 'mixpanel';
 import {envParams} from "../../shared/configs/constants";
 
+
 const mixpanel = Mixpanel.init(envParams.storyblokAccessToken);
+
 
 const MainContainer = ({ children }: PropsWithChildren) => {
 
@@ -33,6 +35,3 @@ const MainContainer = ({ children }: PropsWithChildren) => {
         </>
     );
 };
-
-
-export default MainContainer;
