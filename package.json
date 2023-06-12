@@ -40,6 +40,7 @@
     "jquery": "^3.6.0",
     "mixpanel": "^0.17.0",
     "mixpanel-browser": "^2.45.0",
+    "net": "^1.0.2",
     "next": "^13.3.0",
     "qs": "^6.11.1",
     "react": "^18.2.0",
@@ -52,6 +53,7 @@
     "storyblok-js-client": "^5.10.5",
     "storyblok-rich-text-react-renderer": "^2.8.0",
     "styled-components": "^5.3.0",
+    "tls": "^0.0.1",
     "uuid": "^9.0.0",
     "yup": "^1.1.1"
   },
