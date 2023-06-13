@@ -7,13 +7,15 @@ import style from 'ui/main/Main.module.scss';
 import { useEffect } from 'react';
 import Mixpanel from 'mixpanel';
 import {envParams} from "../../shared/configs/constants";
+import { useRouter } from 'next/router';
 
-const mixpanel = Mixpanel.init(envParams.storyblokAccessToken);
 
 const MainContainer = ({ children }: PropsWithChildren) => {
+    const router = useRouter();
+    const mixpanel = Mixpanel.init(envParams.storyblokAccessToken);
 
     useEffect(() => {
-        mixpanel.track('PAGE_LOAD');
+        let result = mixpanel.track('PAGE_LOAD', { page: router.pathname });
     }, []);
 
     return (
