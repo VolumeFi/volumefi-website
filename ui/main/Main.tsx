@@ -6,11 +6,13 @@ import Header from 'ui/header';
 import style from 'ui/main/Main.module.scss';
 import { useEffect } from 'react';
 import Mixpanel from 'mixpanel';
-import {envParams} from "../../shared/configs/constants";
 
-const mixpanel = Mixpanel.init(envParams.mixPanelApiKey);
+
+require('dotenv').config();
 
 const MainContainer = ({ children }: PropsWithChildren) => {
+    const mixpanel = Mixpanel.init(process.env.MIXPANEL_API_KEY);
+
     useEffect(() => {
         let result = mixpanel.track('PAGE_LOAD', { });
     }, []);
