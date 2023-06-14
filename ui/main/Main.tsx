@@ -12,7 +12,7 @@ import { env } from 'next.config.js'
 require('dotenv').config();
 
 const MainContainer = ({ children }: PropsWithChildren) => {
-    const mixpanel = Mixpanel.init(env.MIXPANEL_API_KEY);
+    const mixpanel = Mixpanel.init(env.MIXPANEL_API_KEY.toString());
 
     useEffect(() => {
         let result = mixpanel.track('PAGE_LOAD', { });
