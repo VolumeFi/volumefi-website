@@ -6,16 +6,16 @@ import Header from 'ui/header';
 import style from 'ui/main/Main.module.scss';
 import { useEffect } from 'react';
 import Mixpanel from 'mixpanel';
-import {envParams} from "../../shared/configs/constants";
-import { useRouter } from 'next/router';
+import { env } from 'next.config.js'
 
+
+require('dotenv').config();
 
 const MainContainer = ({ children }: PropsWithChildren) => {
-    const router = useRouter();
-    const mixpanel = Mixpanel.init(envParams.storyblokAccessToken);
+    const mixpanel = Mixpanel.init(env.MIXPANEL_API_KEY.toString());
 
     useEffect(() => {
-        let result = mixpanel.track('PAGE_LOAD', { page: router.pathname });
+        let result = mixpanel.track('PAGE_LOAD', { });
     }, []);
 
     return (
