@@ -8,6 +8,7 @@ const envParams = {
   baseUrl: process.env.BASE_URL ?? '',
   apiVolumeService: process.env.API_VOLUME_SERVICE ?? '',
   storyblokAccessToken: process.env.STORYBLOK_ACCESS_TOKEN ?? '',
+  mixPanelApiKey: process.env.MIXPANEL_API_KEY ?? '',
 };
 
 export { envParams };

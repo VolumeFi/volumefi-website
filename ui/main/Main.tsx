@@ -8,11 +8,11 @@ import { useEffect } from 'react';
 import Mixpanel from 'mixpanel';
 import {envParams} from "../../shared/configs/constants";
 
-const mixpanel = Mixpanel.init(envParams.storyblokAccessToken);
+const mixpanel = Mixpanel.init(envParams.mixPanelApiKey);
 
 const MainContainer = ({ children }: PropsWithChildren) => {
     useEffect(() => {
-        let result = mixpanel.track('PAGE_LOAD', { page: router.pathname });
+        let result = mixpanel.track('PAGE_LOAD', { });
     }, []);
 
     return (
