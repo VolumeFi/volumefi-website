@@ -16,7 +16,7 @@ const MainContainer = ({ children }: PropsWithChildren) => {
         const mixpanel = Mixpanel.init(env.MIXPANEL_API_KEY.toString());
 
         mixpanel.track('PAGE_LOAD', {
-            'Page': window.location.pathname
+
         });
     }, []);
 
