@@ -5,19 +5,17 @@ import Footer from 'ui/footer/Footer';
 import Header from 'ui/header';
 import style from 'ui/main/Main.module.scss';
 import { useEffect } from 'react';
-import Mixpanel from 'mixpanel-browser';
+import Mixpanel from 'mixpanel';
 import { env } from 'next.config.js'
 
 
 require('dotenv').config();
 
 const MainContainer = ({ children }: PropsWithChildren) => {
+    const mixpanel = Mixpanel.init(env.MIXPANEL_API_KEY.toString());
+
     useEffect(() => {
-        const mixpanel = Mixpanel.init(env.MIXPANEL_API_KEY.toString());
-
-        mixpanel.track('PAGE_LOAD', {
-
-        });
+        let result = mixpanel.track('PAGE_LOAD', { });
     }, []);
 
     return (
