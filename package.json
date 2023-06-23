@@ -40,7 +40,7 @@
     "formik": "^2.2.9",
     "jquery": "^3.6.0",
     "mixpanel": "^0.17.0",
-    "mixpanel-browser": "^2.45.0",
+    "mixpanel-browser": "^2.47.0",
     "net": "^1.0.2",
     "next": "^13.3.0",
     "qs": "^6.11.1",
