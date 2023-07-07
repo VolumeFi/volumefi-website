@@ -11,11 +11,6 @@ export const teamMembers: TeamMember[] = [
     photo: '/assets/teams/Taariq.png',
   },
   {
-    name: 'Chase Albert',
-    title: 'Senior Backend Engineer',
-    photo: '/assets/teams/Chase.png',
-  },
-  {
     name: 'Tyler Ruppert',
     title: 'Senior Backend Engineer',
     photo: '/assets/teams/Tyler.png',
