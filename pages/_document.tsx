@@ -1,12 +1,8 @@
-import { Mixpanel } from 'mixpanel-react-native';
+
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 
-const trackAutomaticEvents = true;
-const mixpanel = new Mixpanel('009859534ebc340a92901d2d252f4f94', trackAutomaticEvents);
-
-mixpanel.init();
 
 
 class MyDocument extends Document {
@@ -19,7 +15,7 @@ class MyDocument extends Document {
     // Step 2: Retrieve styles from components in the page
     const page = renderPage((App) => (props) => sheet.collectStyles(<App {...props} />));
 
-      mixpanel.track('page_load', initialProps);
+
 
     // Step 3: Extract the styles as <style> tags
     const styleTags = sheet.getStyleElement();
