@@ -19,7 +19,7 @@ class MyDocument extends Document {
     // Step 2: Retrieve styles from components in the page
     const page = renderPage((App) => (props) => sheet.collectStyles(<App {...props} />));
 
-      mixpanel.track("page_load", initialProps);
+      mixpanel.track('page_load', initialProps);
 
     // Step 3: Extract the styles as <style> tags
     const styleTags = sheet.getStyleElement();
