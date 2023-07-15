@@ -2,7 +2,9 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
+import mixpanel from 'mixpanel-browser';
 
+mixpanel.init("009859534ebc340a92901d2d252f4f94");
 
 
 class MyDocument extends Document {
@@ -15,7 +17,7 @@ class MyDocument extends Document {
     // Step 2: Retrieve styles from components in the page
     const page = renderPage((App) => (props) => sheet.collectStyles(<App {...props} />));
 
-
+    mixpanel.track("PAGE_LOAD_VOLUME", initialProps);
 
     // Step 3: Extract the styles as <style> tags
     const styleTags = sheet.getStyleElement();
