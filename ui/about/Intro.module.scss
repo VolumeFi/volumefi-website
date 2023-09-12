@@ -80,3 +80,19 @@
     width: 100%;
   }
 }
+
+.launchBot {
+  height: 46px;
+  border-radius: 8px;
+  background: #8ABD1F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #272828;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px; /* 146.667% */
+  letter-spacing: -0.015px;
+  padding: 0 18px;
+  cursor: pointer;
+}

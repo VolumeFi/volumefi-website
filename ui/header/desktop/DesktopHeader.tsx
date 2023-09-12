@@ -97,7 +97,8 @@ const DesktopHeader = () => {
         </section>
         <section className={style.communityWrapper}>
           <Link href={ExternalLink.VolumeDiscord} target="_blank" label="Community" />
-          <Button label="Join the Waitlist" onClick={handleJoinWaitlist} />
+          {/* <Button label="Join the Waitlist" onClick={handleJoinWaitlist} /> */}
+          <a href="https://www.palomabot.ai/" target="_blank" rel="noreferrer" className={style.launchBot}>Launch a Free Bot</a>
         </section>
       </section>
     </section>

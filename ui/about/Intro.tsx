@@ -22,9 +22,10 @@ const Intro = () => {
             intelligent blockchain applications quickly.
           </p>
         </div>
-        <Button className={style.join} onClick={handleJoinWaitlist}>
+        {/* <Button className={style.join} onClick={handleJoinWaitlist}>
           Join the waitlist
-        </Button>
+        </Button> */}
+        <a href="https://www.palomabot.ai/" target="_blank" rel="noreferrer" className={style.launchBot}>Launch a Free Bot</a>
       </section>
     </SectionContainer>
   );
