@@ -29,11 +29,11 @@ export const headerMenus: Menu[] = [
         title: 'Volume SDK',
         href: StaticLink.VolumeSDK,
       },
-      {
-        id: 'products/volume-custodyu',
-        title: 'Volume Custody',
-        href: StaticLink.VolumeCustody,
-      },
+      // {
+      //   id: 'products/volume-custodyu',
+      //   title: 'Volume Custody',
+      //   href: StaticLink.VolumeCustody,
+      // },
     ],
   },
   {
@@ -46,21 +46,21 @@ export const headerMenus: Menu[] = [
     title: 'Team',
     href: StaticLink.Team,
   },
-  {
-    id: 'careers',
-    title: 'Careers',
-    href: StaticLink.Careers,
-  },
-  {
-    id: 'blog',
-    title: 'Blog',
-    href: StaticLink.Blog,
-  },
-  {
-    id: 'event',
-    title: 'Events',
-    href: StaticLink.Events,
-  },
+  // {
+  //   id: 'careers',
+  //   title: 'Careers',
+  //   href: StaticLink.Careers,
+  // },
+  // {
+  //   id: 'blog',
+  //   title: 'Blog',
+  //   href: StaticLink.Blog,
+  // },
+  // {
+  //   id: 'event',
+  //   title: 'Events',
+  //   href: StaticLink.Events,
+  // },
 ];
 
 export const footerMenus: Menu[] = [
@@ -83,11 +83,11 @@ export const footerMenus: Menu[] = [
         title: 'Volume SDK',
         href: StaticLink.VolumeSDK,
       },
-      {
-        id: 'footer/products/volume-custody',
-        title: 'Volume Custody',
-        href: StaticLink.VolumeCustody,
-      },
+      // {
+      //   id: 'footer/products/volume-custody',
+      //   title: 'Volume Custody',
+      //   href: StaticLink.VolumeCustody,
+      // },
     ],
   },
   {

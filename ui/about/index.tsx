@@ -1,3 +1,4 @@
+import Bots from 'ui/about/Bots';
 import CompareServices from 'ui/about/CompareServices';
 import style from 'ui/about/index.module.scss';
 import Intro from 'ui/about/Intro';
@@ -9,12 +10,13 @@ import JoinWaitlistBanner from 'ui/common/banners/JoinWaitlistBanner';
 const AboutContainer = () => (
   <section className={style.container}>
     <Intro />
-    <ProductsAndService />
+    <Bots />
+    {/* <ProductsAndService /> */}
     {/* <TotalTransactions /> */}
     <Testimonials />
-    <PrivateKeyManagement />
-    <CompareServices />
-    <JoinWaitlistBanner />
+    {/* <PrivateKeyManagement /> */}
+    {/* <CompareServices /> */}
+    {/* <JoinWaitlistBanner /> */}
   </section>
 );
 

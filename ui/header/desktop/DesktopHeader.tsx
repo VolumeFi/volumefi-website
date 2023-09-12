@@ -76,6 +76,7 @@ const DesktopHeader = () => {
                 className={classNames(style.menu, { [style.active]: activeMenuIds.includes(menu.id) })}
                 forwardedRef={linkRef}
                 onClick={() => handleClickParentMenu(menu.title)}
+                belowIcon={menu.subMenus && menu.subMenus.length > 0}
               />
               {menu.subMenus && clickedParentMenu === menu.title && (
                 <section className={style.subMenuWrapper} ref={ref}>
