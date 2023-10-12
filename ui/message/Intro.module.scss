@@ -1,0 +1,49 @@
+.container {
+  max-width: var(--max-container-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url('/assets/shield.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    padding: 0px 16px;
+  }
+}
+
+.head {
+  color: #8abd1f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.016px;
+}
+.title {
+  font-size: 52px;
+  line-height: 60px;
+  font-weight: bold;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+    line-height: 46px;
+  }
+}
+
+.description {
+  color: #a6a4a4;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: -0.018px;
+  max-width: 640px;
+}

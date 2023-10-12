@@ -16,7 +16,7 @@ const Intro = () => {
       <section className={style.container}>
         <div className={style.textWrapper}>
           <div className={style.sub}>Securely Manage your onchain funds with blockchain bots</div>
-          <h1 className={style.title}>Over 200 intelligent bots active onchain</h1>
+          <h1 className={style.title}>Over 200 intelligent and decentralized bots are active</h1>
           <p className={style.description}>
             Unlock the power of the blockchain, zero-knowledge cryptography, and artificial intelligence to create
             intelligent blockchain applications quickly.

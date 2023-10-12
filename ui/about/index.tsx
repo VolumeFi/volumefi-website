@@ -13,7 +13,7 @@ const AboutContainer = () => (
     <Bots />
     {/* <ProductsAndService /> */}
     {/* <TotalTransactions /> */}
-    <Testimonials />
+    {/* <Testimonials /> */}
     {/* <PrivateKeyManagement /> */}
     {/* <CompareServices /> */}
     {/* <JoinWaitlistBanner /> */}

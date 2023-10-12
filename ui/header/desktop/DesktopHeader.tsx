@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { Button } from 'components/Button';
 import { Link } from 'components/Link';
 import { useRouter } from 'next/router';
+import { AllBots, BotList } from 'shared/configs/bots';
 import { ExternalLink, StaticLink } from 'shared/configs/links';
 import { headerMenus } from 'shared/configs/menus';
 import { useOnClickOutside } from 'shared/hooks';
@@ -78,7 +79,7 @@ const DesktopHeader = () => {
                 onClick={() => handleClickParentMenu(menu.title)}
                 belowIcon={menu.subMenus && menu.subMenus.length > 0}
               />
-              {menu.subMenus && clickedParentMenu === menu.title && (
+              {/* {menu.subMenus && clickedParentMenu === menu.title && (
                 <section className={style.subMenuWrapper} ref={ref}>
                   {menu.subMenus.map((subMenu) => (
                     <Link
@@ -91,16 +92,48 @@ const DesktopHeader = () => {
                     />
                   ))}
                 </section>
-              )}
+              )} */}
             </section>
           ))}
         </section>
         <section className={style.communityWrapper}>
           <Link href={ExternalLink.VolumeDiscord} target="_blank" label="Community" />
           {/* <Button label="Join the Waitlist" onClick={handleJoinWaitlist} /> */}
-          <a href="https://www.palomabot.ai/" target="_blank" rel="noreferrer" className={style.launchBot}>Launch a Free Bot</a>
+          <a href="https://www.palomabot.ai/" target="_blank" rel="noreferrer" className={style.launchBot}>
+            Launch a Free Bot
+          </a>
         </section>
       </section>
+      {clickedParentMenu === headerMenus[0].title && (
+        <section className={style.botsSubMenuWrapper} ref={ref}>
+          <div className={style.botsSubMenu}>
+            <div className={style.botsDetails}>
+              <h3 className={style.title}>Volume Bots</h3>
+              <p className={style.text}>
+                Decentralized blockchain trading bots that will enter and exit your positions automatically. All bots
+                are run on the Paloma Blockchain. Security provided by the Paloma validator set.
+              </p>
+            </div>
+            {Object.values(AllBots).map((bots) => (
+              <Link
+                key={bots.title}
+                className={classNames(style.botsMenu, {
+                  [style.active]: activeMenuIds.includes(bots.link),
+                })}
+                onClick={() => handleClickSubMenu(bots.title, bots.link ?? '')}
+              >
+                <div className={style.botType}>
+                  <img className={style.image} src={bots.subImage} alt={bots.title} height="22" />
+                  {bots.title}
+                </div>
+                {BotList[bots.title].map((bot) => (
+                  <a className={style.subBot} key={bot.title} href={bot.link} target="_blank" rel="noreferrer">{bot.title}</a>
+                ))}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
     </section>
   );
 };
