@@ -17,6 +17,7 @@ const MessageBoard = () => {
 
   const handleSubmit = async () => {
     const couldSave = handleValidateForm();
+
     if (!couldSave) return;
 
     await postCreateUser(formValues as CreateUserDto);

@@ -1,5 +1,6 @@
 import { Button } from 'components/Button';
 import { useRouter } from 'next/router';
+import { envParams } from 'shared/configs/constants';
 import { StaticLink } from 'shared/configs/links';
 import style from 'ui/about/Intro.module.scss';
 import SectionContainer from 'ui/common/SectionContainer';
@@ -25,7 +26,7 @@ const Intro = () => {
         {/* <Button className={style.join} onClick={handleJoinWaitlist}>
           Join the waitlist
         </Button> */}
-        <a href="https://www.palomabot.ai/" target="_blank" rel="noreferrer" className={style.launchBot}>Launch a Free Bot</a>
+        <a href={envParams.palomabot} target="_blank" rel="noreferrer" className={style.launchBot}>Launch a Free Bot</a>
       </section>
     </SectionContainer>
   );

@@ -22,7 +22,6 @@ const Success = () => {
         <h1 className={style.title}>Thank you for Contacting us</h1>
         <p className={style.sub}>We will review your request and contact you directly to schedule a meeting.</p>
       </section>
-      <PalomaBotBanner className={style.banner} />
     </section>
   );
 };

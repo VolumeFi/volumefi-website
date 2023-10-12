@@ -9,10 +9,10 @@ import style from 'ui/message/MessageForm.module.scss';
 export interface FormValue {
   firstName?: string;
   lastName?: string;
-  telegramID?: string;
+  companyName?: string; // telegramID
   email?: string;
-  companyUrl?: string;
-  companySizeSector?: string;
+  jobTitle?: string; // companyUrl
+  businessSector?: string; // companySizeSector
   hearAboutUs?: string;
 }
 
@@ -76,10 +76,10 @@ const MessageForm = ({ showErrors, initialValues, onUpdate }: MessageFormProps) 
           required
           stacked
           title="Telegram ID"
-          value={formik.values.telegramID ?? ''}
-          error={formik.errors.telegramID}
+          value={formik.values.companyName ?? ''}
+          error={formik.errors.companyName}
           showErrors={showErrors}
-          onChange={async (val) => formik.setFieldValue('telegramID', val)}
+          onChange={async (val) => formik.setFieldValue('companyName', val)}
         />
       </section>
       <section className={style.row}>
@@ -87,10 +87,10 @@ const MessageForm = ({ showErrors, initialValues, onUpdate }: MessageFormProps) 
           required
           stacked
           title="Company URL"
-          value={formik.values.companyUrl ?? ''}
-          error={formik.errors.companyUrl}
+          value={formik.values.jobTitle ?? ''}
+          error={formik.errors.jobTitle}
           showErrors={showErrors}
-          onChange={async (val) => formik.setFieldValue('companyUrl', val)}
+          onChange={async (val) => formik.setFieldValue('jobTitle', val)}
         />
       </section>
       <section className={style.row}>
@@ -99,10 +99,10 @@ const MessageForm = ({ showErrors, initialValues, onUpdate }: MessageFormProps) 
           stacked
           options={companySizeSectorOptions}
           title="Company Size"
-          value={formik.values.companySizeSector ?? ''}
-          error={formik.errors.companySizeSector}
+          value={formik.values.businessSector ?? ''}
+          error={formik.errors.businessSector}
           showErrors={showErrors}
-          onChange={async (val) => formik.setFieldValue('companySizeSector', val)}
+          onChange={async (val) => formik.setFieldValue('businessSector', val)}
         />
       </section>
       <section className={style.row}>

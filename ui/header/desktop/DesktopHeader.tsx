@@ -5,6 +5,7 @@ import { Button } from 'components/Button';
 import { Link } from 'components/Link';
 import { useRouter } from 'next/router';
 import { AllBots, BotList } from 'shared/configs/bots';
+import { envParams } from 'shared/configs/constants';
 import { ExternalLink, StaticLink } from 'shared/configs/links';
 import { headerMenus } from 'shared/configs/menus';
 import { useOnClickOutside } from 'shared/hooks';
@@ -99,7 +100,7 @@ const DesktopHeader = () => {
         <section className={style.communityWrapper}>
           <Link href={ExternalLink.VolumeDiscord} target="_blank" label="Community" />
           {/* <Button label="Join the Waitlist" onClick={handleJoinWaitlist} /> */}
-          <a href="https://www.palomabot.ai/" target="_blank" rel="noreferrer" className={style.launchBot}>
+          <a href={envParams.palomabot} target="_blank" rel="noreferrer" className={style.launchBot}>
             Launch a Free Bot
           </a>
         </section>
