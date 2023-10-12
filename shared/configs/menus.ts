@@ -12,27 +12,27 @@ interface Menu {
 export const headerMenus: Menu[] = [
   {
     id: 'products',
-    title: 'Volume Products',
+    title: 'Volume Bots',
     subMenus: [
       {
-        id: 'products/paloma-swap',
-        title: 'PalomaSwap',
-        href: StaticLink.PalomaSwap,
+        id: 'products/sniping-bots',
+        title: 'Sniping Bots',
+        href: StaticLink.SnipingBot,
       },
       {
-        id: 'products/paloma-bot',
-        title: 'Paloma Bot',
-        href: StaticLink.PalomaBot,
+        id: 'products/trading-bots',
+        title: 'Trading Bots',
+        href: StaticLink.TradingBot,
       },
       {
-        id: 'products/volume-sdk',
-        title: 'Volume SDK',
-        href: StaticLink.VolumeSDK,
+        id: 'products/lending-bots',
+        title: 'Lending Bots',
+        href: StaticLink.LendingBot,
       },
       {
-        id: 'products/volume-custodyu',
-        title: 'Volume Custody',
-        href: StaticLink.VolumeCustody,
+        id: 'products/voting-bots',
+        title: 'Staking & Voting Bots',
+        href: StaticLink.VotingBot,
       },
     ],
   },
@@ -46,47 +46,47 @@ export const headerMenus: Menu[] = [
     title: 'Team',
     href: StaticLink.Team,
   },
-  {
-    id: 'careers',
-    title: 'Careers',
-    href: StaticLink.Careers,
-  },
-  {
-    id: 'blog',
-    title: 'Blog',
-    href: StaticLink.Blog,
-  },
-  {
-    id: 'event',
-    title: 'Events',
-    href: StaticLink.Events,
-  },
+  // {
+  //   id: 'careers',
+  //   title: 'Careers',
+  //   href: StaticLink.Careers,
+  // },
+  // {
+  //   id: 'blog',
+  //   title: 'Blog',
+  //   href: StaticLink.Blog,
+  // },
+  // {
+  //   id: 'event',
+  //   title: 'Events',
+  //   href: StaticLink.Events,
+  // },
 ];
 
 export const footerMenus: Menu[] = [
   {
     id: 'footer/products',
-    title: 'Products',
+    title: 'Volume Bots',
     subMenus: [
       {
-        id: 'footer/products/paloma-swap',
-        title: 'Paloma Swap',
-        href: StaticLink.PalomaSwap,
+        id: 'footer/products/sniping-bots',
+        title: 'Sniping Bots',
+        href: StaticLink.SnipingBot,
       },
       {
-        id: 'footer/products/paloma-bot',
-        title: 'Paloma Bot',
-        href: StaticLink.PalomaBot,
+        id: 'footer/products/trading-bots',
+        title: 'Trading Bots',
+        href: StaticLink.TradingBot,
       },
       {
-        id: 'footer/products/volume-sdk',
-        title: 'Volume SDK',
-        href: StaticLink.VolumeSDK,
+        id: 'footer/products/lending-bots',
+        title: 'Lending Bots',
+        href: StaticLink.LendingBot,
       },
       {
-        id: 'footer/products/volume-custody',
-        title: 'Volume Custody',
-        href: StaticLink.VolumeCustody,
+        id: 'footer/products/voting-bots',
+        title: 'Staking & Voting Bots',
+        href: StaticLink.VotingBot,
       },
     ],
   },
@@ -146,12 +146,12 @@ export const footerMenus: Menu[] = [
     id: 'footer/social-media',
     title: 'Social Media',
     subMenus: [
-      {
-        id: 'footer/social-media/volume-discord',
-        title: 'Volume Discord',
-        href: ExternalLink.VolumeDiscord,
-        target: '_blank',
-      },
+      // {
+      //   id: 'footer/social-media/volume-discord',
+      //   title: 'Volume Discord',
+      //   href: ExternalLink.VolumeDiscord,
+      //   target: '_blank',
+      // },
       {
         id: 'footer/social-media/paloma-discord',
         title: 'Paloma Discord',

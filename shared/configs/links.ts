@@ -11,6 +11,12 @@ export enum StaticLink {
   Blog = '/blog',
   Events = '/events',
   Team = '/team',
+  Message = '/message',
+  MessageSuccess = '/message/success',
+  SnipingBot = '/sniping-bots',
+  TradingBot = '/trading-bots',
+  LendingBot = '/lending-bots',
+  VotingBot = '/voting-bots',
 }
 
 export enum ExternalLink {

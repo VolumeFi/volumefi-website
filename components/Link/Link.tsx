@@ -11,6 +11,7 @@ interface LinkProps {
   className?: string;
   onClick?: () => void;
   forwardedRef?: MutableRefObject<HTMLDivElement | null>;
+  belowIcon?: boolean;
 }
 
 export const Link = ({
@@ -21,6 +22,7 @@ export const Link = ({
   onClick,
   children,
   forwardedRef,
+  belowIcon = false,
 }: PropsWithChildren<LinkProps>) => {
   const content = children ?? label;
 
@@ -34,6 +36,7 @@ export const Link = ({
         ref={forwardedRef}
       >
         {content}
+        {belowIcon && <img src="/assets/down.svg" />}
       </div>
     );
 

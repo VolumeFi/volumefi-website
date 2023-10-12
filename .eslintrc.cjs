@@ -89,6 +89,7 @@ module.exports = {
     'react/prefer-stateless-function': 'warn',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
+    "react/no-unescaped-entities": "off",
     // Functional
     'functional/prefer-readonly-type': [
       'off',

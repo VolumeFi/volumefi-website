@@ -45,12 +45,10 @@
 
     @media screen and (max-width: 768px) {
       gap: 40px;
-    }
-
-    .menuBlock {
-      @media screen and (max-width: 768px) {
-        max-width: 112px;
-      }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      gap: 24px;
     }
 
     .menuLink {
