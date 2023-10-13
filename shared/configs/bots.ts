@@ -64,11 +64,11 @@ export const BotList: { [x: string]: IBotsDetails[] } = {
       image: '/assets/bots/uniswapv2_twap_bot.png',
       link: `${palomaBotUrl}/uniswapv2-twap/`,
     },
-    {
-      title: 'PancakeSwap v2 TWAP',
-      description: 'Spread your large BNB Pancakeswap-v2 swap order into smaller swaps to reduce slippage.',
-      image: '/assets/bots/pancakewapv2_twap_bot.png',
-      link: `${palomaBotUrl}/pancakeswapv2-twap/`,
+    /*{
+    /  title: 'PancakeSwap v2 TWAP',
+    /  description: 'Spread your large BNB Pancakeswap-v2 swap order into smaller swaps to reduce slippage.',
+    /  image: '/assets/bots/pancakewapv2_twap_bot.png',
+    /  link: `${palomaBotUrl}/pancakeswapv2-twap/`,
     },
     {
       title: 'Curve Limit Order Bot',
@@ -81,7 +81,7 @@ export const BotList: { [x: string]: IBotsDetails[] } = {
       description: 'Limit your token losses using deep liquidity.',
       image: '/assets/bots/curve_stop_loss_bot.png',
       link: `${palomaBotUrl}/curve-stop-loss/`,
-    },
+    },*/
   ],
   [BotTypes.SNIPING_BOT]: [
     {
