@@ -17,9 +17,11 @@ const BlogContainer = () => {
       <section className={style.container}>
         <h1 className={style.title}>Volume Blog</h1>
         <section className={style.blogListWrapper}>
-          {blogs.map((blog) => (
-            <BlogItem blog={blog} key={blog.uuid} />
-          ))}
+          {blogs.length > 0 ? (
+            blogs.map((blog) => <BlogItem blog={blog} key={blog.uuid} />)
+          ) : (
+            <img src="/assets/loading.svg" alt="loading" className={style.loading} width={64} height={64} />
+          )}
         </section>
       </section>
     </SectionContainer>

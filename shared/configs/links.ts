@@ -16,7 +16,7 @@ export enum StaticLink {
   SnipingBot = '/sniping-bots',
   TradingBot = '/trading-bots',
   LendingBot = '/lending-bots',
-  VotingBot = '/voting-bots',
+  // VotingBot = '/voting-bots',
 }
 
 export enum ExternalLink {

@@ -13,7 +13,7 @@ export const BotTypes = {
   TRADING_BOT: 'Trading Bots',
   SNIPING_BOT: 'Sniping Bots',
   LENDING_BOT: 'Lending Bots',
-  VOTING_STAKING_BOT: 'Voting & Staking Bots',
+  // VOTING_STAKING_BOT: 'Voting & Staking Bots',
 };
 
 export const AllBots: { [x: string]: IBotsDetails } = {
@@ -41,13 +41,13 @@ export const AllBots: { [x: string]: IBotsDetails } = {
     subImage: '/assets/bots/lending_bots_sub.png',
     link: 'lending-bots',
   },
-  [BotTypes.VOTING_STAKING_BOT]: {
-    title: BotTypes.VOTING_STAKING_BOT,
-    description: 'Use decentralized bots to vote your tokens and increase your stake automatically.',
-    image: '/assets/bots/voting_bots.png',
-    subImage: '/assets/bots/voting_bots_sub.png',
-    link: 'voting-bots',
-  },
+  // [BotTypes.VOTING_STAKING_BOT]: {
+  //   title: BotTypes.VOTING_STAKING_BOT,
+  //   description: 'Use decentralized bots to vote your tokens and increase your stake automatically.',
+  //   image: '/assets/bots/voting_bots.png',
+  //   subImage: '/assets/bots/voting_bots_sub.png',
+  //   link: 'voting-bots',
+  // },
 };
 
 export const BotList: { [x: string]: IBotsDetails[] } = {
@@ -117,12 +117,12 @@ export const BotList: { [x: string]: IBotsDetails[] } = {
       link: `${palomaBotUrl}/curve-lending/`,
     },
   ],
-  [BotTypes.VOTING_STAKING_BOT]: [
-    {
-      title: 'StakeDAO APR Chaser Bot',
-      description: "Automatically vote for the highest bribes and highest return proposals on StakeDAO's votemarket.",
-      image: '/assets/bots/stakedao_bot.png',
-      link: `${palomaBotUrl}/vote-distribution/stake-dao-apr-chaser/`,
-    },
-  ],
+  // [BotTypes.VOTING_STAKING_BOT]: [
+  //   {
+  //     title: 'StakeDAO APR Chaser Bot',
+  //     description: "Automatically vote for the highest bribes and highest return proposals on StakeDAO's votemarket.",
+  //     image: '/assets/bots/stakedao_bot.png',
+  //     link: `${palomaBotUrl}/vote-distribution/stake-dao-apr-chaser/`,
+  //   },
+  // ],
 };
