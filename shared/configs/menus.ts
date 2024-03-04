@@ -29,17 +29,22 @@ export const headerMenus: Menu[] = [
         title: 'Lending Bots',
         href: StaticLink.LendingBot,
       },
-      {
-        id: 'products/voting-bots',
-        title: 'Staking & Voting Bots',
-        href: StaticLink.VotingBot,
-      },
+      // {
+      //   id: 'products/voting-bots',
+      //   title: 'Staking & Voting Bots',
+      //   href: StaticLink.VotingBot,
+      // },
     ],
   },
   {
     id: 'pricing',
     title: 'Pricing',
     href: StaticLink.Pricing,
+  },
+  {
+    id: 'blog',
+    title: 'Blog',
+    href: StaticLink.Blog,
   },
   {
     id: 'team',
@@ -83,11 +88,11 @@ export const footerMenus: Menu[] = [
         title: 'Lending Bots',
         href: StaticLink.LendingBot,
       },
-      {
-        id: 'footer/products/voting-bots',
-        title: 'Staking & Voting Bots',
-        href: StaticLink.VotingBot,
-      },
+      // {
+      //   id: 'footer/products/voting-bots',
+      //   title: 'Staking & Voting Bots',
+      //   href: StaticLink.VotingBot,
+      // },
     ],
   },
   {

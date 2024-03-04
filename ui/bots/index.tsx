@@ -1,6 +1,5 @@
 import { Box } from 'components/Box';
 import { GetInTouch } from 'components/GetInTouch/GetInTouch';
-import Link from 'next/link';
 import { AllBots, BotList } from 'shared/configs/bots';
 import styled from 'styled-components';
 import SectionContainer from 'ui/common/SectionContainer';
