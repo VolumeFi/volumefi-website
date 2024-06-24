@@ -16,6 +16,11 @@ export const teamMembers: TeamMember[] = [
     photo: '/assets/teams/Christian.png',
   },
   {
+    name: 'Luis Carvalho',
+    title: 'Senior Backend Engineer',
+    photo: '/assets/teams/Luis.png',
+  },
+  {
     name: 'Steven Jung',
     title: 'Senior Backend Engineer',
     photo: '/assets/teams/Steven.png',
@@ -26,14 +31,19 @@ export const teamMembers: TeamMember[] = [
     photo: '/assets/teams/William.png',
   },
   {
-    name: 'Jason Jacobs',
+    name: 'Jack Lin',
     title: 'Senior Backend Engineer',
-    photo: '/assets/teams/Jason.png',
+    photo: '/assets/teams/Jacky.png',
   },
   {
     name: 'James Lee',
     title: 'Senior Front-end Engineer',
     photo: '/assets/teams/James.png',
+  },
+  {
+    name: 'Michael Arief',
+    title: 'AI Researcher',
+    photo: '/assets/teams/Michael.png',
   },
   {
     name: 'Zhibai Zhang',
