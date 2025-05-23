@@ -140,11 +140,6 @@ export const footerMenus: Menu[] = [
         title: 'Blog',
         href: StaticLink.Blog,
       },
-      {
-        id: 'footer/company/careers',
-        title: 'Careers',
-        href: StaticLink.Careers,
-      },
     ],
   },
   {

@@ -1,7 +1,6 @@
 export enum StaticLink {
   Home = '/',
   Pricing = '/pricing',
-  Careers = '/careers',
   Signup = '/signup',
   SignupSuccess = '/signup/success',
   PalomaSwap = '/products/paloma-swap',
