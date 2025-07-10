@@ -1,6 +1,10 @@
 require('dotenv').config();
 
-module.exports = {
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  output: 'export',
   trailingSlash: true,
   env: {
     BASE_URL: process.env.BASE_URL,
@@ -10,3 +14,5 @@ module.exports = {
     PALOMA_BOT_URL: process.env.PALOMA_BOT_URL || '',
   },
 };
+
+module.exports = nextConfig;
