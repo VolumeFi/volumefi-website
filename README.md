@@ -4,7 +4,7 @@ This repo the web application for [volume.finance](https://volume.finance/)
 
 ## Setup
 
-To run this locally, you will need a Storyblok Api Key.
+To run this locally, you will need a Storyblock Api Key and Mixpanel API key.
 
 To set up the app for local development:
 
